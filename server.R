@@ -4,7 +4,9 @@ library(plotly)
 
 project_folder <- "C:/Users/kr1stine/git/euromod-web-interface"
 setwd(project_folder)
+
 source("indicator_functions.R")
+source("const.R")
 
 # Run base system simulation
 # TODO - save these to the system to save time?
@@ -35,10 +37,10 @@ runSimulation <- function(newMinWage) {
   xml_text(j)
   ns <- xml_ns(page)
 
-  write_xml(c, "EUROMOD_WEB\\XMLParam\\Countries\\EE\\EE.xml")
+  write_xml(c, "euromod/EUROMOD_WEB\\XMLParam\\Countries\\EE\\EE.xml")
 
   # Run EUROMOD for ref system
-  system('EUROMOD\\Executable\\EM_ExecutableCaller.exe "EUROMOD_WEB" EE_2019_ref EE_2019_e1_m')
+  system('euromod/EUROMOD\\Executable\\EM_ExecutableCaller.exe "EUROMOD_WEB" EE_2019_ref EE_2019_e1_m')
   
   ### 
   
