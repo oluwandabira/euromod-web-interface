@@ -5,6 +5,7 @@ library(plotly)
 project_folder <- "C:/Users/kr1stine/git/euromod-web-interface"
 setwd(project_folder)
 
+
 source("indicator_functions.R")
 source("const.R")
 
@@ -21,10 +22,12 @@ new_pay_gap <- 0
 # create new config file
 # and run simulation
 runSimulation <- function(newMinWage) {
-  source("create_input_files.R")
   # Create new input file
+  source("create_input_files.R")
+  orig_data <- read.csv(file="data\\EE_2018_c1.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
+  scenario_data <- create_input_data(newMinWage, orig_data)
+  write.table(scenario_data, file="euromod\\EUROMOD_WEB\\Input\\EE_2018_c1.txt", quote=FALSE, col.names=TRUE, row.names=FALSE, sep="\t")
   
-  cat("New min wage on ", newMinWage)
   # Create new config file
   page <- read_xml("data\\EE_original.xml")
 

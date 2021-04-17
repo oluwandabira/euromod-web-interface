@@ -6,10 +6,7 @@
 
 create_input_data <- function(minwage, euromod_data) {
   actual_minwage <- 500 # necessary for determining the lower limit
-  cat("KUKU\n")
-  cat(nrow(euromod_data))
-  cat("\n")
-  cat(names(euromod_data))
+
   scenario_data <- data.frame(euromod_data)
   # For register data yem00, for EU-SILC yem
   wage_variable = "yem"
