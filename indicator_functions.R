@@ -69,11 +69,42 @@ monthly_gross_pay_gap_ft <- function(data) {
 
 # Helper function to find disposable income gap
 disposable_income_gap <- function(data) {
-  # Disposable income: ils_dispy
+  # Disposable income: ils_dispy for registers, yds for EU-SILC
   data$ils_dispy <- as.numeric(sub(",",".",data$ils_dispy, fixed=TRUE))
   
   disp_men <- data[data[,"ils_dispy"] > 0 & data[,"dgn"]==1, "ils_dispy"]
   disp_women <- data[data[,"ils_dispy"] > 0 & data[,"dgn"]==0, "ils_dispy"]
+  
+  avg_disp_men <- mean(disp_men)
+  avg_disp_women <- mean(disp_women)
+  
+  pay_gap <- (avg_disp_men - avg_disp_women)/avg_disp_men * 100
+  return(pay_gap)
+}
+
+# Helper function to find disposable income gap
+equivalized_disposable_income_gap <- function(data) {
+  # Disposable income: ils_dispy for registers, yds for EU-SILC
+  variable <- "ydses_o"
+  data[,variable] <- as.numeric(sub(",",".",data[,variable], fixed=TRUE))
+  
+  disp_men <- data[data[,variable] > 0 & data[,"dgn"]==1, variable]
+  disp_women <- data[data[,variable] > 0 & data[,"dgn"]==0, variable]
+  
+  avg_disp_men <- mean(disp_men)
+  avg_disp_women <- mean(disp_women)
+  
+  pay_gap <- (avg_disp_men - avg_disp_women)/avg_disp_men * 100
+  return(pay_gap)
+}
+
+# Helper function to find disposable income gap for full-time workers
+disposable_income_gap_ft <- function(data) {
+  # Disposable income: ils_dispy
+  data$ils_dispy <- as.numeric(sub(",",".",data$ils_dispy, fixed=TRUE))
+  
+  disp_men <- data[data[,"liwftmy"] > 0 & data[,"liwftmy"]==data[,"liwmy"] & data[,"ils_dispy"] > 0 & data[,"dgn"]==1, "ils_dispy"]
+  disp_women <- data[data[,"liwftmy"] > 0 & data[,"liwftmy"]==data[,"liwmy"] & data[,"ils_dispy"] > 0 & data[,"dgn"]==0, "ils_dispy"]
   
   avg_disp_men <- mean(disp_men)
   avg_disp_women <- mean(disp_women)
