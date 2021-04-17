@@ -10,10 +10,10 @@ source("const.R")
 
 # Run base system simulation
 # TODO - save these to the system to save time?
-shell(' C:\\Users\\kr1stine\\git\\euromod-web-interface\\euromod\\EUROMOD\\Executable\\EM_ExecutableCaller.exe  "C:\\Users\\kr1stine\\git\\euromod-web-interface\\euromod\\EUROMOD_WEB" EE_2018 EE_2018_c1')
-base_output_data <- read.csv(file="euromod/EUROMOD_WEB/output/ee_2018_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
-base_pay_gap <- monthly_gross_pay_gap_ft(base_output_data)
-cat(base_pay_gap)
+# shell(' C:\\Users\\kr1stine\\git\\euromod-web-interface\\euromod\\EUROMOD\\Executable\\EM_ExecutableCaller.exe  "C:\\Users\\kr1stine\\git\\euromod-web-interface\\euromod\\EUROMOD_WEB" EE_2018 EE_2018_c1')
+# base_output_data <- read.csv(file="euromod/EUROMOD_WEB/output/ee_2018_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
+# base_pay_gap <- monthly_gross_pay_gap_ft(base_output_data)
+# cat(base_pay_gap)
 
 new_pay_gap <- 0
 
@@ -22,25 +22,19 @@ new_pay_gap <- 0
 # and run simulation
 runSimulation <- function(newMinWage) {
   source("create_input_files.R")
-  
   # Create new input file
-  euromod_data <- read.csv(file="EE_2019_e1.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
-  scenario_data <- create_input_data(newMinWage, euromod_data)
-  write.table(scenario_data, file="euromod/EUROMOD_WEB/Input/EE_2019_e1_m.txt", quote=FALSE, col.names=TRUE, row.names=FALSE, sep="\t")
   
+  cat("New min wage on ", newMinWage)
   # Create new config file
-  page <- read_xml("euromod/EUROMOD_WEB\\XMLParam\\Countries\\EE\\EE.xml")
-  c <- xml_ns_strip(page)
-  j <- xml_find_first(c, '//Parameter[ID[text()=""]]/Value')
-  
-  xml_set_text(j, paste(newMinWage, "#m", sep=""))
-  xml_text(j)
-  ns <- xml_ns(page)
+  page <- read_xml("data\\EE_original.xml")
 
-  write_xml(c, "euromod/EUROMOD_WEB\\XMLParam\\Countries\\EE\\EE.xml")
+  # $MinWage
+  j <- xml_find_first(page, '//d1:Parameter[d1:ID[text()="e06886b0-7b1f-41ba-b0af-d97029e57413"]]/d1:Value', xml_ns(page))
+  xml_set_text(j, paste(newMinWage, "#m", sep=""))
+  write_xml(page, "euromod\\EUROMOD_WEB\\XMLParam\\Countries\\EE\\EE.xml")
 
   # Run EUROMOD for ref system
-  system('euromod/EUROMOD\\Executable\\EM_ExecutableCaller.exe "EUROMOD_WEB" EE_2019_ref EE_2019_e1_m')
+  shell('euromod\\EUROMOD\\Executable\\EM_ExecutableCaller.exe  "C:\\Users\\kr1stine\\git\\euromod-web-interface\\euromod\\EUROMOD_WEB" EE_2018 EE_2018_c1')
   
   ### 
   
@@ -50,7 +44,7 @@ readOutput <- function() {
   source("indicator_functions.R")
   
   # Read output file
-  output_data <- read.csv(file="EUROMOD_WEB/output/ee_2019_ref_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
+  output_data <- read.csv(file="euromod\\EUROMOD_WEB\\output\\ee_2018_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
   
   # Find new values for indicators
   new_pay_gap <- hourly_gross_pay_gap(output_data)
@@ -82,12 +76,12 @@ shinyServer(function(input, output) {
     input$run
     isolate(runSimulation(input$obs))
     # Read output file
-    output_data <- read.csv(file="EUROMOD_WEB/output/ee_2019_ref_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
+    output_data <- read.csv(file="euromod/EUROMOD_WEB/output/ee_2018_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
     
     # Find new values for indicators
     new_pay_gap <- monthly_gross_pay_gap_ft(output_data)
     
-    pay_gaps <- c(base_pay_gap, new_pay_gap)
+    pay_gaps <- c(GENDER_PAY_GAP_WORKERS, new_pay_gap)
     names <- c("2019 - 540€", "2019 - 700€")
     text <- c("2019. aasta tegelik palgalõhe statistikaameti andmetel", "Palgalõhe sisestatud miinimumpalgaga simuleeritud olukorras")
     data <- data.frame(names, pay_gaps, text)
