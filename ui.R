@@ -10,7 +10,8 @@ shinyUI(pageWithSidebar(
     br(),
     numericInput("obs",
                  "Sisesta miinimumpalk ",
-                 540),
+                 700,
+                 min=540),
     actionButton("run", "Arvuta")
   ),
   
