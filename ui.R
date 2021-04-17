@@ -6,7 +6,7 @@ shinyUI(pageWithSidebar(
   headerPanel(""),
   
   sidebarPanel(
-    div("Rakendus ennustab miinimumpalga muutuse esmast mõju sotsiaalsetele näitajatele. Alusandmed pärinevad aasatst 2019."),
+    div("Rakendus ennustab miinimumpalga muutuse esmast mõju sotsiaalsetele näitajatele."),
     br(),
     numericInput("obs",
                  "Sisesta miinimumpalk ",
@@ -18,13 +18,12 @@ shinyUI(pageWithSidebar(
   mainPanel(
     strong("Sooline palgalõhe töötava elanikkonna hulgas"),
     div("Meeste ja naiste täisajaga töötatud kuude keskmiste brutopalkade lõhe"),
-    plotlyOutput(outputId = "grossHourlyWageGapPlotInt"),
+    uiOutput(outputId="grossHourlyWageGapStatic"),
     strong("Sooline palgalõhe kättesaadavas sissetulekus"),
     div("Meeste ja naiste täisajaga töötatud kuude keskmiste netosissetulekute (palk koos toetuste ja muude sissetulekutega) lõhe"),
     h4("Kogu elanikkond"),
     strong("Sooline palgalõhe kättesaadavas sissetulekus"),
     div("Meeste ja naiste keskmiste kuunetosissetulekute (palk koos toetuste ja muude sissetulekutega) lõhe"),
-    plotOutput("grossHourlyWageGapPlot")
   )
 ))
 
