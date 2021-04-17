@@ -1,11 +1,15 @@
 library(shiny)
 library(xml2)
 library(plotly)
+
+project_folder <- "C:/Users/kr1stine/git/euromod-web-interface"
+setwd(project_folder)
 source("indicator_functions.R")
 
 # Run base system simulation
-system('EM_ExecutableCaller.exe "EUROMOD_WEB" EE_2019 EE_2019_e1')
-base_output_data <- read.csv(file="EUROMOD_WEB/output/ee_2019_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
+# TODO - save these to the system to save time?
+shell(' C:\\Users\\kr1stine\\git\\euromod-web-interface\\euromod\\EUROMOD\\Executable\\EM_ExecutableCaller.exe  "C:\\Users\\kr1stine\\git\\euromod-web-interface\\euromod\\EUROMOD_WEB" EE_2018 EE_2018_c1')
+base_output_data <- read.csv(file="euromod/EUROMOD_WEB/output/ee_2018_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
 base_pay_gap <- monthly_gross_pay_gap_ft(base_output_data)
 cat(base_pay_gap)
 
@@ -20,10 +24,10 @@ runSimulation <- function(newMinWage) {
   # Create new input file
   euromod_data <- read.csv(file="EE_2019_e1.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
   scenario_data <- create_input_data(newMinWage, euromod_data)
-  write.table(scenario_data, file="EUROMOD_WEB/Input/EE_2019_e1_m.txt", quote=FALSE, col.names=TRUE, row.names=FALSE, sep="\t")
+  write.table(scenario_data, file="euromod/EUROMOD_WEB/Input/EE_2019_e1_m.txt", quote=FALSE, col.names=TRUE, row.names=FALSE, sep="\t")
   
   # Create new config file
-  page <- read_xml("EUROMOD_WEB\\XMLParam\\Countries\\EE\\EE.xml")
+  page <- read_xml("euromod/EUROMOD_WEB\\XMLParam\\Countries\\EE\\EE.xml")
   c <- xml_ns_strip(page)
   j <- xml_find_first(c, '//Parameter[ID[text()=""]]/Value')
   
