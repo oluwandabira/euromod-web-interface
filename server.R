@@ -59,8 +59,7 @@ readOutput <- function() {
 
 shinyServer(function(input, output) {
 
-  output$grossHourlyWageGapStatic <- renderUI({
-    
+  output$genderWageGap <- renderUI({
     input$run
     isolate(runSimulation(input$obs))
     # Read output file
@@ -68,13 +67,37 @@ shinyServer(function(input, output) {
     
     # Find new values for indicators
     new_pay_gap <- monthly_gross_pay_gap_ft(output_data)
-
-    # Show new values and arrows
+    new_dis_inc_gap <- disposable_income_gap(output_data)
+    
     div(
-      div(round(GENDER_PAY_GAP_WORKERS,2)),
-      icon("arrow-down", "fa-2x"),
-      div(round(new_pay_gap,2)),
+      h4("Töötav elanikkond"),
+      fluidRow(
+        column(8,
+               strong("Sooline palgalõhe"),
+               p("Täisajaga töötavate meeste ja naiste brutopalkade lõhe.")
+               
+        ),
+        column(4,
+               div(paste(round(GENDER_PAY_GAP_WORKERS,2), "%")),
+               icon("arrow-down", "fa"),
+               div(paste(round(new_pay_gap,2), "%")),
+        )
+      ),
+      br(),
+      fluidRow(
+        column(8,
+               strong("Kättesaadava sissetuleku sooline lõhe"),
+               p("Meeste ja naiste kasutatava sissetuleku (brutopalk + toetused - maksud) lõhe.")
+               
+        ),
+        column(4,
+               div(paste(round(DISP_INCOME_GAP_WORKERS,2), "%")),
+               icon("arrow-down", "fa"),
+               div(paste(round(new_dis_inc_gap,2), "%")),
+        )
+      )
     )
   
   })
+
 })
