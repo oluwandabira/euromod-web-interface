@@ -99,4 +99,23 @@ shinyServer(function(input, output) {
     fig
     
   })
+  output$grossHourlyWageGapStatic <- renderUI({
+    
+    input$run
+    isolate(runSimulation(input$obs))
+    # Read output file
+    output_data <- read.csv(file="euromod/EUROMOD_WEB/output/ee_2018_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
+    
+    # Find new values for indicators
+    new_pay_gap <- monthly_gross_pay_gap_ft(output_data)
+    pay_gaps <- c(GENDER_PAY_GAP_WORKERS, new_pay_gap)
+    
+    # Show new values and arrows
+    div(
+      div(GENDER_PAY_GAP_WORKERS),
+      icon("arrow-down", "fa-3x"),
+      div(new_pay_gap),
+    )
+  
+  })
 })

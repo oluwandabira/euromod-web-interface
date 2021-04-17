@@ -18,7 +18,9 @@ shinyUI(pageWithSidebar(
   mainPanel(
     strong("Sooline palgalõhe töötava elanikkonna hulgas"),
     div("Meeste ja naiste täisajaga töötatud kuude keskmiste brutopalkade lõhe"),
-    plotlyOutput(outputId = "grossHourlyWageGapPlotInt"),
+    icon("arrow-down", "fa-3x"),
+    uiOutput(outputId="grossHourlyWageGapStatic"),
+    # plotlyOutput(outputId = "grossHourlyWageGapPlotInt"),
     strong("Sooline palgalõhe kättesaadavas sissetulekus"),
     div("Meeste ja naiste täisajaga töötatud kuude keskmiste netosissetulekute (palk koos toetuste ja muude sissetulekutega) lõhe"),
     h4("Kogu elanikkond"),
