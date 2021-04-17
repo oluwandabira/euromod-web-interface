@@ -5,18 +5,6 @@ library(plotly)
 project_folder <- "C:/Users/kr1stine/git/euromod-web-interface"
 setwd(project_folder)
 
-
-source("indicator_functions.R")
-source("const.R")
-
-# Run base system simulation
-# TODO - save these to the system to save time?
-# shell(' C:\\Users\\kr1stine\\git\\euromod-web-interface\\euromod\\EUROMOD\\Executable\\EM_ExecutableCaller.exe  "C:\\Users\\kr1stine\\git\\euromod-web-interface\\euromod\\EUROMOD_WEB" EE_2018 EE_2018_c1')
-# base_output_data <- read.csv(file="euromod/EUROMOD_WEB/output/ee_2018_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
-# base_pay_gap <- monthly_gross_pay_gap_ft(base_output_data)
-# base_disp_i_gap <- disposable_income_gap(base_output_data)
-# cat(base_pay_gap)
-
 new_pay_gap <- 0
 
 # Function to create new input data file,
@@ -44,23 +32,12 @@ runSimulation <- function(newMinWage) {
   
 }
 
-readOutput <- function() {
-  source("indicator_functions.R")
-  
-  # Read output file
-  output_data <- read.csv(file="euromod\\EUROMOD_WEB\\output\\ee_2018_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
-  
-  # Find new values for indicators
-  new_pay_gap <- hourly_gross_pay_gap(output_data)
-  cat(new_pay_gap)
-}
-
-
 
 shinyServer(function(input, output) {
-
-  output$grossHourlyWageGapStatic <- renderUI({
-    
+  source("indicator_functions.R")
+  source("const.R")
+  
+  output$genderWageGap <- renderUI({
     input$run
     isolate(runSimulation(input$obs))
     # Read output file
@@ -68,13 +45,52 @@ shinyServer(function(input, output) {
     
     # Find new values for indicators
     new_pay_gap <- monthly_gross_pay_gap_ft(output_data)
-
-    # Show new values and arrows
+    new_dis_inc_gap_ft <- disposable_income_gap_ft(output_data)
+    new_dis_inc_gap <- disposable_income_gap(output_data)
+    
     div(
-      div(round(GENDER_PAY_GAP_WORKERS,2)),
-      icon("arrow-down", "fa-2x"),
-      div(round(new_pay_gap,2)),
+      h4("Töötav elanikkond"),
+      fluidRow(
+        column(8,
+               strong("Sooline palgalõhe"),
+               p("Täisajaga töötavate meeste ja naiste brutopalkade lõhe.")
+               
+        ),
+        column(4,
+               div(paste(round(GENDER_PAY_GAP_WORKERS,2), "%")),
+               icon("arrow-down", "fa"),
+               div(paste(round(new_pay_gap,2), "%")),
+        )
+      ),
+      br(),
+      fluidRow(
+        column(8,
+               strong("Kättesaadava sissetuleku sooline lõhe"),
+               p("Täisajaga töötavate meeste ja naiste kasutatava sissetuleku (brutopalk + toetused - maksud) lõhe.")
+               
+        ),
+        column(4,
+               div(paste(round(DISP_INCOME_GAP_WORKERS,2), "%")),
+               icon("arrow-down", "fa"),
+               div(paste(round(new_dis_inc_gap_ft,2), "%")),
+        )
+      ),
+      br(),
+      h4("Kogu elanikkond"),
+      fluidRow(
+        column(8,
+               strong("Kättesaadava sissetuleku sooline lõhe"),
+               p("Positiivse sissetulekuga meeste ja naiste kasutatava sissetuleku (brutopalk + toetused - maksud) lõhe.")
+               
+        ),
+        column(4,
+               div(paste(round(DISP_INCOME_GAP_ALL,2), "%")),
+               icon("arrow-down", "fa"),
+               div(paste(round(new_dis_inc_gap,2), "%")),
+        )
+      ),
     )
   
   })
+
 })
