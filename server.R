@@ -12,9 +12,6 @@ source("util\\create_input_files.R")
 source("views\\gender_pay_gap_tab.R", encoding="utf-8")
 source("views\\poverty_tab.R", encoding="utf-8")
 
-new_pay_gap <- 0
-
-
 runSimulation <- function(newMinWage) {
   # Create new input file and config
   createInputData(500, newMinWage)

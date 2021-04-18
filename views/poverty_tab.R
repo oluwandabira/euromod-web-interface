@@ -6,6 +6,10 @@ povertyOutput <- function(output_data, output_data_nxt) {
     new_absolute_poverty_rate <- absolute_poverty_rate(ABSOLUTE_POVERTY_LINE_2018, output_data)
     new_absolute_poverty_rate_nxt <- absolute_poverty_rate(ABSOLUTE_POVERTY_LINE_2019, output_data_nxt)
     
+    relative_poverty_line <- relative_poverty_line(output_data)
+    new_relative_poverty_rate <-relative_poverty_rate(relative_poverty_line, output_data)
+    new_relative_poverty_rate_nxt <- relative_poverty_rate(relative_poverty_line, output_data_nxt)
+    
     div(
       h4("Kogu elanikkond"),
       fluidRow(
@@ -14,7 +18,7 @@ povertyOutput <- function(output_data, output_data_nxt) {
                span(id="infoPayGap", icon("info-circle", "fa")),
                bsTooltip(id = "infoPayGap", title = "TODO",
                          placement = "bottom", trigger = "hover"),
-               p("TODO")
+               p("Nende elanike osatähtsus, kelle sissetulek jääb alla elatusmiinimumi.")
                
         ),
         column(4, align="center",
@@ -27,6 +31,30 @@ povertyOutput <- function(output_data, output_data_nxt) {
                          placement = "left", trigger = "hover"),
                greenArrowDown(),
                div(id="newValue", paste(round(new_absolute_poverty_rate_nxt,2), "% (2019)")),
+               bsTooltip(id = "newValue", title = "Ennustatatud uus vĆ¤Ć¤rtus",
+                         placement = "left", trigger = "hover"),
+        )
+      ),
+      br(),
+      fluidRow(
+        column(8,
+               strong("Suhtelise vaesuse määr"),
+               span(id="infoPayGap", icon("info-circle", "fa")),
+               bsTooltip(id = "infoPayGap", title = "TODO",
+                         placement = "bottom", trigger = "hover"),
+               p("Nende elanike osatähtsus, kelle ekvivalentnetosissetulek on allpool suhtelise vaesuse piiri. ")
+               
+        ),
+        column(4, align="center",
+               div(id = "actualValue",paste(round(RELATIVE_POVERTY_RATE_2018,2), "%")),
+               bsTooltip(id = "actualValue", title = "Tegelik vĆ¤Ć¤rtus",
+                         placement = "left", trigger = "hover"),
+               greenArrowDown(),
+               div(id="newValue", paste(round(new_relative_poverty_rate,2), "% (2018)")),
+               bsTooltip(id = "newValue", title = "Ennustatatud uus vĆ¤Ć¤rtus",
+                         placement = "left", trigger = "hover"),
+               greenArrowDown(),
+               div(id="newValue", paste(round(new_relative_poverty_rate_nxt,2), "% (2019)")),
                bsTooltip(id = "newValue", title = "Ennustatatud uus vĆ¤Ć¤rtus",
                          placement = "left", trigger = "hover"),
         )
