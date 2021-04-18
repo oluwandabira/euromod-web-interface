@@ -111,15 +111,12 @@ disposable_income_gap_ft <- function(data) {
 absolute_poverty_rate <- function(poverty_line, data) {
   # Ratio of people who fall under the poverty line
   total_count <- nrow(data)
-  poor_count <- nrow(data[data$eq_dispy < poverty_line,])
+  poor_count <- nrow(data[data$eq_dispy <= poverty_line,])
   
   return((poor_count * 100)/total_count)
 }
 
-print_results <- function(title, data) {
-  cat(title, "hourly pay gap:", hourly_gross_pay_gap(data), "\n")
-  cat(title, "hourly pay gap for full time workers:", hourly_gross_pay_gap_ft(data), "\n")
-  cat(title, "monthly pay gap:", monthly_gross_pay_gap(data), "\n")
-  cat(title, "monthly pay gap for full time workers:", monthly_gross_pay_gap_ft(data), "\n")
-  cat(title, "disposable income gap:", disposable_income_gap(data), "\n")
+average_wage <- function(data) {
+  return(mean(data[data$yem > 0, "yem"]))
 }
+
