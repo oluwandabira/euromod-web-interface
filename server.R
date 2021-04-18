@@ -6,11 +6,13 @@ library(shinyBS) # Additional Bootstrap Controls
 project_folder <- "C:/Users/kr1stine/git/euromod-web-interface"
 setwd(project_folder)
 
+source("indicator_functions.R")
+source("const.R")
+source("gender_pay_gap_tab.R", encoding="utf-8")
+
 new_pay_gap <- 0
 
-# Function to create new input data file,
-# create new config file
-# and run simulation
+
 runSimulation <- function(newMinWage) {
   # Create new input file
   source("create_input_files.R")
@@ -28,83 +30,22 @@ runSimulation <- function(newMinWage) {
 
   # Run EUROMOD for ref system
   shell('euromod\\EUROMOD\\Executable\\EM_ExecutableCaller.exe  "C:\\Users\\kr1stine\\git\\euromod-web-interface\\euromod\\EUROMOD_WEB" EE_2018 EE_2018_c1')
-  
-  ### 
-  
 }
 
-
 shinyServer(function(input, output) {
-  source("indicator_functions.R")
-  source("const.R")
-  
-  output$genderWageGap <- renderUI({
+  output$simulationResults <- renderUI({
     input$run
     isolate(runSimulation(input$obs))
     # Read output file
     output_data <- read.csv(file="euromod/EUROMOD_WEB/output/ee_2018_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
     
-    # Find new values for indicators
-    new_pay_gap <- monthly_gross_pay_gap_ft(output_data)
-    new_dis_inc_gap_ft <- disposable_income_gap_ft(output_data)
-    new_dis_inc_gap <- disposable_income_gap(output_data)
-    
-    div(
-      h4("Töötav elanikkond"),
-      fluidRow(
-        column(8,
-               strong("Sooline palgalõhe"),
-               span(id="infoPayGap", icon("info-circle", "fa")),
-               bsTooltip(id = "infoPayGap", title = "Arvutuse aluseks on meeste ja naiste kuine brutopalk.",
-                         placement = "bottom", trigger = "hover"),
-               p("Täisajaga töötavate meeste ja naiste brutopalkade lõhe.")
-               
-        ),
-        column(4,
-               div(id = "actualValue",paste(round(GENDER_PAY_GAP_WORKERS,2), "%")),
-               bsTooltip(id = "actualValue", title = "Tegelik väärtus",
-                         placement = "left", trigger = "hover"),
-               icon("arrow-down", "fa"),
-               div(id="newValue", paste(round(new_pay_gap,2), "%")),
-               bsTooltip(id = "newValue", title = "Ennustatatud uus väärtus",
-                         placement = "left", trigger = "hover"),
-        )
-      ),
-      br(),
-      fluidRow(
-        column(8,
-               strong("Kättesaadava sissetuleku sooline lõhe"),
-               span(id="infoDispIncFT", icon("info-circle", "fa")),
-               bsTooltip(id = "infoDispIncFT", title = "Arvutuse aluseks on meeste ja naiste kuine brutopalk.",
-                         placement = "bottom", trigger = "hover"),
-               p("Täisajaga töötavate meeste ja naiste kasutatava sissetuleku (brutopalk + toetused - maksud) lõhe.")
-               
-        ),
-        column(4,
-               div(paste(round(DISP_INCOME_GAP_WORKERS,2), "%")),
-               icon("arrow-down", "fa"),
-               div(paste(round(new_dis_inc_gap_ft,2), "%")),
-        )
-      ),
-      br(),
-      h4("Kogu elanikkond"),
-      fluidRow(
-        column(8,
-               strong("Kättesaadava sissetuleku sooline lõhe"),
-               span(id="infoDispInc", icon("info-circle", "fa")),
-               bsTooltip(id = "infoDispInc", title = "Arvutuse aluseks on meeste ja naiste kuine brutopalk.",
-                         placement = "bottom", trigger = "hover"),
-               p("Positiivse sissetulekuga meeste ja naiste kasutatava sissetuleku (brutopalk + toetused - maksud) lõhe.")
-               
-        ),
-        column(4,
-               div(paste(round(DISP_INCOME_GAP_ALL,2), "%")),
-               icon("arrow-down", "fa"),
-               div(paste(round(new_dis_inc_gap,2), "%")),
-        )
-      ),
+    tabsetPanel(type = "tabs",
+                tabPanel("Palgalõhe", genderWageGapOutput(output_data)),
+                tabPanel("Vaesus", ""),
+                tabPanel("Maksud ja toetused", "")
     )
-  
   })
+  
+
 
 })

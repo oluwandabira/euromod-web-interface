@@ -1,8 +1,6 @@
 # Calculate pay gap values from
 # EUROMOD output files
 
-rm(list=ls())
-
 # Helper function to find pay gap of gross hourly wage
 hourly_gross_pay_gap <- function(data) {
   # Gross hourly wage: yivwg
