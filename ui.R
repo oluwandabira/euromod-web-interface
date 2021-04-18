@@ -16,7 +16,7 @@ shinyUI(pageWithSidebar(
   ),
   
   mainPanel(
-    uiOutput(outputId="genderWageGap"),
+    uiOutput(outputId="simulationResults"),
     # h4("Kogu elanikkond"),
     # div("Meeste ja naiste täisajaga töötatud kuude keskmiste netosissetulekute (palk koos toetuste ja muude sissetulekutega) lõhe"),
     # 
