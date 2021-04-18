@@ -9,7 +9,7 @@ shinyUI(pageWithSidebar(
     div("Rakendus ennustab miinimumpalga muutuse esmast mõju sotsiaalsetele näitajatele."),
     br(),
     numericInput("obs",
-                 "Sisesta miinimumpalk ",
+                 "Sisesta miinimumpalk (bruto) ",
                  700,
                  min=500),
     actionButton("run", "Arvuta")

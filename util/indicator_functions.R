@@ -1,3 +1,5 @@
+library(tidyr)
+
 # Calculate pay gap values from
 # EUROMOD output files
 
@@ -133,3 +135,19 @@ relative_poverty_rate <- function(poverty_line, data) {
   
   return((poor_count * 100)/total_count)
 }
+
+absolute_poverty_rate_by_hh <- function(poverty_line, data) {
+  # Ratio of people who fall under the poverty line
+  household_types <- c("Üksik mees", "Üksik naine", "Üksikvanem", "Ühe lapsega paar")
+  obervables <- c("orig","2018","2019")
+  
+  household_types_rep <- unlist(lapply(household_types, function(x) rep(x, length(observables))))
+  observables_rep <- unlist(lapply(observables, function(x) rep(x, length(household_types))))
+  hh_poverty_rates <- data.frame("Leibkond"=household_types, "AbsolutePoverty" = rep(0,length(household_types)), "RelativePoverty"=rep(0,length(household_types)))
+  
+  total_count <- nrow(data)
+  poor_count <- nrow(data[data$eq_dispy <= poverty_line,])
+  
+  return((poor_count * 100)/total_count)
+}
+

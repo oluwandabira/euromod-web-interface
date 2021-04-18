@@ -1,3 +1,4 @@
+library(CGPfunctions)
 
 povertyOutput <- function(output_data, output_data_nxt) {
   renderUI({
