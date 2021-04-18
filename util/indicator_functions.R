@@ -120,3 +120,16 @@ average_wage <- function(data) {
   return(mean(data[data$yem > 0, "yem"]))
 }
 
+relative_poverty_line <- function(data) {
+  med <- median(data$eq_dispy)
+  return((60*med)/100)
+}
+
+relative_poverty_rate <- function(poverty_line, data) {
+  # Ratio of people whose equivalent disposable income
+  # falls under the poverty line
+  total_count <- nrow(data)
+  poor_count <- nrow(data[data$eq_dispy <= poverty_line,])
+  
+  return((poor_count * 100)/total_count)
+}
