@@ -1,3 +1,4 @@
+source("components\\index.R")
 
 genderWageGapOutput <- function(output_data) {
   renderUI({
@@ -18,14 +19,14 @@ genderWageGapOutput <- function(output_data) {
                p("Täisajaga töötavate meeste ja naiste brutopalkade lõhe.")
                
         ),
-        column(4,
+        column(4, align="center",
                div(id = "actualValue",paste(round(GENDER_PAY_GAP_WORKERS,2), "%")),
                bsTooltip(id = "actualValue", title = "Tegelik väärtus",
-                         placement = "left", trigger = "hover"),
-               icon("arrow-down", "fa"),
+                         placement = "top", trigger = "hover"),
+               greenArrowDown(),
                div(id="newValue", paste(round(new_pay_gap,2), "%")),
                bsTooltip(id = "newValue", title = "Ennustatatud uus väärtus",
-                         placement = "left", trigger = "hover"),
+                         placement = "top", trigger = "hover"),
         )
       ),
       br(),
@@ -38,9 +39,9 @@ genderWageGapOutput <- function(output_data) {
                p("Täisajaga töötavate meeste ja naiste kasutatava sissetuleku (brutopalk + toetused - maksud) lõhe.")
                
         ),
-        column(4,
+        column(4, align="center",
                div(paste(round(DISP_INCOME_GAP_WORKERS,2), "%")),
-               icon("arrow-down", "fa"),
+               greenArrowDown(),
                div(paste(round(new_dis_inc_gap_ft,2), "%")),
         )
       ),
@@ -55,9 +56,9 @@ genderWageGapOutput <- function(output_data) {
                p("Positiivse sissetulekuga meeste ja naiste kasutatava sissetuleku (brutopalk + toetused - maksud) lõhe.")
                
         ),
-        column(4,
+        column(4, align="center",
                div(paste(round(DISP_INCOME_GAP_ALL,2), "%")),
-               icon("arrow-down", "fa"),
+               greenArrowDown(),
                div(paste(round(new_dis_inc_gap,2), "%")),
         )
       ),
