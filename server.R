@@ -1,3 +1,4 @@
+#rm(list=ls())
 library(shiny)
 library(xml2)
 library(plotly)
@@ -49,6 +50,7 @@ shinyServer(function(input, output) {
     
     # Read output file
     output_data <- readOutputData()
+
     output_data_nxt <- readNextYearOutputData()
     
     tabsetPanel(type = "tabs",

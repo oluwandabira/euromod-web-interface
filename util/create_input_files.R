@@ -35,9 +35,25 @@ addEquivalizedIncome <- function(data) {
     total_dispy = sum(ils_dispy),
     total_weight = sum(oecd_weight),
     eq_dispy = total_dispy/total_weight,
-  )
+    hh_adults_count = sum(dag >= 18),
+    hh_children_count = sum(dag < 18),
+    hh_pensioners_count = sum(dag >= 65),
+    dgn_help = sum(dgn),
+  ) 
+  total_income$hh_type <- case_when(
+    total_income$hh_pensioners_count > 0 | total_income$hh_adults_count > 2 ~ "other",
+    total_income$hh_adults_count == 1 & total_income$hh_children_count == 0 & total_income$dgn_help == 1 ~ "single_man",
+    total_income$hh_adults_count == 1 & total_income$hh_children_count == 0 & total_income$dgn_help == 0 ~ "single_woman",
+    total_income$hh_adults_count == 1 & total_income$hh_children_count > 0 ~ "single_parent",
+    total_income$hh_adults_count == 2 & total_income$hh_children_count == 0 ~ "couple_no_children",
+    total_income$hh_adults_count == 2 & total_income$hh_children_count == 1 ~ "couple_one_child",
+    total_income$hh_adults_count == 2 & total_income$hh_children_count == 2 ~ "couple_two_children",
+    total_income$hh_adults_count == 2 & total_income$hh_children_count > 2 ~ "couple_many_children",
+    TRUE ~ "other"
+  ) 
+    
   data <- left_join(data, total_income, by="idhh")
-  
+
   return(data)
 }
 

@@ -1,7 +1,7 @@
+library(CGPfunctions)
 
 povertyOutput <- function(output_data, output_data_nxt) {
   renderUI({
-    
     # Find new values for indicators
     new_absolute_poverty_rate <- absolute_poverty_rate(ABSOLUTE_POVERTY_LINE_2018, output_data)
     new_absolute_poverty_rate_nxt <- absolute_poverty_rate(ABSOLUTE_POVERTY_LINE_2019, output_data_nxt)
@@ -9,6 +9,7 @@ povertyOutput <- function(output_data, output_data_nxt) {
     relative_poverty_line <- relative_poverty_line(output_data)
     new_relative_poverty_rate <-relative_poverty_rate(relative_poverty_line, output_data)
     new_relative_poverty_rate_nxt <- relative_poverty_rate(relative_poverty_line, output_data_nxt)
+    hh_poverty_rates <- poverty_rates_by_hh(output_data, output_data_nxt)
     
     div(
       h4("Kogu elanikkond"),
@@ -58,6 +59,24 @@ povertyOutput <- function(output_data, output_data_nxt) {
                bsTooltip(id = "newValue", title = "Ennustatatud uus vĆ¤Ć¤rtus",
                          placement = "left", trigger = "hover"),
         )
+      ),
+      br(),
+      renderPlot(
+        newggslopegraph(dataframe = hh_poverty_rates,
+                        Times = Scenario,
+                        Measurement = AbsolutePoverty,
+                        Grouping = Household,
+                        Title = "Absoluutse vaesuse määra muutus",
+                        SubTitle = "Leibkondade kaupa")
+      ),
+      br(),
+      renderPlot(
+        newggslopegraph(dataframe = hh_poverty_rates,
+                        Times = Scenario,
+                        Measurement = RelativePoverty,
+                        Grouping = Household,
+                        Title = "Suhtelise vaesuse määra muutus",
+                        SubTitle = "Leibkondade kaupa")
       ),
     )
     
