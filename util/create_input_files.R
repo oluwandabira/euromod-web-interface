@@ -20,8 +20,6 @@ createInputData <- function(origMinwage, newMinWage) {
 
 # Adds a column to the data depicting the equivalized disposable income
 addEquivalizedIncome <- function(data) {
-  data <- read.csv(file="euromod/EUROMOD_WEB/Output/ee_2018_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
-  
   data$ils_dispy <- as.numeric(sub(",",".",data$ils_dispy, fixed=TRUE))
   data$dag <- as.numeric(sub(",",".",data$dag, fixed=TRUE))
   
@@ -40,12 +38,13 @@ addEquivalizedIncome <- function(data) {
     hh_adults_count = sum(dag >= 18),
     hh_children_count = sum(dag < 18),
     hh_pensioners_count = sum(dag >= 65),
-    dgn = sum(dgn),
+    dgn_help = sum(dgn),
   ) 
   total_income$hh_type <- case_when(
     total_income$hh_pensioners_count > 0 | total_income$hh_adults_count > 2 ~ "other",
-    total_income$hh_adults_count == 1 & total_income$hh_children_count == 0 & total_income$dgn == 1 ~ "single_man",
-    total_income$hh_adults_count == 1 & total_income$hh_children_count == 0 & total_income$dgn == 0 ~ "single_woman",
+    total_income$hh_adults_count == 1 & total_income$hh_children_count == 0 & total_income$dgn_help == 1 ~ "single_man",
+    total_income$hh_adults_count == 1 & total_income$hh_children_count == 0 & total_income$dgn_help == 0 ~ "single_woman",
+    total_income$hh_adults_count == 1 & total_income$hh_children_count > 0 ~ "single_parent",
     total_income$hh_adults_count == 2 & total_income$hh_children_count == 0 ~ "couple_no_children",
     total_income$hh_adults_count == 2 & total_income$hh_children_count == 1 ~ "couple_one_child",
     total_income$hh_adults_count == 2 & total_income$hh_children_count == 2 ~ "couple_two_children",
@@ -54,7 +53,7 @@ addEquivalizedIncome <- function(data) {
   ) 
     
   data <- left_join(data, total_income, by="idhh")
-  
+
   return(data)
 }
 

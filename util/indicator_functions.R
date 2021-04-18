@@ -110,10 +110,15 @@ disposable_income_gap_ft <- function(data) {
   return(pay_gap)
 }
 
-absolute_poverty_rate <- function(poverty_line, data) {
+absolute_poverty_rate <- function(poverty_line, data, household = NULL) {
   # Ratio of people who fall under the poverty line
-  total_count <- nrow(data)
-  poor_count <- nrow(data[data$eq_dispy <= poverty_line,])
+  if (is.null(household)) {
+    total_count <- nrow(data)
+    poor_count <- nrow(data[data$eq_dispy <= poverty_line,])
+  } else {
+    total_count <- nrow(data[data$hh_type == household,])
+    poor_count <- nrow(data[data$hh_type == household & data$eq_dispy <= poverty_line,])
+  }
   
   return((poor_count * 100)/total_count)
 }
@@ -127,54 +132,49 @@ relative_poverty_line <- function(data) {
   return((60*med)/100)
 }
 
-relative_poverty_rate <- function(poverty_line, data) {
+relative_poverty_rate <- function(poverty_line, data, household = NULL) {
   # Ratio of people whose equivalent disposable income
   # falls under the poverty line
-  total_count <- nrow(data)
-  poor_count <- nrow(data[data$eq_dispy <= poverty_line,])
+  if (!is.null(household)) {
+    total_count <- nrow(data[data$hh_type == household,])
+    poor_count <- nrow(data[data$hh_type == household & data$eq_dispy <= poverty_line,])
+  } else {
+    total_count <- nrow(data)
+    poor_count <- nrow(data[data$eq_dispy <= poverty_line,])
+  }
   
   return((poor_count * 100)/total_count)
 }
 
-set_poverty_rates <- function(row) {
-  row[row$Scenario == "orig" ,"AbsolutePoverty"] <- ABSOLUTE_POVERTY_RATE_2018_SINGLE_MAN
+get_poverty_rows <- function(hh_name, orig_abs_value, orig_rel_value, keyword, data, data_nxt, observables) {
+  result <- data.frame("Household" = rep(hh_name, 3), "Scenario"=observables, "AbsolutePoverty" = rep(0,length(observables)), "RelativePoverty"=rep(0,length(observables)))
   
+  result[result$Scenario == "orig" ,"AbsolutePoverty"] <- orig_abs_value
+  result[result$Scenario == "orig" ,"RelativePoverty"] <- orig_rel_value
+  
+  # TODO: dynamically for each scenario
+  # 2018
+  result[result$Scenario == "2018" ,"AbsolutePoverty"] <- absolute_poverty_rate(ABSOLUTE_POVERTY_LINE_2018, data, household=keyword)
+  result[result$Scenario == "2018" ,"RelativePoverty"] <- relative_poverty_rate(relative_poverty_line(data), data, household=keyword)
+  
+  # 2019
+  result[result$Scenario == "2019" ,"AbsolutePoverty"] <- absolute_poverty_rate(ABSOLUTE_POVERTY_LINE_2019, data_nxt, household=keyword)
+  result[result$Scenario == "2019" ,"RelativePoverty"] <- relative_poverty_rate(relative_poverty_line(data_nxt), data_nxt, household=keyword)
+  
+  return(result)
 } 
 
-absolute_poverty_rate_by_hh <- function(poverty_line, data) {
-  # Ratio of people who fall under the poverty line
-  household_types <- c("Üksik mees", "Üksik naine", "Üksikvanem", "Ühe lapsega paar")
+poverty_rates_by_hh <- function(data, data_nxt) {
   observables <- c("orig","2018","2019")
   
-  household_types_rep <- unlist(lapply(household_types, function(x) rep(x, length(observables))))
-  observables_rep <- unlist(lapply(observables, function(x) rep(x, length(household_types))))
+  single_man_rows <- get_poverty_rows("Üksik mees", ABSOLUTE_POVERTY_RATE_2018_SINGLE_MAN, RELATIVE_POVERTY_RATE_2018_SINGLE_MAN, "single_man", data, data_nxt, observables)
+  single_woman_rows <- get_poverty_rows("Üksik naine", ABSOLUTE_POVERTY_RATE_2018_SINGLE_WOMAN, RELATIVE_POVERTY_RATE_2018_SINGLE_WOMAN, "single_woman", data, data_nxt, observables)
+  single_parent_rows <- get_poverty_rows("Üksikvanem", ABSOLUTE_POVERTY_RATE_2018_SINGLE_PARENT, RELATIVE_POVERTY_RATE_2018_SINGLE_PARENT, "single_parent", data, data_nxt, observables)
+  couple_no_children_rows <- get_poverty_rows("Lasteta paar", ABSOLUTE_POVERTY_RATE_2018_CHILDLESS_COUPLE, RELATIVE_POVERTY_RATE_2018_CHILDLESS_COUPLE, "couple_no_children", data, data_nxt, observables)
+  couple_one_child_rows <- get_poverty_rows("Ühe lapsega paar", ABSOLUTE_POVERTY_RATE_2018_COUPLE_ONE_CHILD, RELATIVE_POVERTY_RATE_2018_COUPLE_ONE_CHILD, "couple_one_child", data, data_nxt, observables)
+  couple_two_children_rows <- get_poverty_rows("Kahe lapsega paar", ABSOLUTE_POVERTY_RATE_2018_COUPLE_TWO_CHILDREN, RELATIVE_POVERTY_RATE_2018_COUPLE_TWO_CHILDREN, "couple_two_children", data, data_nxt, observables)
+  couple_many_children_rows <- get_poverty_rows("Kolme ja enama lapsega paar", ABSOLUTE_POVERTY_RATE_2018_COUPLE_MANY_CHILDREN, RELATIVE_POVERTY_RATE_2018_COUPLE_MANY_CHILDREN, "couple_many_children", data, data_nxt, observables)
   
-  hh_poverty_rates <- data.frame("Household"=household_types_rep, "Scenario"=observables_rep, "AbsolutePoverty" = rep(0,length(household_types_rep)), "RelativePoverty"=rep(0,length(household_types_rep)))
-  
-  # Insert original values
-  single_man_row <- hh_poverty_rates[hh_poverty_rates$Household == "Üksik mees",]
-  set_poverty_rates(single_man_row)
-  hh_poverty_rates[hh_poverty_rates$Household == "Üksik mees",] <- get_poverty_row("Üksik mees", ABSOLUTE_POVERTY_RATE_2018_SINGLE_MAN, RELATIVE_POVERTY_RATE_2018_SINGLE_MAN, "single_man")
-  hh_poverty_rates[hh_poverty_rates$Household == "Üksik naine",] <- get_poverty_row("Üksik naine", ABSOLUTE_POVERTY_RATE_2018_SINGLE_WOMAN, RELATIVE_POVERTY_RATE_2018_SINGLE_WOMAN, "single_woman")
-  
-  
-  
-  #   
-  # single_man_row[hh_poverty_rates[, "Scenario"] == "orig" ,"AbsolutePoverty"] <- ABSOLUTE_POVERTY_RATE_2018_SINGLE_MAN
-  # hh_poverty_rates[hh_poverty_rates$Household == "Üksik mees" & hh_poverty_rates[, "Scenario"] == "orig" ,"RelativePoverty"] <- RELATIVE_POVERTY_RATE_2018_SINGLE_MAN
-  # 
-  # hh_poverty_rates[hh_poverty_rates$Household == "Üksik naine" & hh_poverty_rates[, "Scenario"] == "orig" ,"AbsolutePoverty"] <- ABSOLUTE_POVERTY_RATE_2018_SINGLE_WOMAN
-  # hh_poverty_rates[hh_poverty_rates$Household == "Üksik naine" & hh_poverty_rates[, "Scenario"] == "orig" ,"RelativePoverty"] <- RELATIVE_POVERTY_RATE_2018_SINGLE_WOMAN
-  # 
-  # hh_poverty_rates[hh_poverty_rates$Household == "Üksikvanem" & hh_poverty_rates[, "Scenario"] == "orig" ,"AbsolutePoverty"] <- ABSOLUTE_POVERTY_RATE_2018_SINGLE_PARENT
-  # hh_poverty_rates[hh_poverty_rates$Household == "Üksikvanem" & hh_poverty_rates[, "Scenario"] == "orig" ,"RelativePoverty"] <- RELATIVE_POVERTY_RATE_2018_SINGLE_PARENT
-  # 
-  # hh_poverty_rates[hh_poverty_rates$Household == "Ühe lapsega paar" & hh_poverty_rates[, "Scenario"] == "orig" ,"AbsolutePoverty"] <- ABSOLUTE_POVERTY_RATE_2018_COUPLE_ONE_CHILD
-  # hh_poverty_rates[hh_poverty_rates$Household == "Ühe lapsega paar" & hh_poverty_rates[, "Scenario"] == "orig" ,"RelativePoverty"] <- RELATIVE_POVERTY_RATE_2018_COUPLE_ONE_CHILD
-  # 
-  total_count <- nrow(data)
-  poor_count <- nrow(data[data$eq_dispy <= poverty_line,])
-  
-  return((poor_count * 100)/total_count)
-}
+  return(rbind(single_man_rows, single_woman_rows, single_parent_rows, couple_no_children_rows, couple_one_child_rows, couple_two_children_rows, couple_many_children_rows))
+  }
 
