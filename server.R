@@ -34,12 +34,21 @@ runSimulation <- function(newMinWage) {
   shell('euromod\\EUROMOD\\Executable\\EM_ExecutableCaller.exe  "C:\\Users\\kr1stine\\git\\euromod-web-interface\\euromod\\EUROMOD_WEB" EE_2018 EE_2018_c1')
 }
 
+readOutputData <- function() {
+  output_data <- read.csv(file="euromod/EUROMOD_WEB/output/ee_2018_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
+  
+  # Add equivalized disposable income variables
+  output_data <- addEquivalizedIncome(output_data)
+
+  return(output_data)
+}
+
 shinyServer(function(input, output) {
   output$simulationResults <- renderUI({
     input$run
     isolate(runSimulation(input$obs))
     # Read output file
-    output_data <- read.csv(file="euromod/EUROMOD_WEB/output/ee_2018_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
+    output_data <- readOutputData()
     
     tabsetPanel(type = "tabs",
                 tabPanel("Palgalõhe", genderWageGapOutput(output_data)),
