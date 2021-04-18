@@ -69,15 +69,15 @@ povertyOutput <- function(output_data, output_data_nxt) {
                         Title = "Absoluutse vaesuse määra muutus",
                         SubTitle = "Leibkondade kaupa")
       ),
-      # br(),
-      # renderPlot(
-      #   newggslopegraph(dataframe = hh_poverty_rates,
-      #                   Times = Scenario,
-      #                   Measurement = RelativePoverty,
-      #                   Grouping = Household,
-      #                   Title = "Suhtelise vaesuse määra muutus",
-      #                   SubTitle = "Leibkondade kaupa")
-      # ),
+      br(),
+      renderPlot(
+        newggslopegraph(dataframe = hh_poverty_rates,
+                        Times = Scenario,
+                        Measurement = RelativePoverty,
+                        Grouping = Household,
+                        Title = "Suhtelise vaesuse määra muutus",
+                        SubTitle = "Leibkondade kaupa")
+      ),
     )
     
   })
