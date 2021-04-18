@@ -57,9 +57,6 @@ monthly_gross_pay_gap_ft <- function(data) {
   
   avg_monthly_men <- mean(monthly_men)
   avg_monthly_women <- mean(monthly_women)
-  #cat(sort(monthly_men))
-  cat(length(monthly_men[monthly_men <= 500]))
-  cat("\n")
 
   pay_gap <- (avg_monthly_men - avg_monthly_women)/avg_monthly_men * 100
   return(pay_gap)

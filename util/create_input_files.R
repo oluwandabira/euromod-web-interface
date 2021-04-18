@@ -15,7 +15,6 @@ create_input_data <- function(minwage, euromod_data) {
   scenario_data$yivwg <- ifelse(scenario_data[,"liwftmy"] > 0 & scenario_data[,"liwftmy"]==scenario_data[,"liwmy"] & scenario_data[, wage_variable] <= minwage*1.05 & scenario_data[,wage_variable]>=actual_minwage*0.8, scenario_data[,wage_variable]/168, scenario_data[, "yivwg"])
   # Count how many were affected
   affected <- scenario_data[scenario_data[,"liwftmy"] > 0 & scenario_data[,"liwftmy"]==scenario_data[,"liwmy"] & scenario_data[, wage_variable] <= minwage*1.05 & scenario_data[,wage_variable]>=actual_minwage*0.8, ]
-  cat("Affected:", nrow(affected))
 
   return(scenario_data)
 }

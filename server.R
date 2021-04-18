@@ -6,16 +6,18 @@ library(shinyBS) # Additional Bootstrap Controls
 project_folder <- "C:/Users/kr1stine/git/euromod-web-interface"
 setwd(project_folder)
 
-source("indicator_functions.R")
-source("const.R")
-source("gender_pay_gap_tab.R", encoding="utf-8")
+source("util\\indicator_functions.R")
+source("util\\const.R")
+source("util\\create_input_files.R")
+source("views\\gender_pay_gap_tab.R", encoding="utf-8")
+source("views\\poverty_tab.R", encoding="utf-8")
 
 new_pay_gap <- 0
 
 
 runSimulation <- function(newMinWage) {
   # Create new input file
-  source("create_input_files.R")
+
   orig_data <- read.csv(file="data\\EE_2018_c1.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
   scenario_data <- create_input_data(newMinWage, orig_data)
   write.table(scenario_data, file="euromod\\EUROMOD_WEB\\Input\\EE_2018_c1.txt", quote=FALSE, col.names=TRUE, row.names=FALSE, sep="\t")
@@ -41,7 +43,7 @@ shinyServer(function(input, output) {
     
     tabsetPanel(type = "tabs",
                 tabPanel("Palgalõhe", genderWageGapOutput(output_data)),
-                tabPanel("Vaesus", ""),
+                tabPanel("Vaesus", povertyOutput(output_data)),
                 tabPanel("Maksud ja toetused", "")
     )
   })
