@@ -120,7 +120,7 @@ absolute_poverty_rate <- function(poverty_line, data, household = NULL) {
     poor_count <- nrow(data[data$hh_type == household & data$eq_dispy <= poverty_line,])
   }
   
-  return((poor_count * 100)/total_count)
+  return(round((poor_count * 100)/total_count,2))
 }
 
 average_wage <- function(data) {
@@ -143,7 +143,7 @@ relative_poverty_rate <- function(poverty_line, data, household = NULL) {
     poor_count <- nrow(data[data$eq_dispy <= poverty_line,])
   }
   
-  return((poor_count * 100)/total_count)
+  return(round((poor_count * 100)/total_count, 2))
 }
 
 get_poverty_rows <- function(hh_name, orig_abs_value, orig_rel_value, keyword, data, data_nxt, observables) {
@@ -175,6 +175,9 @@ poverty_rates_by_hh <- function(data, data_nxt) {
   couple_two_children_rows <- get_poverty_rows("Kahe lapsega paar", ABSOLUTE_POVERTY_RATE_2018_COUPLE_TWO_CHILDREN, RELATIVE_POVERTY_RATE_2018_COUPLE_TWO_CHILDREN, "couple_two_children", data, data_nxt, observables)
   couple_many_children_rows <- get_poverty_rows("Kolme ja enama lapsega paar", ABSOLUTE_POVERTY_RATE_2018_COUPLE_MANY_CHILDREN, RELATIVE_POVERTY_RATE_2018_COUPLE_MANY_CHILDREN, "couple_many_children", data, data_nxt, observables)
   
-  return(rbind(single_man_rows, single_woman_rows, single_parent_rows, couple_no_children_rows, couple_one_child_rows, couple_two_children_rows, couple_many_children_rows))
-  }
+  result <- rbind(single_man_rows, single_woman_rows, single_parent_rows, couple_no_children_rows, couple_one_child_rows, couple_two_children_rows, couple_many_children_rows)
+  result$Scenario <- factor(result$Scenario,levels = observables, labels = c("Tegelik 2018","Ennustatud 2018","Ennustatud 2019"), ordered = TRUE)
+  
+  return(result)
+}
 
