@@ -8,3 +8,12 @@ greenArrowDown <- function() {
   )
 }
 
+metricDescription <- function(title, description, infoId, infoContent) {
+  div(
+    strong(title),
+    p(description,
+      span(id = infoId, icon("question-circle", "far", "font-awesome"))),
+    bsTooltip(id = infoId, title = infoContent,
+              placement = "bottom", trigger = "hover")
+  )
+}
