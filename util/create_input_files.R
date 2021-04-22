@@ -8,9 +8,9 @@ createInputData <- function(origMinwage, newMinWage) {
   
   # For register data yem00, for EU-SILC yem
   wage_variable = "yem"
-  scenario_data[, wage_variable] <- ifelse(scenario_data[,"liwftmy"] > 0 & scenario_data[,"liwftmy"]==scenario_data[,"liwmy"] & scenario_data[, wage_variable] <= newMinWage*1.05 & scenario_data[,wage_variable]>=origMinwage*0.8, newMinWage, scenario_data[, wage_variable])
+  scenario_data[, wage_variable] <- ifelse(scenario_data[,"liwftmy"] > 0 & scenario_data[,"liwftmy"]==scenario_data[,"liwmy"] & scenario_data[, wage_variable] <= newMinWage*1.05 & scenario_data[,wage_variable]>=origMinwage*0.9, newMinWage, scenario_data[, wage_variable])
   #scenario_data$yem <- scenario_data$yem00 + scenario_data$yemabtx + scenario_data$yemabnt
-  scenario_data$yivwg <- ifelse(scenario_data[,"liwftmy"] > 0 & scenario_data[,"liwftmy"]==scenario_data[,"liwmy"] & scenario_data[, wage_variable] <= newMinWage*1.05 & scenario_data[,wage_variable]>=origMinwage*0.8, scenario_data[,wage_variable]/168, scenario_data[, "yivwg"])
+  scenario_data$yivwg <- ifelse(scenario_data[,"liwftmy"] > 0 & scenario_data[,"liwftmy"]==scenario_data[,"liwmy"] & scenario_data[, wage_variable] <= newMinWage*1.05 & scenario_data[,wage_variable]>=origMinwage*0.9, scenario_data[,wage_variable]/168, scenario_data[, "yivwg"])
 
   write.table(scenario_data, file="euromod\\EUROMOD_WEB\\Input\\EE_2018_c1.txt", quote=FALSE, col.names=TRUE, row.names=FALSE, sep="\t")
   
