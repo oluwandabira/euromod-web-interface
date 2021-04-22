@@ -12,12 +12,10 @@ genderWageGapOutput <- function(output_data) {
       h4("Töötav elanikkond"),
       fluidRow(
         column(8,
-               strong("Sooline palgalõhe"),
-               span(id="infoPayGap", icon("info-circle", "fa")),
-               bsTooltip(id = "infoPayGap", title = "Arvutuse aluseks on meeste ja naiste kuine brutopalk.",
-                         placement = "bottom", trigger = "hover"),
-               p("Täisajaga töötavate meeste ja naiste brutopalkade lõhe.")
-               
+               metricDescription(title="Sooline palgalõhe",
+                                 description="Täisajaga töötavate meeste ja naiste brutopalkade lõhe.",
+                                 infoId="genderPayGapInfo",
+                                 infoContent="Arvutuse aluseks on meeste ja naiste kuine brutopalk.")
         ),
         column(4, align="center",
                div(id = "actualValue",paste(round(GENDER_PAY_GAP_WORKERS,2), "%")),
@@ -32,12 +30,10 @@ genderWageGapOutput <- function(output_data) {
       br(),
       fluidRow(
         column(8,
-               strong("Kättesaadava sissetuleku sooline lõhe"),
-               span(id="infoDispIncFT", icon("info-circle", "fa")),
-               bsTooltip(id = "infoDispIncFT", title = "Arvutuse aluseks on meeste ja naiste kuine brutopalk.",
-                         placement = "bottom", trigger = "hover"),
-               p("Täisajaga töötavate meeste ja naiste kasutatava sissetuleku (brutopalk + toetused - maksud) lõhe.")
-               
+               metricDescription(title="Kättesaadava sissetuleku sooline lõhe",
+                                 description="Täisajaga töötavate meeste ja naiste kasutatava sissetuleku (brutopalk + toetused - maksud) lõhe.",
+                                 infoId="dispIncGapFTInfo",
+                                 infoContent="Arvutuse aluseks on meeste ja naiste kuine brutopalk.")
         ),
         column(4, align="center",
                div(paste(round(DISP_INCOME_GAP_WORKERS,2), "%")),
@@ -49,12 +45,10 @@ genderWageGapOutput <- function(output_data) {
       h4("Kogu elanikkond"),
       fluidRow(
         column(8,
-               strong("Kättesaadava sissetuleku sooline lõhe"),
-               span(id="infoDispInc", icon("info-circle", "fa")),
-               bsTooltip(id = "infoDispInc", title = "Arvutuse aluseks on meeste ja naiste kuine brutopalk.",
-                         placement = "bottom", trigger = "hover"),
-               p("Positiivse sissetulekuga meeste ja naiste kasutatava sissetuleku (brutopalk + toetused - maksud) lõhe.")
-               
+               metricDescription(title="Kättesaadava sissetuleku sooline lõhe",
+                                 description="Positiivse sissetulekuga meeste ja naiste kasutatava sissetuleku (brutopalk + toetused - maksud) lõhe.",
+                                 infoId="dispIncGapInfo",
+                                 infoContent="Arvutuse aluseks on meeste ja naiste kuine brutopalk.")
         ),
         column(4, align="center",
                div(paste(round(DISP_INCOME_GAP_ALL,2), "%")),

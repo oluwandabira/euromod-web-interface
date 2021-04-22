@@ -19,10 +19,6 @@ runSimulation <- function(newMinWage) {
 
   # Run EUROMOD for ref system of the same year
   shell('euromod\\EUROMOD\\Executable\\EM_ExecutableCaller.exe  "C:\\Users\\kr1stine\\git\\euromod-web-interface\\euromod\\EUROMOD_WEB" EE_2018 EE_2018_c1')
-  # Run EUROMOD for the next year 
-  # TODO- if year changes, check that system exists
-  shell('euromod\\EUROMOD\\Executable\\EM_ExecutableCaller.exe  "C:\\Users\\kr1stine\\git\\euromod-web-interface\\euromod\\EUROMOD_WEB" EE_2019 EE_2018_c1')
-  
 }
 
 readOutputData <- function() {
@@ -34,15 +30,6 @@ readOutputData <- function() {
   return(output_data)
 }
 
-readNextYearOutputData <- function() {
-  output_data_nxt <- read.csv(file="euromod/EUROMOD_WEB/output/ee_2019_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
-  
-  # Add equivalized disposable income variables
-  output_data_nxt <- addEquivalizedIncome(output_data_nxt)
-  
-  return(output_data_nxt)
-}
-
 shinyServer(function(input, output) {
   output$simulationResults <- renderUI({
     input$run
@@ -51,11 +38,9 @@ shinyServer(function(input, output) {
     # Read output file
     output_data <- readOutputData()
 
-    output_data_nxt <- readNextYearOutputData()
-    
     tabsetPanel(type = "tabs",
                 tabPanel("Palgalõhe", genderWageGapOutput(output_data)),
-                tabPanel("Vaesus", povertyOutput(output_data, output_data_nxt)),
+                tabPanel("Vaesus", povertyOutput(output_data)),
                 tabPanel("Maksud ja toetused", "")
     )
   })

@@ -146,8 +146,8 @@ relative_poverty_rate <- function(poverty_line, data, household = NULL) {
   return(round((poor_count * 100)/total_count, 2))
 }
 
-get_poverty_rows <- function(hh_name, orig_abs_value, orig_rel_value, keyword, data, data_nxt, observables) {
-  result <- data.frame("Household" = rep(hh_name, 3), "Scenario"=observables, "AbsolutePoverty" = rep(0,length(observables)), "RelativePoverty"=rep(0,length(observables)))
+get_poverty_rows <- function(hh_name, orig_abs_value, orig_rel_value, keyword, data, observables) {
+  result <- data.frame("Household" = rep(hh_name, 2), "Scenario"=observables, "AbsolutePoverty" = rep(0,length(observables)), "RelativePoverty"=rep(0,length(observables)))
   
   result[result$Scenario == "orig" ,"AbsolutePoverty"] <- orig_abs_value
   result[result$Scenario == "orig" ,"RelativePoverty"] <- orig_rel_value
@@ -156,27 +156,23 @@ get_poverty_rows <- function(hh_name, orig_abs_value, orig_rel_value, keyword, d
   # 2018
   result[result$Scenario == "2018" ,"AbsolutePoverty"] <- absolute_poverty_rate(ABSOLUTE_POVERTY_LINE_2018, data, household=keyword)
   result[result$Scenario == "2018" ,"RelativePoverty"] <- relative_poverty_rate(relative_poverty_line(data), data, household=keyword)
-  
-  # 2019
-  result[result$Scenario == "2019" ,"AbsolutePoverty"] <- absolute_poverty_rate(ABSOLUTE_POVERTY_LINE_2019, data_nxt, household=keyword)
-  result[result$Scenario == "2019" ,"RelativePoverty"] <- relative_poverty_rate(relative_poverty_line(data_nxt), data_nxt, household=keyword)
-  
+
   return(result)
 } 
 
-poverty_rates_by_hh <- function(data, data_nxt) {
-  observables <- c("orig","2018","2019")
+poverty_rates_by_hh <- function(data) {
+  observables <- c("orig","2018")
   
-  single_man_rows <- get_poverty_rows("Üksik mees", ABSOLUTE_POVERTY_RATE_2018_SINGLE_MAN, RELATIVE_POVERTY_RATE_2018_SINGLE_MAN, "single_man", data, data_nxt, observables)
-  single_woman_rows <- get_poverty_rows("Üksik naine", ABSOLUTE_POVERTY_RATE_2018_SINGLE_WOMAN, RELATIVE_POVERTY_RATE_2018_SINGLE_WOMAN, "single_woman", data, data_nxt, observables)
-  single_parent_rows <- get_poverty_rows("Üksikvanem", ABSOLUTE_POVERTY_RATE_2018_SINGLE_PARENT, RELATIVE_POVERTY_RATE_2018_SINGLE_PARENT, "single_parent", data, data_nxt, observables)
-  couple_no_children_rows <- get_poverty_rows("Lasteta paar", ABSOLUTE_POVERTY_RATE_2018_CHILDLESS_COUPLE, RELATIVE_POVERTY_RATE_2018_CHILDLESS_COUPLE, "couple_no_children", data, data_nxt, observables)
-  couple_one_child_rows <- get_poverty_rows("Ühe lapsega paar", ABSOLUTE_POVERTY_RATE_2018_COUPLE_ONE_CHILD, RELATIVE_POVERTY_RATE_2018_COUPLE_ONE_CHILD, "couple_one_child", data, data_nxt, observables)
-  couple_two_children_rows <- get_poverty_rows("Kahe lapsega paar", ABSOLUTE_POVERTY_RATE_2018_COUPLE_TWO_CHILDREN, RELATIVE_POVERTY_RATE_2018_COUPLE_TWO_CHILDREN, "couple_two_children", data, data_nxt, observables)
-  couple_many_children_rows <- get_poverty_rows("Kolme ja enama lapsega paar", ABSOLUTE_POVERTY_RATE_2018_COUPLE_MANY_CHILDREN, RELATIVE_POVERTY_RATE_2018_COUPLE_MANY_CHILDREN, "couple_many_children", data, data_nxt, observables)
+  single_man_rows <- get_poverty_rows("Üksik mees", ABSOLUTE_POVERTY_RATE_2018_SINGLE_MAN, RELATIVE_POVERTY_RATE_2018_SINGLE_MAN, "single_man", data, observables)
+  single_woman_rows <- get_poverty_rows("Üksik naine", ABSOLUTE_POVERTY_RATE_2018_SINGLE_WOMAN, RELATIVE_POVERTY_RATE_2018_SINGLE_WOMAN, "single_woman", data, observables)
+  single_parent_rows <- get_poverty_rows("Üksikvanem", ABSOLUTE_POVERTY_RATE_2018_SINGLE_PARENT, RELATIVE_POVERTY_RATE_2018_SINGLE_PARENT, "single_parent", data, observables)
+  couple_no_children_rows <- get_poverty_rows("Lasteta paar", ABSOLUTE_POVERTY_RATE_2018_CHILDLESS_COUPLE, RELATIVE_POVERTY_RATE_2018_CHILDLESS_COUPLE, "couple_no_children", data, observables)
+  couple_one_child_rows <- get_poverty_rows("Ühe lapsega paar", ABSOLUTE_POVERTY_RATE_2018_COUPLE_ONE_CHILD, RELATIVE_POVERTY_RATE_2018_COUPLE_ONE_CHILD, "couple_one_child", data, observables)
+  couple_two_children_rows <- get_poverty_rows("Kahe lapsega paar", ABSOLUTE_POVERTY_RATE_2018_COUPLE_TWO_CHILDREN, RELATIVE_POVERTY_RATE_2018_COUPLE_TWO_CHILDREN, "couple_two_children", data, observables)
+  couple_many_children_rows <- get_poverty_rows("Kolme ja enama lapsega paar", ABSOLUTE_POVERTY_RATE_2018_COUPLE_MANY_CHILDREN, RELATIVE_POVERTY_RATE_2018_COUPLE_MANY_CHILDREN, "couple_many_children", data, observables)
   
   result <- rbind(single_man_rows, single_woman_rows, single_parent_rows, couple_no_children_rows, couple_one_child_rows, couple_two_children_rows, couple_many_children_rows)
-  result$Scenario <- factor(result$Scenario,levels = observables, labels = c("Tegelik 2018","Ennustatud 2018","Ennustatud 2019"), ordered = TRUE)
+  result$Scenario <- factor(result$Scenario,levels = observables, labels = c("Tegelik 2018","Ennustatud 2018"), ordered = TRUE)
   
   return(result)
 }
