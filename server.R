@@ -12,6 +12,7 @@ source("util\\const.R")
 source("util\\create_input_files.R") 
 source("views\\gender_pay_gap_tab.R", encoding="utf-8")
 source("views\\poverty_tab.R", encoding="utf-8")
+source("views\\taxes_and_benefits_tab.R ", encoding="utf-8")
 
 runSimulation <- function(newMinWage) {
   # Create new input file and config
@@ -41,7 +42,7 @@ shinyServer(function(input, output) {
     tabsetPanel(type = "tabs",
                 tabPanel("Palgalõhe", genderWageGapOutput(output_data)),
                 tabPanel("Vaesus", povertyOutput(output_data)),
-                tabPanel("Maksud ja toetused", "")
+                tabPanel("Maksud ja toetused", taxesAndBenefitsOutput(output_data))
     )
   })
   

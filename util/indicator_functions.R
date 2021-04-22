@@ -177,3 +177,44 @@ poverty_rates_by_hh <- function(data) {
   return(result)
 }
 
+get_social_taxes_paid <- function(data) {
+  # EUROMOD calculated variables:
+  # ils_sicot - SIC paid by individuals rather than employees
+  # ils_sicee - employee SIC
+  # ils_sicse - self-employed SIC
+  # ils_sicer - employer SIC
+  # ils_sicct - credited SIC
+  
+  result <- 0
+  for (col in c("ils_sicot", "ils_sicee", "ils_sicse", "ils_sicer", "ils_sicct")) {
+    data[,col] <- as.numeric(sub(",",".",data[,col], fixed=TRUE))
+    result <- result + sum(data[,col])
+    
+  }
+ return(result)
+}
+
+get_income_taxes_paid <- function(data) {
+  # EUROMOD calculated variables:
+  # ils_taxsim - income tax
+  data$ils_taxsim <- as.numeric(sub(",",".",data$ils_taxsim, fixed=TRUE))
+  return(sum(data$ils_taxsim))
+}
+
+get_subsistence_benefit_received <- function(data) {
+  # EUROMOD calculated variables:
+  # bsa00_s
+  data$bsa00_s <- as.numeric(sub(",",".",data$bsa00_s, fixed=TRUE))
+  return(sum(data$bsa00_s))
+  
+}
+
+get_benefits_received <- function(data) {
+  # EUROMOD calculated variables:
+  # ils_ben
+  data$ils_ben <- as.numeric(sub(",",".",data$ils_ben, fixed=TRUE))
+  return(sum(data$ils_ben))
+  
+}
+
+
