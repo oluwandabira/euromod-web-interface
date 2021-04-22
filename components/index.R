@@ -23,3 +23,20 @@ metricDescription <- function(title, description, infoId, infoContent) {
               placement = "bottom", trigger = "hover")
   )
 }
+
+changeArrow <- function(amount) {
+  if (amount > 0) {
+    return(
+      tags$i(
+        class = "fa fa-arrow-up" 
+      )
+    )
+  }
+  if (amount < 0) {
+    return(
+      tags$i(
+        class = "fa fa-arrow-down" 
+      )
+    )
+  }
+}

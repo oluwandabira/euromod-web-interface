@@ -10,6 +10,7 @@ setwd(project_folder)
 source("util\\indicator_functions.R")
 source("util\\const.R")
 source("util\\create_input_files.R") 
+source("util\\helpers.R") 
 source("views\\gender_pay_gap_tab.R", encoding="utf-8")
 source("views\\poverty_tab.R", encoding="utf-8")
 source("views\\taxes_and_benefits_tab.R ", encoding="utf-8")
@@ -24,8 +25,8 @@ runSimulation <- function(newMinWage) {
 
 readOutputData <- function() {
   output_data <- read.csv(file="euromod/EUROMOD_WEB/output/ee_2018_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
-  
-  # Add equivalized disposable income variables
+
+    # Add equivalized disposable income variables
   output_data <- addEquivalizedIncome(output_data)
 
   return(output_data)
