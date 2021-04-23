@@ -6,7 +6,7 @@ shinyUI(pageWithSidebar(
   headerPanel(""),
   
   sidebarPanel(
-    div("Rakendus ennustab miinimumpalga muutuse esmast mõju sotsiaalsetele näitajatele."),
+    div("Rakendus ennustab miinimumpalga muutuse esmast mõju sotsiaalsetele näitajatele, eeldusel, et muud näitajad jäävad samaks."),
     br(),
     numericInput("obs",
                  "Sisesta miinimumpalk (bruto) ",
@@ -17,12 +17,6 @@ shinyUI(pageWithSidebar(
   
   mainPanel(
     uiOutput(outputId="simulationResults"),
-    # h4("Kogu elanikkond"),
-    # div("Meeste ja naiste täisajaga töötatud kuude keskmiste netosissetulekute (palk koos toetuste ja muude sissetulekutega) lõhe"),
-    # 
-    # strong("Sooline palgalõhe kättesaadavas sissetulekus"),
-    # div("Meeste ja naiste keskmiste kuunetosissetulekute (palk koos toetuste ja muude sissetulekutega) lõhe"),
-    
  )
 ))
 

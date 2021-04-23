@@ -2,9 +2,15 @@ library(dplyr)
 
 greenArrowDown <- function() {
   tags$i(
-    id = "actualValue",
     class = "fa fa-arrow-down", 
     style = "color: rgb(0,166,90)"
+  )
+}
+
+redArrowUp <- function() {
+  tags$i(
+    class = "fa fa-arrow-up", 
+    style = "color: red"
   )
 }
 
@@ -16,4 +22,21 @@ metricDescription <- function(title, description, infoId, infoContent) {
     bsTooltip(id = infoId, title = infoContent,
               placement = "bottom", trigger = "hover")
   )
+}
+
+changeArrow <- function(amount) {
+  if (amount > 0) {
+    return(
+      tags$i(
+        class = "fa fa-arrow-up" 
+      )
+    )
+  }
+  if (amount < 0) {
+    return(
+      tags$i(
+        class = "fa fa-arrow-down" 
+      )
+    )
+  }
 }
