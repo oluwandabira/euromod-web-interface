@@ -8,4 +8,3 @@ formatPercentageChange <- function(value) {
   return(paste(prefix, round(value,2),"%"))
 }
 
-

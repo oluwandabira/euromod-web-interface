@@ -5,6 +5,7 @@ genderWageGapOutput <- function(output_data) {
     
     # Find new values for indicators
     new_pay_gap <- monthly_gross_pay_gap_ft(output_data)
+    
     new_dis_inc_gap_ft <- disposable_income_gap_ft(output_data)
     new_dis_inc_gap <- disposable_income_gap(output_data)
     
