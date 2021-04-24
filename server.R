@@ -41,10 +41,10 @@ readOutputData <- function(year) {
 shinyServer(function(input, output) {
   output$simulationResults <- renderUI({
     input$run
-    isolate(runSimulation(input$obs, 2018))
+    isolate(runSimulation(input$obs, input$year))
     
     # Read output file
-    output_data <- readOutputData(2018)
+    output_data <- isolate(readOutputData(input$year))
 
     tabsetPanel(type = "tabs",
                 tabPanel("Palgalõhe", genderWageGapOutput(output_data)),
