@@ -38,9 +38,26 @@ readOutputData <- function(year) {
   return(output_data)
 }
 
-shinyServer(function(input, output) {
+shinyServer(function(input, output, session) {
+  # Make sure minimum wage is not below the actual minimum wage 
+  observe({
+    updateNumericInput(session, "obs", min = getOrigMinWage(input$year))
+  })
+  v <- reactive({
+    validate(
+      need(input$obs, "Miinimumpalk ei tohi olla tühi!"),
+      need(input$obs >= getOrigMinWage(input$year), "Palun sisesta tegelikust miinimümpalgast kõrgem väärtus.")
+    )
+  })
+  
   output$simulationResults <- renderUI({
+    # Calls this function if "Run" button is clicked
     input$run
+    
+    # Validations
+    isolate(v())
+    
+    # Run simulation
     isolate(runSimulation(input$obs, input$year))
     
     # Read output file
