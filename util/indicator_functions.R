@@ -6,13 +6,19 @@ library(tidyr)
 # Helper function to find pay gap of gross hourly wage
 hourly_gross_pay_gap <- function(data) {
   # Gross hourly wage: yivwg
+
   data$yivwg <- as.numeric(sub(",",".",data$yivwg, fixed=TRUE))
+  data$dwt <- as.numeric(sub(",",".",data$yivwg, fixed=TRUE))
   
-  hourly_men <- data[data[,"yivwg"] > 0 & data[,"dgn"]==1, "yivwg"]
-  hourly_women <- data[data[,"yivwg"] > 0 & data[,"dgn"]==0, "yivwg"]
+  hourly_men <- data[data[,"liwftmy"] > 0 & (data[,"liwftmy"]==data[,"liwmy"]) & data[,"dgn"]==1, c("yivwg", "dwt")]
+  hourly_women <- data[data[,"liwftmy"] > 0 & (data[,"liwftmy"]==data[,"liwmy"]) & data[,"dgn"]==0, c("yivwg", "dwt")]
+  # hourly_men <- data[data[,"yivwg"] > 0 & data[,"dgn"]==1, c("yivwg", "dwt")]
+  # hourly_women <- data[data[,"yivwg"] > 0 & data[,"dgn"]==0, c("yivwg", "dwt")]
   
-  avg_hourly_men <- mean(hourly_men)
-  avg_hourly_women <- mean(hourly_women)
+  #avg_hourly_men <- weighted.mean(hourly_men$yivwg, hourly_men$dwt)
+  #avg_hourly_women <- weighted.mean(hourly_women$yivwg, hourly_women$dwt)
+  avg_hourly_men <- mean(hourly_men$yivwg)
+  avg_hourly_women <- mean(hourly_women$yivwg)
   
   pay_gap <- (avg_hourly_men - avg_hourly_women)/avg_hourly_men * 100
   return(pay_gap)
@@ -85,7 +91,8 @@ disposable_income_gap <- function(data) {
 # Helper function to find disposable income gap
 equivalized_disposable_income_gap <- function(data) {
   # Disposable income: ils_dispy for registers, yds for EU-SILC
-  variable <- "ydses_o"
+  # variable <- "ydses_o"
+  variable <- eq_dispy
   data[,variable] <- as.numeric(sub(",",".",data[,variable], fixed=TRUE))
   data$dwt <- as.numeric(sub(",",".",data$dwt, fixed=TRUE))
   
@@ -194,11 +201,13 @@ get_social_taxes_paid <- function(data) {
   # ils_sicse - self-employed SIC
   # ils_sicer - employer SIC
   # ils_sicct - credited SIC
-  
   result <- 0
+  data$dwt <- as.numeric(sub(",",".",data$dwt, fixed=TRUE))
+  
   for (col in c("ils_sicot", "ils_sicee", "ils_sicse", "ils_sicer", "ils_sicct")) {
     data[,col] <- as.numeric(sub(",",".",data[,col], fixed=TRUE))
-    result <- result + sum(data[,col])
+    weighted <- data[,col]*data$dwt
+    result <- result + sum(weighted)
     
   }
  return(result)
@@ -208,14 +217,18 @@ get_income_taxes_paid <- function(data) {
   # EUROMOD calculated variables:
   # ils_taxsim - income tax
   data$ils_taxsim <- as.numeric(sub(",",".",data$ils_taxsim, fixed=TRUE))
-  return(sum(data$ils_taxsim))
+  data$dwt <- as.numeric(sub(",",".",data$dwt, fixed=TRUE))
+  weighted <- data$ils_taxsim*data$dwt
+  return(sum(weighted))
 }
 
 get_subsistence_benefit_received <- function(data) {
   # EUROMOD calculated variables:
   # bsa00_s
   data$bsa00_s <- as.numeric(sub(",",".",data$bsa00_s, fixed=TRUE))
-  return(sum(data$bsa00_s))
+  data$dwt <- as.numeric(sub(",",".",data$dwt, fixed=TRUE))
+  weighted <- data$bsa00_s*data$dwt
+  return(sum(weighted))
   
 }
 
@@ -223,7 +236,9 @@ get_benefits_received <- function(data) {
   # EUROMOD calculated variables:
   # ils_ben
   data$ils_ben <- as.numeric(sub(",",".",data$ils_ben, fixed=TRUE))
-  return(sum(data$ils_ben))
+  data$dwt <- as.numeric(sub(",",".",data$dwt, fixed=TRUE))
+  weighted <- data$ils_ben*data$dwt
+  return(sum(weighted))
   
 }
 

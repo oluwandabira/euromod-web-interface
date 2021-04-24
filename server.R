@@ -15,30 +15,53 @@ source("views\\gender_pay_gap_tab.R", encoding="utf-8")
 source("views\\poverty_tab.R", encoding="utf-8")
 source("views\\taxes_and_benefits_tab.R ", encoding="utf-8")
 
-runSimulation <- function(newMinWage) {
+runSimulation <- function(newMinWage, year) {
   # Create new input file and config
-  createInputData(500, newMinWage)
-
+  createInputData(newMinWage, year)
+  systemName <- getSystemName(year)
+  inputFileName <- getInputFileName(year)
+  command <- paste('euromod\\EUROMOD\\Executable\\EM_ExecutableCaller.exe  "C:\\Users\\kr1stine\\git\\euromod-web-interface\\euromod\\EUROMOD_WEB" ',
+                   systemName,
+                   tools::file_path_sans_ext(inputFileName)
+                   )
   # Run EUROMOD for ref system of the same year
-  shell('euromod\\EUROMOD\\Executable\\EM_ExecutableCaller.exe  "C:\\Users\\kr1stine\\git\\euromod-web-interface\\euromod\\EUROMOD_WEB" EE_2018 EE_2018_c1')
+  shell(command)
 }
 
-readOutputData <- function() {
-  output_data <- read.csv(file="euromod/EUROMOD_WEB/output/ee_2018_std.txt", header=TRUE, sep="\t", stringsAsFactors = TRUE)
+readOutputData <- function(year) {
+  outputFileName <- getOutputFileName(year)
+  output_data <- read.csv(file=paste("euromod/EUROMOD_WEB/output/",outputFileName, sep=""), header=TRUE, sep="\t", stringsAsFactors = TRUE)
 
-    # Add equivalized disposable income variables
+  # Add equivalized disposable income variables
   output_data <- addEquivalizedIncome(output_data)
 
   return(output_data)
 }
 
-shinyServer(function(input, output) {
+shinyServer(function(input, output, session) {
+  # Make sure minimum wage is not below the actual minimum wage 
+  observe({
+    updateNumericInput(session, "obs", min = getOrigMinWage(input$year))
+  })
+  v <- reactive({
+    validate(
+      need(input$obs, "Miinimumpalk ei tohi olla tühi!"),
+      need(input$obs >= getOrigMinWage(input$year), "Palun sisesta tegelikust miinimümpalgast kõrgem väärtus.")
+    )
+  })
+  
   output$simulationResults <- renderUI({
+    # Calls this function if "Run" button is clicked
     input$run
-    isolate(runSimulation(input$obs))
+    
+    # Validations
+    isolate(v())
+    
+    # Run simulation
+    isolate(runSimulation(input$obs, input$year))
     
     # Read output file
-    output_data <- readOutputData()
+    output_data <- isolate(readOutputData(input$year))
 
     tabsetPanel(type = "tabs",
                 tabPanel("Palgalõhe", genderWageGapOutput(output_data)),

@@ -1,7 +1,7 @@
 source("components\\index.R")
 
 formatMoney <- function(value) {
-  return(paste("€", round(value)))
+  return(paste("€", formatC(round(value), big.mark=',', format = 'd')))
 }
 
 taxesAndBenefitsOutput <- function(output_data) {
@@ -33,7 +33,7 @@ taxesAndBenefitsOutput <- function(output_data) {
                               "Muutus"=c(formatPercentageChange(subsistence_benefit_change),
                                          formatPercentageChange(other_benefits_change),
                                          formatPercentageChange(total_benefits_change)))
-    names(benefits_table) <- c("Maks", "Tegelik kulu", "Ennustatav kulu", "Muutus")
+    names(benefits_table) <- c("Toetus", "Tegelik kulu", "Ennustatav kulu", "Muutus")
     
     div(
       h4("Riigi tööjõumaksutulu ja kulutused toetustele"),

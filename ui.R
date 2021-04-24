@@ -10,8 +10,14 @@ shinyUI(pageWithSidebar(
     br(),
     numericInput("obs",
                  "Sisesta miinimumpalk (bruto) ",
-                 700,
-                 min=500),
+                 700),
+    selectInput("year", "Rakendumise aasta:",
+                c("2020" = "2020",
+                  "2019" = "2019",
+                  "2018" = "2018",
+                  "2017" = "2017",
+                  "2016" = "2016",
+                  "2015" = "2015")),
     actionButton("run", "Arvuta")
   ),
   
