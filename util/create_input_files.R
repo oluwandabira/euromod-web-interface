@@ -9,8 +9,6 @@ createInputData <- function(newMinWage, year) {
   
   origMinWage <- getOrigMinWage(year)
   
-  cat("Original min wage on ",origMinWage)
-  cat("New min wage on ",newMinWage)
   # For register data yem00, for EU-SILC yem
   wage_variable = "yem"
   #scenario_data[, wage_variable] <- ifelse(scenario_data[,"liwftmy"] > 0 & scenario_data[,"liwftmy"]==scenario_data[,"liwmy"] & scenario_data[, wage_variable] <= newMinWage & scenario_data[,wage_variable]>=origMinWage*0.8, newMinWage, scenario_data[, wage_variable])

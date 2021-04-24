@@ -3,6 +3,7 @@ library(shiny)
 library(xml2)
 library(plotly)
 library(shinyBS) # Additional Bootstrap Controls
+library(shiny.i18n)
 
 project_folder <- "C:/Users/kr1stine/git/euromod-web-interface"
 setwd(project_folder)
@@ -14,6 +15,7 @@ source("util\\helpers.R")
 source("views\\gender_pay_gap_tab.R", encoding="utf-8")
 source("views\\poverty_tab.R", encoding="utf-8")
 source("views\\taxes_and_benefits_tab.R ", encoding="utf-8")
+source("translate.R")
 
 runSimulation <- function(newMinWage, year) {
   # Create new input file and config
@@ -39,14 +41,16 @@ readOutputData <- function(year) {
 }
 
 shinyServer(function(input, output, session) {
+
+  
   # Make sure minimum wage is not below the actual minimum wage 
   observe({
     updateNumericInput(session, "obs", min = getOrigMinWage(input$year))
   })
   v <- reactive({
     validate(
-      need(input$obs, "Miinimumpalk ei tohi olla tühi!"),
-      need(input$obs >= getOrigMinWage(input$year), "Palun sisesta tegelikust miinimümpalgast kõrgem väärtus.")
+      need(input$obs, i18n$t("Miinimumpalk ei tohi olla tühi!")),
+      need(input$obs >= getOrigMinWage(input$year), i18n$t("Palun sisesta tegelikust miinimümpalgast kõrgem väärtus."))
     )
   })
   
@@ -64,9 +68,9 @@ shinyServer(function(input, output, session) {
     output_data <- isolate(readOutputData(input$year))
 
     tabsetPanel(type = "tabs",
-                tabPanel("Palgalõhe", genderWageGapOutput(output_data)),
-                tabPanel("Vaesus", povertyOutput(output_data)),
-                tabPanel("Maksud ja toetused", taxesAndBenefitsOutput(output_data))
+                tabPanel(i18n$t("Palgalõhe"), genderWageGapOutput(output_data)),
+                tabPanel(i18n$t("Vaesus"), povertyOutput(output_data)),
+                tabPanel(i18n$t("Maksud ja toetused"), taxesAndBenefitsOutput(output_data))
     )
   })
   
