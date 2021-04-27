@@ -193,7 +193,7 @@ get_poverty_rows <- function(hh_name, orig_abs_value, orig_rel_value, keyword, d
   return(result)
 } 
 
-poverty_rates_by_hh <- function(data, relative_poverty_line) {
+poverty_rates_by_hh <- function(data, relative_poverty_line, i18n) {
   observables <- c("orig","2018")
 
   single_man_rows <- get_poverty_rows(i18n$t("Üksik mees"), ABSOLUTE_POVERTY_RATE_2018_SINGLE_MAN, RELATIVE_POVERTY_RATE_2018_SINGLE_MAN, "single_man", data, observables, relative_poverty_line)

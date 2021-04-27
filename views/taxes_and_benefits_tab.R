@@ -5,7 +5,7 @@ formatMoney <- function(value) {
   return(paste("€", formatC(round(value), big.mark=',', format = 'd')))
 }
 
-taxesAndBenefitsOutput <- function(output_data) {
+taxesAndBenefitsOutput <- function(output_data, i18n) {
   renderUI({
     
     new_social_tax <- get_social_taxes_paid(output_data)
