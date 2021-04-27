@@ -3,7 +3,7 @@ library(CGPfunctions)
 povertyOutput <- function(output_data, i18n) {
   renderUI({
     # Find new values for indicators
-    new_absolute_poverty_rate <- absolute_poverty_rate(ABSOLUTE_POVERTY_LINE_2018, output_data)
+    new_absolute_poverty_rate <- absolute_poverty_rate(ABSOLUTE_POVERTY_LINE, output_data)
 
     relative_poverty_line <- relative_poverty_line(output_data)
     new_relative_poverty_rate <-relative_poverty_rate(relative_poverty_line, output_data)
@@ -22,7 +22,7 @@ povertyOutput <- function(output_data, i18n) {
                                  infoContent=i18n$t("Palgavaesus näitab, mitu protsenti töötavatest inimestest on suhtelises vaesuses, ehk nende ekvivalentnetosissetulek on allpool suhtelise vaesuse piiri."))
         ),
         column(4, align="center",
-               div(id = "actualValueIWP",paste(round(RELATIVE_POVERTY_RATE_2018,2), "%")),
+               div(id = "actualValueIWP",paste(round(IN_WORK_POVERTY_RATE,2), "%")),
                bsTooltip(id = "actualValueIWP", title = i18n$t("Tegelik väärtus"),
                          placement = "top", trigger = "hover"),
                greenArrowDown(),
@@ -41,7 +41,7 @@ povertyOutput <- function(output_data, i18n) {
                                  infoContent=i18n$t("Suhtelise vaesuse määr näitab, mitu protsenti kogu elanikkonnast on suhtelises vaesuses, ehk nende ekvivalentnetosissetulek on allpool suhtelise vaesuse piiri."))
         ),
         column(4, align="center",
-               div(id = "actualValueRP",paste(round(RELATIVE_POVERTY_RATE_2018,2), "%")),
+               div(id = "actualValueRP",paste(round(RELATIVE_POVERTY_RATE,2), "%")),
                bsTooltip(id = "actualValueRP", title = i18n$t("Tegelik väärtus"),
                          placement = "top", trigger = "hover"),
                greenArrowDown(),
@@ -59,7 +59,7 @@ povertyOutput <- function(output_data, i18n) {
                                  infoContent=i18n$t("Absoluutse vaesuse määr näitab, mitu protsenti kogu elanikkonnast on absoluutses vaesuses, ehk nende ekvivalentnetosissetulek on allpool elatusmiinimumi."))
         ),
         column(4, align="center",
-               div(id = "actualValueEP",paste(round(ABSOLUTE_POVERTY_RATE_2018,2), "%")),
+               div(id = "actualValueEP",paste(round(ABSOLUTE_POVERTY_RATE,2), "%")),
                bsTooltip(id = "actualValueEP", title = i18n$t("Tegelik väärtus"),
                          placement = "top", trigger = "hover"),
                greenArrowDown(),
