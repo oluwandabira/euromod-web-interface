@@ -37,6 +37,7 @@ taxesAndBenefitsOutput <- function(output_data) {
     names(benefits_table) <- c(i18n$t("Toetus"), i18n$t("Tegelik kulu"), i18n$t("Ennustatav kulu"), i18n$t("Muutus"))
     
     div(
+      br(),
       h4(i18n$t("Riigi tööjõumaksutulu ja kulutused toetustele")),
       fluidRow(
         column(8,

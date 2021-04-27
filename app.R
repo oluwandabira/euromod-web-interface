@@ -8,6 +8,8 @@ library(shiny.i18n)
 project_folder <- "C:/Users/kr1stine/git/euromod-web-interface"
 setwd(project_folder)
 
+i18n <- Translator$new(translation_json_path='translations/translation.json')
+
 source("util\\indicator_functions.R")
 source("util\\const.R")
 source("util\\create_input_files.R") 
@@ -15,7 +17,7 @@ source("util\\helpers.R")
 source("views\\gender_pay_gap_tab.R", encoding="utf-8")
 source("views\\poverty_tab.R", encoding="utf-8")
 source("views\\taxes_and_benefits_tab.R ", encoding="utf-8")
-source("translate.R")
+
 
 runSimulation <- function(newMinWage, year) {
   # Create new input file and config
@@ -40,40 +42,79 @@ readOutputData <- function(year) {
   return(output_data)
 }
 
-shinyServer(function(input, output, session) {
-
-  
+server <- shinyServer(function(input, output, session) {
   # Make sure minimum wage is not below the actual minimum wage 
+  observeEvent(input$language, ignoreInit = TRUE, {
+    update_lang(session, input$language)
+  })
   observe({
     updateNumericInput(session, "obs", min = getOrigMinWage(input$year))
   })
   v <- reactive({
     validate(
       need(input$obs, i18n$t("Miinimumpalk ei tohi olla tühi!")),
-      need(input$obs >= getOrigMinWage(input$year), i18n$t("Palun sisesta tegelikust miinimümpalgast kõrgem väärtus."))
+      need(input$obs >= getOrigMinWage(input$year), i18n$t("Palun sisesta tegelikust miinimumpalgast kõrgem väärtus."))
     )
   })
-  
+
   output$simulationResults <- renderUI({
+
     # Calls this function if "Run" button is clicked
-    input$run
-    
+    isolate(input$run)
+
     # Validations
     isolate(v())
-    
+
     # Run simulation
     isolate(runSimulation(input$obs, input$year))
-    
+
     # Read output file
-    output_data <- isolate(readOutputData(input$year))
+    isolate(output_data <- isolate(readOutputData(input$year)))
 
     tabsetPanel(type = "tabs",
                 tabPanel(i18n$t("Palgalõhe"), genderWageGapOutput(output_data)),
                 tabPanel(i18n$t("Vaesus"), povertyOutput(output_data)),
-                tabPanel(i18n$t("Maksud ja toetused"), taxesAndBenefitsOutput(output_data))
-    )
+                tabPanel(i18n$t("Maksud ja toetused"), taxesAndBenefitsOutput(output_data)))
+
   })
-  
-
-
 })
+
+
+ui <- shinyUI(
+  fluidPage(
+    shiny.i18n::usei18n(i18n),
+    titlePanel(i18n$t("Miinimumpalga tõusu mõju palgalõhele")),
+    
+    fluidRow(
+      column(2,offset=10,
+             selectInput("language", label= NULL, 
+                         choices = list("Eesti keel" = "ee",
+                                        "In English" = "en"),
+                         selected = i18n$get_key_translation())
+      )
+    ),
+    sidebarLayout(
+      sidebarPanel(
+        div(i18n$t("Rakendus ennustab miinimumpalga muutuse esmast mõju sotsiaalsetele näitajatele, eeldusel, et muud näitajad jäävad samaks.")),
+        br(),
+        numericInput("obs",
+                     i18n$t("Sisesta miinimumpalk (bruto)"),
+                     700),
+        selectInput("year", i18n$t("Rakendumise aasta"),
+                    c("2020" = "2020",
+                      "2019" = "2019",
+                      "2018" = "2018",
+                      "2017" = "2017",
+                      "2016" = "2016",
+                      "2015" = "2015")),
+        actionButton("run", i18n$t("Arvuta"))
+      ),
+      
+      mainPanel(
+        uiOutput(outputId="simulationResults"),
+      )
+    )
+  )
+)
+
+shinyApp(ui=ui, server=server)

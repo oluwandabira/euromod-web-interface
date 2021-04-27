@@ -6,7 +6,7 @@
 	  {"ee": "Maksud ja toetused", "en": "Taxes and benefits"},
 	  {
 		  "ee": "Rakendus ennustab miinimumpalga muutuse esmast mõju sotsiaalsetele näitajatele, eeldusel, et muud näitajad jäävad samaks.", 
-		  "en": "The application predicts the primary impact of a change in the minimum wage on social indicators, provided that other indicators remain the same."
+		  "en": "The application predicts the first-hand effects of an increase in the minimum wage on social indicators, provided that other indicators remain the same."
 	  },
       {
 		  "ee": "Sisesta miinimumpalk (bruto)", 
@@ -25,8 +25,8 @@
 		  "en": "The gender pay gap"
 	  },
 	  {
-		  "ee": "Täisajaga töötavate meeste ja naiste brutopalkade lõhe.", 
-		  "en": "The gross pay gap between men and women in full - time employment."
+		  "ee": "Täisajaga töötavate meeste ja naiste brutotunnipalkade lõhe.", 
+		  "en": "The gross hourly pay gap between men and women in full - time employment."
 	  },
 	  {
 		  "ee": "Kättesaadava sissetuleku sooline lõhe", 
@@ -57,8 +57,20 @@
 		  "en": "Relative poverty rate"
 	  },
 	  {
+		  "ee": "Palgavaesuse määr", 
+		  "en": "In-work poverty rate"
+	  },
+	  {
+		  "ee": "Nende elanike osatähtsus, kes on vaesuses vaatamata sellele, et käivad tööl.", 
+		  "en": "The amount of people who are at risk of poverty regardless that they are employed"
+	  },
+	  {
+		  "ee": "Palgavaesus näitab, mitu protsenti töötavatest inimestest on suhtelises vaesuses, ehk nende ekvivalentnetosissetulek on allpool suhtelise vaesuse piiri.", 
+		  "en": "The proportion of working individuals whose equivalised disposable income is under the at-risk-of-poverty threshold."
+	  },
+	  {
 		  "ee": "Nende elanike osatähtsus, kelle ekvivalentnetosissetulek on allpool suhtelise vaesuse piiri.", 
-		  "en": "Proportion of the population whose equivalent net income is below the relative poverty line."
+		  "en": "The proportion of the population whose equivalent disposable income is below the relative poverty threshold."
 	  },
 	  {
 		  "ee": "Absoluutse vaesuse määra muutus", 
@@ -177,7 +189,7 @@
 		  "en": "The minimum wage must not be empty!"
 	  },
 	  {
-		  "ee": "Palun sisesta tegelikust miinimümpalgast kõrgem väärtus.", 
+		  "ee": "Palun sisesta tegelikust miinimumpalgast kõrgem väärtus.", 
 		  "en": "Please enter a value higher than the actual minimum wage."
 	  },
 	  {
@@ -189,8 +201,16 @@
 		  "en": "Predicted new value"
 	  },
 	  {
-		  "ee": "Arvutuse aluseks on meeste ja naiste kuine brutopalk.", 
-		  "en": "The calculation is based on the gross monthly salary of men and women."
+		  "ee": "Palgalõhe näitab, mitu protsenti on naiste brutotunnipalk meeste omast madalam.", 
+		  "en": "The gender pay gap shows how many percent the gross hourly pay of women is lower than the gross hourly pay of men."
+	  },
+	  {
+		  "ee": "Arv näitab, mitu protsenti on naiste kuus kättesaadav sissetulek meeste omast madalam.",
+		  "en": "The indicator shows how many percent the disposable income of women is lower than the disposable income of men."
+	  },
+	  {
+		  "ee": "Miinimumpalga tõusu mõju palgalõhele",
+		  "en": "Impact of the increase in the minimum wage on the pay gap"
 	  }
     ]
 }

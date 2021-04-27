@@ -8,19 +8,21 @@ source("translate.R")
 # Helper function to find pay gap of gross hourly wage
 hourly_gross_pay_gap <- function(data) {
   # Gross hourly wage: yivwg
-
+  #data <- read.csv(file=paste("euromod/EUROMOD_WEB/output/","EE_2018_std.txt", sep=""), header=TRUE, sep="\t", stringsAsFactors = TRUE)
+  
   data$yivwg <- as.numeric(sub(",",".",data$yivwg, fixed=TRUE))
-  data$dwt <- as.numeric(sub(",",".",data$yivwg, fixed=TRUE))
+  data$dwt <- as.numeric(sub(",",".",data$dwt, fixed=TRUE))
+  data$dag <- as.numeric(sub(",",".",data$dag, fixed=TRUE))
   
-  hourly_men <- data[data[,"liwftmy"] > 0 & (data[,"liwftmy"]==data[,"liwmy"]) & data[,"dgn"]==1, c("yivwg", "dwt")]
-  hourly_women <- data[data[,"liwftmy"] > 0 & (data[,"liwftmy"]==data[,"liwmy"]) & data[,"dgn"]==0, c("yivwg", "dwt")]
-  # hourly_men <- data[data[,"yivwg"] > 0 & data[,"dgn"]==1, c("yivwg", "dwt")]
-  # hourly_women <- data[data[,"yivwg"] > 0 & data[,"dgn"]==0, c("yivwg", "dwt")]
-  
-  #avg_hourly_men <- weighted.mean(hourly_men$yivwg, hourly_men$dwt)
-  #avg_hourly_women <- weighted.mean(hourly_women$yivwg, hourly_women$dwt)
-  avg_hourly_men <- mean(hourly_men$yivwg)
-  avg_hourly_women <- mean(hourly_women$yivwg)
+  #hourly_men <- data[data[,"liwftmy"] > 0 & (data[,"liwftmy"]==data[,"liwmy"]) & data[,"dgn"]==1, c("yivwg", "dwt")]
+  #hourly_women <- data[data[,"liwftmy"] > 0 & (data[,"liwftmy"]==data[,"liwmy"]) & data[,"dgn"]==0, c("yivwg", "dwt")]
+  hourly_men <- data[data$lhw > 0 & data[,"yivwg"] > 0 & data[,"dgn"]==1, c("yivwg", "dwt")]
+  hourly_women <- data[data$lhw > 0 & data[,"yivwg"] > 0 & data[,"dgn"]==0, c("yivwg", "dwt")]
+  # data$dag >= 18 & data$dag < 65 & data[,"liwftmy"] == 12 & 
+  avg_hourly_men <- weighted.mean(hourly_men$yivwg, hourly_men$dwt)
+  avg_hourly_women <- weighted.mean(hourly_women$yivwg, hourly_women$dwt)
+  #avg_hourly_men <- mean(hourly_men$yivwg)
+  #avg_hourly_women <- mean(hourly_women$yivwg)
   
   pay_gap <- (avg_hourly_men - avg_hourly_women)/avg_hourly_men * 100
   return(pay_gap)
@@ -162,6 +164,18 @@ relative_poverty_rate <- function(poverty_line, data, household = NULL) {
     poor_weight <- sum(data[data$eq_dispy <= poverty_line,"dwt"])
   }
   
+  return(round((poor_weight * 100)/total_weight, 2))
+}
+
+in_work_poverty_rate <- function(poverty_line, data) {
+  # Ratio of people who are employed and whose equivalent disposable income
+  # falls under the poverty line
+  data$dwt <- as.numeric(sub(",",".",data$dwt, fixed=TRUE))
+  data$liwmy <- as.numeric(sub(",",".",data$liwmy, fixed=TRUE))
+  
+  total_weight <- sum(data[data$liwmy > 0 ,"dwt"])
+  poor_weight <- sum(data[data$liwmy > 0 & data$eq_dispy <= poverty_line,"dwt"])
+
   return(round((poor_weight * 100)/total_weight, 2))
 }
 
