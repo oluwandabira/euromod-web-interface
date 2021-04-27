@@ -9,8 +9,6 @@ createInputData <- function(newMinWage, year) {
   
   origMinWage <- getOrigMinWage(year)
   
-  cat("Original min wage on ",origMinWage)
-  cat("New min wage on ",newMinWage)
   # For register data yem00, for EU-SILC yem
   wage_variable = "yem"
   #scenario_data[, wage_variable] <- ifelse(scenario_data[,"liwftmy"] > 0 & scenario_data[,"liwftmy"]==scenario_data[,"liwmy"] & scenario_data[, wage_variable] <= newMinWage & scenario_data[,wage_variable]>=origMinWage*0.8, newMinWage, scenario_data[, wage_variable])
@@ -30,6 +28,7 @@ createInputData <- function(newMinWage, year) {
 
 # Adds a column to the data depicting the equivalized disposable income
 addEquivalizedIncome <- function(data) {
+  data <- output_data
   data$ils_dispy <- as.numeric(sub(",",".",data$ils_dispy, fixed=TRUE))
   data$dag <- as.numeric(sub(",",".",data$dag, fixed=TRUE))
   
@@ -38,17 +37,18 @@ addEquivalizedIncome <- function(data) {
   next_adult <- 0.5
   child <- 0.3
   child_age <- 14
-  data$oecd_weight <- ifelse(data$idperson == data$tu_sapehh_ee_HeadID, first_adult, ifelse(data$dag >= child_age, 0.7, 0.5))
+  data$oecd_weight <- ifelse(data$idperson == data$tu_sapehh_ee_HeadID, first_adult, ifelse(data$dag >= child_age, next_adult, child))
   
   by_hh <- data %>% group_by(idhh)
   total_income <- by_hh %>% summarise(
     total_dispy = sum(ils_dispy),
     total_weight = sum(oecd_weight),
     eq_dispy = total_dispy/total_weight,
-    hh_adults_count = sum(dag >= 18),
-    hh_children_count = sum(dag < 18),
+    hh_adults_count = sum(tu_sapehh_ee_IsDependentChild == 0 & dag < 65),
+    hh_children_count = sum(tu_sapehh_ee_IsDependentChild == 1),
     hh_pensioners_count = sum(dag >= 65),
     dgn_help = sum(dgn),
+    n = n(),
   ) 
   total_income$hh_type <- case_when(
     total_income$hh_pensioners_count > 0 | total_income$hh_adults_count > 2 ~ "other",

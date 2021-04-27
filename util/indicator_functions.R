@@ -1,24 +1,28 @@
 library(tidyr)
 
+source("translate.R")
+
 # Calculate pay gap values from
 # EUROMOD output files
 
 # Helper function to find pay gap of gross hourly wage
 hourly_gross_pay_gap <- function(data) {
   # Gross hourly wage: yivwg
-
+  #data <- read.csv(file=paste("euromod/EUROMOD_WEB/output/","EE_2018_std.txt", sep=""), header=TRUE, sep="\t", stringsAsFactors = TRUE)
+  
   data$yivwg <- as.numeric(sub(",",".",data$yivwg, fixed=TRUE))
-  data$dwt <- as.numeric(sub(",",".",data$yivwg, fixed=TRUE))
+  data$dwt <- as.numeric(sub(",",".",data$dwt, fixed=TRUE))
+  data$dag <- as.numeric(sub(",",".",data$dag, fixed=TRUE))
   
-  hourly_men <- data[data[,"liwftmy"] > 0 & (data[,"liwftmy"]==data[,"liwmy"]) & data[,"dgn"]==1, c("yivwg", "dwt")]
-  hourly_women <- data[data[,"liwftmy"] > 0 & (data[,"liwftmy"]==data[,"liwmy"]) & data[,"dgn"]==0, c("yivwg", "dwt")]
-  # hourly_men <- data[data[,"yivwg"] > 0 & data[,"dgn"]==1, c("yivwg", "dwt")]
-  # hourly_women <- data[data[,"yivwg"] > 0 & data[,"dgn"]==0, c("yivwg", "dwt")]
-  
-  #avg_hourly_men <- weighted.mean(hourly_men$yivwg, hourly_men$dwt)
-  #avg_hourly_women <- weighted.mean(hourly_women$yivwg, hourly_women$dwt)
-  avg_hourly_men <- mean(hourly_men$yivwg)
-  avg_hourly_women <- mean(hourly_women$yivwg)
+  #hourly_men <- data[data[,"liwftmy"] > 0 & (data[,"liwftmy"]==data[,"liwmy"]) & data[,"dgn"]==1, c("yivwg", "dwt")]
+  #hourly_women <- data[data[,"liwftmy"] > 0 & (data[,"liwftmy"]==data[,"liwmy"]) & data[,"dgn"]==0, c("yivwg", "dwt")]
+  hourly_men <- data[data$lhw > 0 & data[,"yivwg"] > 0 & data[,"dgn"]==1, c("yivwg", "dwt")]
+  hourly_women <- data[data$lhw > 0 & data[,"yivwg"] > 0 & data[,"dgn"]==0, c("yivwg", "dwt")]
+  # data$dag >= 18 & data$dag < 65 & data[,"liwftmy"] == 12 & 
+  avg_hourly_men <- weighted.mean(hourly_men$yivwg, hourly_men$dwt)
+  avg_hourly_women <- weighted.mean(hourly_women$yivwg, hourly_women$dwt)
+  #avg_hourly_men <- mean(hourly_men$yivwg)
+  #avg_hourly_women <- mean(hourly_women$yivwg)
   
   pay_gap <- (avg_hourly_men - avg_hourly_women)/avg_hourly_men * 100
   return(pay_gap)
@@ -163,6 +167,18 @@ relative_poverty_rate <- function(poverty_line, data, household = NULL) {
   return(round((poor_weight * 100)/total_weight, 2))
 }
 
+in_work_poverty_rate <- function(poverty_line, data) {
+  # Ratio of people who are employed and whose equivalent disposable income
+  # falls under the poverty line
+  data$dwt <- as.numeric(sub(",",".",data$dwt, fixed=TRUE))
+  data$liwmy <- as.numeric(sub(",",".",data$liwmy, fixed=TRUE))
+  
+  total_weight <- sum(data[data$liwmy > 0 ,"dwt"])
+  poor_weight <- sum(data[data$liwmy > 0 & data$eq_dispy <= poverty_line,"dwt"])
+
+  return(round((poor_weight * 100)/total_weight, 2))
+}
+
 get_poverty_rows <- function(hh_name, orig_abs_value, orig_rel_value, keyword, data, observables, relative_poverty_line) {
   result <- data.frame("Household" = rep(hh_name, 2), "Scenario"=observables, "AbsolutePoverty" = rep(0,length(observables)), "RelativePoverty"=rep(0,length(observables)))
   
@@ -180,16 +196,16 @@ get_poverty_rows <- function(hh_name, orig_abs_value, orig_rel_value, keyword, d
 poverty_rates_by_hh <- function(data, relative_poverty_line) {
   observables <- c("orig","2018")
 
-  single_man_rows <- get_poverty_rows("Üksik mees", ABSOLUTE_POVERTY_RATE_2018_SINGLE_MAN, RELATIVE_POVERTY_RATE_2018_SINGLE_MAN, "single_man", data, observables, relative_poverty_line)
-  single_woman_rows <- get_poverty_rows("Üksik naine", ABSOLUTE_POVERTY_RATE_2018_SINGLE_WOMAN, RELATIVE_POVERTY_RATE_2018_SINGLE_WOMAN, "single_woman", data, observables, relative_poverty_line)
-  single_parent_rows <- get_poverty_rows("Üksikvanem", ABSOLUTE_POVERTY_RATE_2018_SINGLE_PARENT, RELATIVE_POVERTY_RATE_2018_SINGLE_PARENT, "single_parent", data, observables, relative_poverty_line)
-  couple_no_children_rows <- get_poverty_rows("Lasteta paar", ABSOLUTE_POVERTY_RATE_2018_CHILDLESS_COUPLE, RELATIVE_POVERTY_RATE_2018_CHILDLESS_COUPLE, "couple_no_children", data, observables, relative_poverty_line)
-  couple_one_child_rows <- get_poverty_rows("Ühe lapsega paar", ABSOLUTE_POVERTY_RATE_2018_COUPLE_ONE_CHILD, RELATIVE_POVERTY_RATE_2018_COUPLE_ONE_CHILD, "couple_one_child", data, observables, relative_poverty_line)
-  couple_two_children_rows <- get_poverty_rows("Kahe lapsega paar", ABSOLUTE_POVERTY_RATE_2018_COUPLE_TWO_CHILDREN, RELATIVE_POVERTY_RATE_2018_COUPLE_TWO_CHILDREN, "couple_two_children", data, observables, relative_poverty_line)
-  couple_many_children_rows <- get_poverty_rows("Kolme ja enama lapsega paar", ABSOLUTE_POVERTY_RATE_2018_COUPLE_MANY_CHILDREN, RELATIVE_POVERTY_RATE_2018_COUPLE_MANY_CHILDREN, "couple_many_children", data, observables, relative_poverty_line)
+  single_man_rows <- get_poverty_rows(i18n$t("Üksik mees"), ABSOLUTE_POVERTY_RATE_2018_SINGLE_MAN, RELATIVE_POVERTY_RATE_2018_SINGLE_MAN, "single_man", data, observables, relative_poverty_line)
+  single_woman_rows <- get_poverty_rows(i18n$t("Üksik naine"), ABSOLUTE_POVERTY_RATE_2018_SINGLE_WOMAN, RELATIVE_POVERTY_RATE_2018_SINGLE_WOMAN, "single_woman", data, observables, relative_poverty_line)
+  single_parent_rows <- get_poverty_rows(i18n$t("Üksikvanem"), ABSOLUTE_POVERTY_RATE_2018_SINGLE_PARENT, RELATIVE_POVERTY_RATE_2018_SINGLE_PARENT, "single_parent", data, observables, relative_poverty_line)
+  couple_no_children_rows <- get_poverty_rows(i18n$t("Lasteta paar"), ABSOLUTE_POVERTY_RATE_2018_CHILDLESS_COUPLE, RELATIVE_POVERTY_RATE_2018_CHILDLESS_COUPLE, "couple_no_children", data, observables, relative_poverty_line)
+  couple_one_child_rows <- get_poverty_rows(i18n$t("Ühe lapsega paar"), ABSOLUTE_POVERTY_RATE_2018_COUPLE_ONE_CHILD, RELATIVE_POVERTY_RATE_2018_COUPLE_ONE_CHILD, "couple_one_child", data, observables, relative_poverty_line)
+  couple_two_children_rows <- get_poverty_rows(i18n$t("Kahe lapsega paar"), ABSOLUTE_POVERTY_RATE_2018_COUPLE_TWO_CHILDREN, RELATIVE_POVERTY_RATE_2018_COUPLE_TWO_CHILDREN, "couple_two_children", data, observables, relative_poverty_line)
+  couple_many_children_rows <- get_poverty_rows(i18n$t("Kolme ja enama lapsega paar"), ABSOLUTE_POVERTY_RATE_2018_COUPLE_MANY_CHILDREN, RELATIVE_POVERTY_RATE_2018_COUPLE_MANY_CHILDREN, "couple_many_children", data, observables, relative_poverty_line)
   
   result <- rbind(single_man_rows, single_woman_rows, single_parent_rows, couple_no_children_rows, couple_one_child_rows, couple_two_children_rows, couple_many_children_rows)
-  result$Scenario <- factor(result$Scenario,levels = observables, labels = c("Tegelik 2018","Ennustatud 2018"), ordered = TRUE)
+  result$Scenario <- factor(result$Scenario,levels = observables, labels = c(paste(i18n$t("Tegelik"), "2018"),paste(i18n$t("Ennustatud"), "2018")), ordered = TRUE)
   
   return(result)
 }
