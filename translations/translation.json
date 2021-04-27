@@ -47,11 +47,15 @@
 	  },
 	  {
 		  "ee": "Absoluutse vaesuse määr", 
-		  "en": "Absolute poverty rate"
+		  "en": "Extreme poverty rate"
 	  },
 	  {
 		  "ee": "Nende elanike osatähtsus, kelle sissetulek jääb alla elatusmiinimumi. ", 
 		  "en": "Proportion of the population whose income is below the subsistence level."
+	  },
+	  {
+		  "ee": "Absoluutse vaesuse määr näitab, mitu protsenti kogu elanikkonnast on absoluutses vaesuses, ehk nende ekvivalentnetosissetulek on allpool elatusmiinimumi.",
+		  "en": "The extreme poverty rate shows the percentage of individuals whose equivalent disposable income is lower than the subsistence level."
 	  },
 	  {
 		  "ee": "Suhtelise vaesuse määr", 
@@ -70,8 +74,12 @@
 		  "en": "The proportion of working individuals whose equivalised disposable income is under the at-risk-of-poverty threshold."
 	  },
 	  {
-		  "ee": "Nende elanike osatähtsus, kelle ekvivalentnetosissetulek on allpool suhtelise vaesuse piiri.", 
+		  "ee": "Nende elanike osatähtsus, kes on suhtelises vaesuses.", 
 		  "en": "The proportion of the population whose equivalent disposable income is below the relative poverty threshold."
+	  },
+	  {
+		  "ee": "Suhtelise vaesuse määr näitab, mitu protsenti kogu elanikkonnast on suhtelises vaesuses, ehk nende ekvivalentnetosissetulek on allpool suhtelise vaesuse piiri.",
+		  "en": "The at-risk-ofpoverty rate shows the percentage of individuals whose equivalent disposable income is below the at-risk-at-poverty threshold"
 	  },
 	  {
 		  "ee": "Absoluutse vaesuse määra muutus", 
