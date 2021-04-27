@@ -1,6 +1,7 @@
 {
   "languages": ["ee", "en"],
   "translation": [
+	  {"ee": "Palun oota, arvutan...", "en": "Loading..."},
       {"ee": "Palgalõhe", "en": "Gender pay gap"},
       {"ee": "Vaesus", "en": "Poverty"},
 	  {"ee": "Maksud ja toetused", "en": "Taxes and benefits"},
