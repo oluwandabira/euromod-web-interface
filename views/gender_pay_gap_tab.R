@@ -1,7 +1,7 @@
 source("components\\index.R")
 #source("translate.R")
 
-genderWageGapOutput <- function(output_data) {
+genderWageGapOutput <- function(output_data, i18n) {
   renderUI({
     # Find new values for indicators
     #new_pay_gap <- monthly_gross_pay_gap_ft(output_data)

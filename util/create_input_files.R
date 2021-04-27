@@ -28,7 +28,6 @@ createInputData <- function(newMinWage, year) {
 
 # Adds a column to the data depicting the equivalized disposable income
 addEquivalizedIncome <- function(data) {
-  data <- output_data
   data$ils_dispy <- as.numeric(sub(",",".",data$ils_dispy, fixed=TRUE))
   data$dag <- as.numeric(sub(",",".",data$dag, fixed=TRUE))
   

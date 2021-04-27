@@ -9,6 +9,7 @@ project_folder <- "C:/Users/kr1stine/git/euromod-web-interface"
 setwd(project_folder)
 
 i18n <- Translator$new(translation_json_path='translations/translation.json')
+i18n$set_translation_language("ee")
 
 source("util\\indicator_functions.R")
 source("util\\const.R")
@@ -60,21 +61,21 @@ server <- shinyServer(function(input, output, session) {
   output$simulationResults <- renderUI({
 
     # Calls this function if "Run" button is clicked
-    isolate(input$run)
+    input$run
 
     # Validations
     isolate(v())
 
     # Run simulation
-    isolate(runSimulation(input$obs, input$year))
+    runSimulation(input$obs, input$year)
 
     # Read output file
-    isolate(output_data <- isolate(readOutputData(input$year)))
+    output_data <- readOutputData(input$year)
 
     tabsetPanel(type = "tabs",
-                tabPanel(i18n$t("Palgalõhe"), genderWageGapOutput(output_data)),
-                tabPanel(i18n$t("Vaesus"), povertyOutput(output_data)),
-                tabPanel(i18n$t("Maksud ja toetused"), taxesAndBenefitsOutput(output_data)))
+                tabPanel(i18n$t("Palgalõhe"), genderWageGapOutput(output_data, i18n)),
+                tabPanel(i18n$t("Vaesus"), povertyOutput(output_data, i18n)),
+                tabPanel(i18n$t("Maksud ja toetused"), taxesAndBenefitsOutput(output_data, i18n)))
 
   })
 })
@@ -101,6 +102,7 @@ ui <- shinyUI(
                      i18n$t("Sisesta miinimumpalk (bruto)"),
                      700),
         selectInput("year", i18n$t("Rakendumise aasta"),
+                    selected="2018",
                     c("2020" = "2020",
                       "2019" = "2019",
                       "2018" = "2018",
