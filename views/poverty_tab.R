@@ -3,7 +3,7 @@ library(CGPfunctions)
 povertyOutput <- function(output_data, i18n) {
   renderUI({
     # Find new values for indicators
-    new_absolute_poverty_rate <- absolute_poverty_rate(ABSOLUTE_POVERTY_LINE_2018, output_data)
+    new_absolute_poverty_rate <- absolute_poverty_rate(ABSOLUTE_POVERTY_LINE, output_data)
 
     relative_poverty_line <- relative_poverty_line(output_data)
     new_relative_poverty_rate <-relative_poverty_rate(relative_poverty_line, output_data)
@@ -22,13 +22,13 @@ povertyOutput <- function(output_data, i18n) {
                                  infoContent=i18n$t("Palgavaesus näitab, mitu protsenti töötavatest inimestest on suhtelises vaesuses, ehk nende ekvivalentnetosissetulek on allpool suhtelise vaesuse piiri."))
         ),
         column(4, align="center",
-               div(id = "actualValueIWP",paste(round(RELATIVE_POVERTY_RATE_2018,2), "%")),
+               div(id = "actualValueIWP",paste(round(IN_WORK_POVERTY_RATE,2), "%")),
                bsTooltip(id = "actualValueIWP", title = i18n$t("Tegelik väärtus"),
-                         placement = "left", trigger = "hover"),
+                         placement = "top", trigger = "hover"),
                greenArrowDown(),
                div(id="newValueIWP", paste(round(new_in_work_poverty_rate,2), "%")),
                bsTooltip(id = "newValueIWP", title = i18n$t("Ennustatatud uus väärtus"),
-                         placement = "left", trigger = "hover"),
+                         placement = "top", trigger = "hover"),
         )
       ),
       h4(i18n$t("Kogu elanikkond")),
@@ -36,18 +36,18 @@ povertyOutput <- function(output_data, i18n) {
       fluidRow(
         column(8,
                metricDescription(title=i18n$t("Suhtelise vaesuse määr"),
-                                 description=i18n$t("Nende elanike osatähtsus, kelle ekvivalentnetosissetulek on allpool suhtelise vaesuse piiri."),
+                                 description=i18n$t("Nende elanike osatähtsus, kes on suhtelises vaesuses."),
                                  infoId="relPovertyRateInfo",
-                                 infoContent="TODO")
+                                 infoContent=i18n$t("Suhtelise vaesuse määr näitab, mitu protsenti kogu elanikkonnast on suhtelises vaesuses, ehk nende ekvivalentnetosissetulek on allpool suhtelise vaesuse piiri."))
         ),
         column(4, align="center",
-               div(id = "actualValue",paste(round(RELATIVE_POVERTY_RATE_2018,2), "%")),
-               bsTooltip(id = "actualValue", title = i18n$t("Tegelik väärtus"),
-                         placement = "left", trigger = "hover"),
+               div(id = "actualValueRP",paste(round(RELATIVE_POVERTY_RATE,2), "%")),
+               bsTooltip(id = "actualValueRP", title = i18n$t("Tegelik väärtus"),
+                         placement = "top", trigger = "hover"),
                greenArrowDown(),
-               div(id="newValue", paste(round(new_relative_poverty_rate,2), "%")),
-               bsTooltip(id = "newValue", title = i18n$t("Ennustatatud uus väärtus"),
-                         placement = "left", trigger = "hover"),
+               div(id="newValueRP", paste(round(new_relative_poverty_rate,2), "%")),
+               bsTooltip(id = "newValueRP", title = i18n$t("Ennustatatud uus väärtus"),
+                         placement = "top", trigger = "hover"),
         )
       ),
       br(),
@@ -56,16 +56,16 @@ povertyOutput <- function(output_data, i18n) {
                metricDescription(title=i18n$t("Absoluutse vaesuse määr"),
                                  description=i18n$t("Nende elanike osatähtsus, kelle sissetulek jääb alla elatusmiinimumi."),
                                  infoId="absPovertyRateInfo",
-                                 infoContent="TODO")
+                                 infoContent=i18n$t("Absoluutse vaesuse määr näitab, mitu protsenti kogu elanikkonnast on absoluutses vaesuses, ehk nende ekvivalentnetosissetulek on allpool elatusmiinimumi."))
         ),
         column(4, align="center",
-               div(id = "actualValue",paste(round(ABSOLUTE_POVERTY_RATE_2018,2), "%")),
-               bsTooltip(id = "actualValue", title = i18n$t("Tegelik väärtus"),
-                         placement = "left", trigger = "hover"),
+               div(id = "actualValueEP",paste(round(ABSOLUTE_POVERTY_RATE,2), "%")),
+               bsTooltip(id = "actualValueEP", title = i18n$t("Tegelik väärtus"),
+                         placement = "top", trigger = "hover"),
                greenArrowDown(),
-               div(id="newValue", paste(round(new_absolute_poverty_rate,2), "%")),
-               bsTooltip(id = "newValue", title = i18n$t("Ennustatatud uus väärtus"),
-                         placement = "left", trigger = "hover"),
+               div(id="newValueEP", paste(round(new_absolute_poverty_rate,2), "%")),
+               bsTooltip(id = "newValueEP", title = i18n$t("Ennustatatud uus väärtus"),
+                         placement = "top", trigger = "hover"),
         )
       ),
       br(),

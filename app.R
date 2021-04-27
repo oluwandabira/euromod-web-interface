@@ -12,7 +12,6 @@ i18n <- Translator$new(translation_json_path='translations/translation.json')
 i18n$set_translation_language("ee")
 
 source("util\\indicator_functions.R")
-source("util\\const.R")
 source("util\\create_input_files.R") 
 source("util\\helpers.R") 
 source("views\\gender_pay_gap_tab.R", encoding="utf-8")
@@ -22,6 +21,8 @@ source("views\\taxes_and_benefits_tab.R ", encoding="utf-8")
 
 runSimulation <- function(newMinWage, year) {
   # Create new input file and config
+  source(paste("util\\const_", year, ".R", sep=""))
+  
   createInputData(newMinWage, year)
   systemName <- getSystemName(year)
   inputFileName <- getInputFileName(year)
@@ -69,10 +70,11 @@ server <- shinyServer(function(input, output, session) {
     isolate(v())
 
     # Run simulation
-    runSimulation(input$obs, input$year)
+    isolate(runSimulation(input$obs, input$year))
 
     # Read output file
-    output_data <- readOutputData(input$year)
+    isolate(output_data <- readOutputData(input$year))
+    
     rv$setupComplete <- TRUE
     ## the conditional panel reads this output
     output$setupComplete <- reactive({
@@ -114,9 +116,7 @@ ui <- shinyUI(
                     c("2020" = "2020",
                       "2019" = "2019",
                       "2018" = "2018",
-                      "2017" = "2017",
-                      "2016" = "2016",
-                      "2015" = "2015")),
+                      "2017" = "2017")),
         actionButton("run", i18n$t("Arvuta"))
       ),
       
