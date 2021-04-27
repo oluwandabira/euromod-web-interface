@@ -57,6 +57,8 @@ server <- shinyServer(function(input, output, session) {
       need(input$obs >= getOrigMinWage(input$year), i18n$t("Palun sisesta tegelikust miinimumpalgast kõrgem väärtus."))
     )
   })
+  rv <- reactiveValues()
+  rv$setupComplete <- TRUE
 
   output$simulationResults <- renderUI({
 
@@ -71,7 +73,13 @@ server <- shinyServer(function(input, output, session) {
 
     # Read output file
     output_data <- readOutputData(input$year)
-
+    rv$setupComplete <- TRUE
+    ## the conditional panel reads this output
+    output$setupComplete <- reactive({
+      return(rv$setupComplete)
+    })
+    outputOptions(output, 'setupComplete', suspendWhenHidden=FALSE)
+    
     tabsetPanel(type = "tabs",
                 tabPanel(i18n$t("Palgalõhe"), genderWageGapOutput(output_data, i18n)),
                 tabPanel(i18n$t("Vaesus"), povertyOutput(output_data, i18n)),
@@ -113,7 +121,12 @@ ui <- shinyUI(
       ),
       
       mainPanel(
-        uiOutput(outputId="simulationResults"),
+        conditionalPanel(condition = "output.setupComplete",
+                         uiOutput(outputId="simulationResults"),
+        ),
+        conditionalPanel(condition = "!output.setupComplete",
+                         h4(i18n$t("Palun oota, arvutan...")))
+        
       )
     )
   )
