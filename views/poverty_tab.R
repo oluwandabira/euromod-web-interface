@@ -1,6 +1,6 @@
 library(CGPfunctions)
 
-povertyOutput <- function(output_data, i18n) {
+povertyOutput <- function(output_data, year, i18n) {
   renderUI({
     # Find new values for indicators
     new_absolute_poverty_rate <- absolute_poverty_rate(ABSOLUTE_POVERTY_LINE, output_data)
@@ -8,7 +8,7 @@ povertyOutput <- function(output_data, i18n) {
     relative_poverty_line <- relative_poverty_line(output_data)
     new_relative_poverty_rate <-relative_poverty_rate(relative_poverty_line, output_data)
     new_in_work_poverty_rate <- in_work_poverty_rate(relative_poverty_line, output_data)
-    hh_poverty_rates <- poverty_rates_by_hh(output_data, relative_poverty_line, i18n)
+    hh_poverty_rates <- poverty_rates_by_hh(output_data, relative_poverty_line, year, i18n)
     
     div(
       br(),

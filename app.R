@@ -84,7 +84,7 @@ server <- shinyServer(function(input, output, session) {
     
     tabsetPanel(type = "tabs",
                 tabPanel(i18n$t("Palgalõhe"), genderWageGapOutput(output_data, i18n)),
-                tabPanel(i18n$t("Vaesus"), povertyOutput(output_data, i18n)),
+                tabPanel(i18n$t("Vaesus"), povertyOutput(output_data, isolate(input$year), i18n)),
                 tabPanel(i18n$t("Maksud ja toetused"), taxesAndBenefitsOutput(output_data, i18n)))
 
   })

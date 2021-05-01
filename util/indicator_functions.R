@@ -187,14 +187,14 @@ get_poverty_rows <- function(hh_name, orig_abs_value, orig_rel_value, keyword, d
   
   # TODO: dynamically for each scenario
   # 2018
-  result[result$Scenario == "2018" ,"AbsolutePoverty"] <- absolute_poverty_rate(ABSOLUTE_POVERTY_LINE, data, household=keyword)
-  result[result$Scenario == "2018" ,"RelativePoverty"] <- relative_poverty_rate(relative_poverty_line, data, household=keyword)
+  result[result$Scenario == observables[2] ,"AbsolutePoverty"] <- absolute_poverty_rate(ABSOLUTE_POVERTY_LINE, data, household=keyword)
+  result[result$Scenario == observables[2] ,"RelativePoverty"] <- relative_poverty_rate(relative_poverty_line, data, household=keyword)
 
   return(result)
 } 
 
-poverty_rates_by_hh <- function(data, relative_poverty_line, i18n) {
-  observables <- c("orig","2018")
+poverty_rates_by_hh <- function(data, relative_poverty_line, year, i18n) {
+  observables <- c("orig",year)
 
   single_man_rows <- get_poverty_rows(i18n$t("Üksik mees"), ABSOLUTE_POVERTY_RATE_SINGLE_MAN, RELATIVE_POVERTY_RATE_SINGLE_MAN, "single_man", data, observables, relative_poverty_line)
   single_woman_rows <- get_poverty_rows(i18n$t("Üksik naine"), ABSOLUTE_POVERTY_RATE_SINGLE_WOMAN, RELATIVE_POVERTY_RATE_SINGLE_WOMAN, "single_woman", data, observables, relative_poverty_line)
@@ -205,7 +205,7 @@ poverty_rates_by_hh <- function(data, relative_poverty_line, i18n) {
   couple_many_children_rows <- get_poverty_rows(i18n$t("Kolme ja enama lapsega paar"), ABSOLUTE_POVERTY_RATE_COUPLE_MANY_CHILDREN, RELATIVE_POVERTY_RATE_COUPLE_MANY_CHILDREN, "couple_many_children", data, observables, relative_poverty_line)
   
   result <- rbind(single_man_rows, single_woman_rows, single_parent_rows, couple_no_children_rows, couple_one_child_rows, couple_two_children_rows, couple_many_children_rows)
-  result$Scenario <- factor(result$Scenario,levels = observables, labels = c(paste(i18n$t("Tegelik"), "2018"),paste(i18n$t("Ennustatud"), "2018")), ordered = TRUE)
+  result$Scenario <- factor(result$Scenario,levels = observables, labels = c(paste(i18n$t("Tegelik"), year),paste(i18n$t("Ennustatud"), year)), ordered = TRUE)
   
   return(result)
 }
