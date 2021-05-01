@@ -8,6 +8,8 @@ formatMoney <- function(value) {
 taxesAndBenefitsOutput <- function(output_data, i18n) {
   renderUI({
     
+    # Taxes
+    
     new_social_tax <- get_social_taxes_paid(output_data)
     social_tax_change <- percentageChange(SOCIAL_TAX_PAID, new_social_tax)
     new_income_tax <- get_income_taxes_paid(output_data)
@@ -21,6 +23,8 @@ taxesAndBenefitsOutput <- function(output_data, i18n) {
                                          formatPercentageChange(income_tax_change),
                                          formatPercentageChange(total_tax_change)))
     names(taxes_table) <- c(i18n$t("Maks"), i18n$t("Tegelik maksutulu"), i18n$t("Ennustatav maksutulu"), i18n$t("Muutus"))
+    
+    # Benefits
     
     new_subsistence_benefits <- get_subsistence_benefit_received(output_data)
     subsistence_benefit_change <- percentageChange(SUBSISTENCE_BENEFIT_RECEIVED, new_subsistence_benefits)
@@ -36,18 +40,34 @@ taxesAndBenefitsOutput <- function(output_data, i18n) {
                                          formatPercentageChange(total_benefits_change)))
     names(benefits_table) <- c(i18n$t("Toetus"), i18n$t("Tegelik kulu"), i18n$t("Ennustatav kulu"), i18n$t("Muutus"))
     
+    # Pay
+    
+    new_private_pay_expense <- get_private_pay_expense(output_data)
+    private_pay_change <- percentageChange(PRIVATE_PAY_EXPENSE, new_private_pay_expense)
+    new_public_pay_expense <- get_public_pay_expense(output_data)
+    public_pay_change <- percentageChange(PUBLIC_PAY_EXPENSE, new_public_pay_expense)
+    new_all_pay <- new_private_pay_expense + new_public_pay_expense
+    total_pay_change <- percentageChange(PRIVATE_PAY_EXPENSE + PUBLIC_PAY_EXPENSE, new_all_pay)
+
+    pay_expense_table <- data.frame("Sektor"=c(i18n$t("Avalik sektor"), i18n$t("Erasektor"), i18n$t("Kokku")), 
+                                 "Tegelik palgakulu" = c(formatMoney(PUBLIC_PAY_EXPENSE), formatMoney(PRIVATE_PAY_EXPENSE), formatMoney(PRIVATE_PAY_EXPENSE + PUBLIC_PAY_EXPENSE)), 
+                                 "Ennustatav palgakulu" = c(formatMoney(new_public_pay_expense), formatMoney(new_private_pay_expense), formatMoney(new_all_pay)),
+                                 "Muutus"=c(formatPercentageChange(public_pay_change),
+                                            formatPercentageChange(private_pay_change),
+                                            formatPercentageChange(total_pay_change)))
+    names(pay_expense_table) <- c(i18n$t("Sektor"), i18n$t("Tegelik palgakulu"), i18n$t("Ennustatav palgakulu"), i18n$t("Muutus"))
+    
+    
     div(
       br(),
       h4(i18n$t("Riigi tööjõumaksutulu ja kulutused toetustele")),
+      br(),
       fluidRow(
         column(8,
                strong(i18n$t("Laekuvad tööjõumaksud"))
         ),
         column(4, align="center",
-               div(id = "actualValue", formatPercentageChange(total_tax_change), changeArrow(total_tax_change)),
-               bsTooltip(id = "actualValue", title = i18n$t("Tegelik väärtus"),
-                         placement = "top", trigger = "hover"),
-              
+               div(id = "actualValue", formatPercentageChange(total_tax_change), changeArrow(total_tax_change))
         )
       ),
       br(),
@@ -57,16 +77,12 @@ taxesAndBenefitsOutput <- function(output_data, i18n) {
         ),
       ),
       br(),
-     
       fluidRow(
         column(8,
                strong(i18n$t("Väljamakstavad toetused"))
         ),
         column(4, align="center",
-               div(id = "actualValue",formatPercentageChange(total_benefits_change), changeArrow(total_benefits_change)),
-               bsTooltip(id = "actualValue", title = i18n$t("Tegelik väärtus"),
-                         placement = "top", trigger = "hover"),
-               
+               div(id = "actualValue",formatPercentageChange(total_benefits_change), changeArrow(total_benefits_change))
         )
       ),
       br(),
@@ -75,6 +91,29 @@ taxesAndBenefitsOutput <- function(output_data, i18n) {
                renderTable(benefits_table, width="100%", striped=TRUE)
         ),
       ),
+      br(),
+      br(),
+      h4(i18n$t("Ettevõtete kulutused")),
+      br(),
+      fluidRow(
+        column(8,
+               strong(i18n$t("Palgakulu ettevõtetele"))
+        ),
+        column(4, align="center",
+               div(id = "actualValue",formatPercentageChange(total_pay_change), changeArrow(total_pay_change)),
+               
+        )
+      ),
+      br(),
+      fluidRow(
+        column(11,
+               renderTable(pay_expense_table, width="100%", striped=TRUE)
+        ),
+      ),
+      br(),
+      br(),
+      strong(i18n$t("Selgitused")),
+      p(i18n$t("Kõik arvud on näidatud keskmiselt ühe kuu kohta."))
     )
     
   })

@@ -71,17 +71,17 @@ povertyOutput <- function(output_data, i18n) {
       br(),
       fluidRow(
         column(11, align="center",
-          renderPlot(
-            newggslopegraph(dataframe = hh_poverty_rates,
-                            Times = Scenario,
-                            Measurement = AbsolutePoverty,
-                            Grouping = Household,
-                            Title = i18n$t("Absoluutse vaesuse määra muutus"),
-                            SubTitle = i18n$t("Leibkondade kaupa"),
-                            YTextSize = 4,
-                            DataTextSize = 4,
-                            Caption=NULL)
-          ),
+               renderPlot(
+                 newggslopegraph(dataframe = hh_poverty_rates,
+                                 Times = Scenario,
+                                 Measurement = RelativePoverty,
+                                 Grouping = Household,
+                                 Title = i18n$t("Suhtelise vaesuse määra muutus"),
+                                 SubTitle = i18n$t("Leibkondade kaupa"),
+                                 YTextSize = 4,
+                                 DataTextSize = 4,
+                                 Caption=NULL)
+               ),
         ),
       ),
       br(),
@@ -90,9 +90,9 @@ povertyOutput <- function(output_data, i18n) {
           renderPlot(
             newggslopegraph(dataframe = hh_poverty_rates,
                             Times = Scenario,
-                            Measurement = RelativePoverty,
+                            Measurement = AbsolutePoverty,
                             Grouping = Household,
-                            Title = i18n$t("Suhtelise vaesuse määra muutus"),
+                            Title = i18n$t("Absoluutse vaesuse määra muutus"),
                             SubTitle = i18n$t("Leibkondade kaupa"),
                             YTextSize = 4,
                             DataTextSize = 4,

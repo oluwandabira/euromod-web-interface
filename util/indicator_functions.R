@@ -204,14 +204,6 @@ poverty_rates_by_hh <- function(data, relative_poverty_line, i18n) {
   couple_two_children_rows <- get_poverty_rows(i18n$t("Kahe lapsega paar"), ABSOLUTE_POVERTY_RATE_COUPLE_TWO_CHILDREN, RELATIVE_POVERTY_RATE_COUPLE_TWO_CHILDREN, "couple_two_children", data, observables, relative_poverty_line)
   couple_many_children_rows <- get_poverty_rows(i18n$t("Kolme ja enama lapsega paar"), ABSOLUTE_POVERTY_RATE_COUPLE_MANY_CHILDREN, RELATIVE_POVERTY_RATE_COUPLE_MANY_CHILDREN, "couple_many_children", data, observables, relative_poverty_line)
   
-  # single_man_rows <- get_poverty_rows(i18n$t("Üksik mees"), ABSOLUTE_POVERTY_RATE_2018_SINGLE_MAN, RELATIVE_POVERTY_RATE_2018_SINGLE_MAN, "single_man", data, observables, relative_poverty_line)
-  # single_woman_rows <- get_poverty_rows(i18n$t("Üksik naine"), ABSOLUTE_POVERTY_RATE_2018_SINGLE_WOMAN, RELATIVE_POVERTY_RATE_2018_SINGLE_WOMAN, "single_woman", data, observables, relative_poverty_line)
-  # single_parent_rows <- get_poverty_rows(i18n$t("Üksikvanem"), ABSOLUTE_POVERTY_RATE_2018_SINGLE_PARENT, RELATIVE_POVERTY_RATE_2018_SINGLE_PARENT, "single_parent", data, observables, relative_poverty_line)
-  # couple_no_children_rows <- get_poverty_rows(i18n$t("Lasteta paar"), ABSOLUTE_POVERTY_RATE_2018_CHILDLESS_COUPLE, RELATIVE_POVERTY_RATE_2018_CHILDLESS_COUPLE, "couple_no_children", data, observables, relative_poverty_line)
-  # couple_one_child_rows <- get_poverty_rows(i18n$t("Ühe lapsega paar"), ABSOLUTE_POVERTY_RATE_2018_COUPLE_ONE_CHILD, RELATIVE_POVERTY_RATE_2018_COUPLE_ONE_CHILD, "couple_one_child", data, observables, relative_poverty_line)
-  # couple_two_children_rows <- get_poverty_rows(i18n$t("Kahe lapsega paar"), ABSOLUTE_POVERTY_RATE_2018_COUPLE_TWO_CHILDREN, RELATIVE_POVERTY_RATE_2018_COUPLE_TWO_CHILDREN, "couple_two_children", data, observables, relative_poverty_line)
-  # couple_many_children_rows <- get_poverty_rows(i18n$t("Kolme ja enama lapsega paar"), ABSOLUTE_POVERTY_RATE_2018_COUPLE_MANY_CHILDREN, RELATIVE_POVERTY_RATE_2018_COUPLE_MANY_CHILDREN, "couple_many_children", data, observables, relative_poverty_line)
-  # 
   result <- rbind(single_man_rows, single_woman_rows, single_parent_rows, couple_no_children_rows, couple_one_child_rows, couple_two_children_rows, couple_many_children_rows)
   result$Scenario <- factor(result$Scenario,levels = observables, labels = c(paste(i18n$t("Tegelik"), "2018"),paste(i18n$t("Ennustatud"), "2018")), ordered = TRUE)
   
@@ -266,4 +258,27 @@ get_benefits_received <- function(data) {
   
 }
 
+get_private_pay_expense <- function(data) {
+  # EUROMOD calculated variables:
+  # ils_sicer
+  subset <- data[data$lcs == 0, ]
+  subset$ils_sicer <- as.numeric(sub(",",".",subset$ils_sicer, fixed=TRUE))
+  subset$yem <- as.numeric(sub(",",".",subset$yem, fixed=TRUE))
+  subset$dwt <- as.numeric(sub(",",".",subset$dwt, fixed=TRUE))
+  total_pay <- subset$ils_sicer + subset$yem
+  weighted <- total_pay*subset$dwt
+  return(sum(weighted))
+}
+
+get_public_pay_expense <- function(data) {
+  # EUROMOD calculated variables:
+  # ils_sicer
+  subset <- data[data$lcs == 1, ]
+  subset$ils_sicer <- as.numeric(sub(",",".",subset$ils_sicer, fixed=TRUE))
+  subset$yem <- as.numeric(sub(",",".",subset$yem, fixed=TRUE))
+  subset$dwt <- as.numeric(sub(",",".",subset$dwt, fixed=TRUE))
+  total_pay <- subset$ils_sicer + subset$yem
+  weighted <- total_pay*subset$dwt
+  return(sum(weighted))
+}
 

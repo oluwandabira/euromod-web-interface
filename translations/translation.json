@@ -220,6 +220,42 @@
 	  {
 		  "ee": "Miinimumpalga tõusu mõju palgalõhele",
 		  "en": "Impact of the increase in the minimum wage on the pay gap"
+	  },
+	  {
+		  "ee": "Selgitused",
+		  "en": "Explanations"
+	  },
+	  {
+		  "ee": "Kõik arvud on näidatud keskmiselt ühe kuu kohta.",
+		  "en": "All values show the amount on average per one month."
+	  },
+	  {
+		  "ee": "Ettevõtete kulutused",
+		  "en": "Expenses for companies"
+	  },
+	  {
+		  "ee": "Palgakulu ettevõtetele",
+		  "en": "Expenses on pay "
+	  },
+	  {
+		  "ee": "Sektor",
+		  "en": "Sector"
+	  },
+	  {
+		  "ee": "Tegelik palgakulu",
+		  "en": "Actual expenses on pay"
+	  },
+	  {
+		  "ee": "Ennustatav palgakulu",
+		  "en": "Predicted expenses on pay"
+	  },
+	  {
+		  "ee": "Avalik sektor",
+		  "en": "Public sector"
+	  },
+	  {
+		  "ee": "Erasektor",
+		  "en": "Private sector"
 	  }
     ]
 }
