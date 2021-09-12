@@ -5,9 +5,6 @@ library(plotly)
 library(shinyBS) # Additional Bootstrap Controls
 library(shiny.i18n)
 
-#project_folder <- "C:/Users/kr1stine/git/euromod-web-interface"
-#setwd(project_folder)
-
 i18n <- Translator$new(translation_json_path='translations/translation.json')
 i18n$set_translation_language("ee")
 
@@ -95,10 +92,10 @@ ui <- shinyUI(
   fluidPage(
     shiny.i18n::usei18n(i18n),
     titlePanel(i18n$t("Miinimumpalga tõusu mõju palgalõhele")),
-    
+
     fluidRow(
       column(2,offset=10,
-             selectInput("language", label= NULL, 
+             selectInput("language", label= NULL,
                          choices = list("Eesti keel" = "ee",
                                         "In English" = "en"),
                          selected = i18n$get_key_translation())
@@ -119,14 +116,14 @@ ui <- shinyUI(
                       "2017" = "2017")),
         actionButton("run", i18n$t("Arvuta"))
       ),
-      
+
       mainPanel(
         conditionalPanel(condition = "output.setupComplete",
-                         uiOutput(outputId="simulationResults"),
+                         uiOutput(outputId="simulationResults")
         ),
         conditionalPanel(condition = "!output.setupComplete",
                          h4(i18n$t("Palun oota, arvutan...")))
-        
+
       )
     )
   )
