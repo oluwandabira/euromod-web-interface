@@ -1,4 +1,4 @@
-source("components\\index.R")
+source("components/index.R")
 #source("translate.R")
 
 genderWageGapOutput <- function(output_data, i18n) {

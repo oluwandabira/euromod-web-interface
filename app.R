@@ -8,22 +8,22 @@ library(shiny.i18n)
 i18n <- Translator$new(translation_json_path='translations/translation.json')
 i18n$set_translation_language("ee")
 
-source("util\\indicator_functions.R")
-source("util\\create_input_files.R") 
-source("util\\helpers.R") 
-source("views\\gender_pay_gap_tab.R", encoding="utf-8")
-source("views\\poverty_tab.R", encoding="utf-8")
-source("views\\taxes_and_benefits_tab.R ", encoding="utf-8")
+source("util/indicator_functions.R")
+source("util/create_input_files.R") 
+source("util/helpers.R") 
+source("views/gender_pay_gap_tab.R", encoding="utf-8")
+source("views/poverty_tab.R", encoding="utf-8")
+source("views/taxes_and_benefits_tab.R", encoding="utf-8")
 
 
 runSimulation <- function(newMinWage, year) {
   # Create new input file and config
-  source(paste("util\\const_", year, ".R", sep=""))
+  source(paste("util/const_", year, ".R", sep=""))
   
   createInputData(newMinWage, year)
   systemName <- getSystemName(year)
   inputFileName <- getInputFileName(year)
-  command <- paste('euromod\\EUROMOD\\Executable\\EM_ExecutableCaller.exe  "C:\\Users\\kr1stine\\git\\euromod-web-interface\\euromod\\EUROMOD_WEB" ',
+  command <- paste('euromod/EUROMOD/Executable/EM_ExecutableCaller.exe  "C:/Users/kr1stine/git/euromod-web-interface/euromod/EUROMOD_WEB" ',
                    systemName,
                    tools::file_path_sans_ext(inputFileName)
                    )
