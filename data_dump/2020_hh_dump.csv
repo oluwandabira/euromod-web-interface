@@ -1,0 +1,2101 @@
+,household,scenario,absolute poverty,relative poverty,year,minwage
+1,üksik mees,Tegelik 2020,5.47,32.99,2020,585
+2,üksik mees,Ennustatud 2020,5.47,32.99,2020,585
+3,üksik naine,Tegelik 2020,1.35,21.29,2020,585
+4,üksik naine,Ennustatud 2020,1.35,21.29,2020,585
+5,üksikvanem,Tegelik 2020,0,29.34,2020,585
+6,üksikvanem,Ennustatud 2020,0,29.34,2020,585
+7,Lasteta paar,Tegelik 2020,0.26,9.21,2020,585
+8,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,585
+9,ühe lapsega paar,Tegelik 2020,0,7.3,2020,585
+10,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,585
+11,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,585
+12,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,585
+13,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,585
+14,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,585
+15,üksik mees,Tegelik 2020,5.47,32.99,2020,586
+16,üksik mees,Ennustatud 2020,5.47,32.99,2020,586
+17,üksik naine,Tegelik 2020,1.35,21.29,2020,586
+18,üksik naine,Ennustatud 2020,1.35,21.29,2020,586
+19,üksikvanem,Tegelik 2020,0,29.34,2020,586
+20,üksikvanem,Ennustatud 2020,0,29.34,2020,586
+21,Lasteta paar,Tegelik 2020,0.26,9.21,2020,586
+22,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,586
+23,ühe lapsega paar,Tegelik 2020,0,7.3,2020,586
+24,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,586
+25,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,586
+26,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,586
+27,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,586
+28,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,586
+29,üksik mees,Tegelik 2020,5.47,32.99,2020,587
+30,üksik mees,Ennustatud 2020,5.47,32.99,2020,587
+31,üksik naine,Tegelik 2020,1.35,21.29,2020,587
+32,üksik naine,Ennustatud 2020,1.35,21.29,2020,587
+33,üksikvanem,Tegelik 2020,0,29.34,2020,587
+34,üksikvanem,Ennustatud 2020,0,29.34,2020,587
+35,Lasteta paar,Tegelik 2020,0.26,9.21,2020,587
+36,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,587
+37,ühe lapsega paar,Tegelik 2020,0,7.3,2020,587
+38,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,587
+39,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,587
+40,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,587
+41,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,587
+42,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,587
+43,üksik mees,Tegelik 2020,5.47,32.99,2020,588
+44,üksik mees,Ennustatud 2020,5.47,32.99,2020,588
+45,üksik naine,Tegelik 2020,1.35,21.29,2020,588
+46,üksik naine,Ennustatud 2020,1.35,21.29,2020,588
+47,üksikvanem,Tegelik 2020,0,29.34,2020,588
+48,üksikvanem,Ennustatud 2020,0,29.34,2020,588
+49,Lasteta paar,Tegelik 2020,0.26,9.21,2020,588
+50,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,588
+51,ühe lapsega paar,Tegelik 2020,0,7.3,2020,588
+52,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,588
+53,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,588
+54,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,588
+55,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,588
+56,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,588
+57,üksik mees,Tegelik 2020,5.47,32.99,2020,589
+58,üksik mees,Ennustatud 2020,5.47,32.99,2020,589
+59,üksik naine,Tegelik 2020,1.35,21.29,2020,589
+60,üksik naine,Ennustatud 2020,1.35,21.29,2020,589
+61,üksikvanem,Tegelik 2020,0,29.34,2020,589
+62,üksikvanem,Ennustatud 2020,0,29.34,2020,589
+63,Lasteta paar,Tegelik 2020,0.26,9.21,2020,589
+64,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,589
+65,ühe lapsega paar,Tegelik 2020,0,7.3,2020,589
+66,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,589
+67,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,589
+68,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,589
+69,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,589
+70,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,589
+71,üksik mees,Tegelik 2020,5.47,32.99,2020,590
+72,üksik mees,Ennustatud 2020,5.47,32.99,2020,590
+73,üksik naine,Tegelik 2020,1.35,21.29,2020,590
+74,üksik naine,Ennustatud 2020,1.35,21.29,2020,590
+75,üksikvanem,Tegelik 2020,0,29.34,2020,590
+76,üksikvanem,Ennustatud 2020,0,29.34,2020,590
+77,Lasteta paar,Tegelik 2020,0.26,9.21,2020,590
+78,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,590
+79,ühe lapsega paar,Tegelik 2020,0,7.3,2020,590
+80,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,590
+81,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,590
+82,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,590
+83,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,590
+84,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,590
+85,üksik mees,Tegelik 2020,5.47,32.99,2020,591
+86,üksik mees,Ennustatud 2020,5.47,32.99,2020,591
+87,üksik naine,Tegelik 2020,1.35,21.29,2020,591
+88,üksik naine,Ennustatud 2020,1.35,21.29,2020,591
+89,üksikvanem,Tegelik 2020,0,29.34,2020,591
+90,üksikvanem,Ennustatud 2020,0,29.34,2020,591
+91,Lasteta paar,Tegelik 2020,0.26,9.21,2020,591
+92,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,591
+93,ühe lapsega paar,Tegelik 2020,0,7.3,2020,591
+94,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,591
+95,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,591
+96,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,591
+97,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,591
+98,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,591
+99,üksik mees,Tegelik 2020,5.47,32.99,2020,592
+100,üksik mees,Ennustatud 2020,5.47,32.99,2020,592
+101,üksik naine,Tegelik 2020,1.35,21.29,2020,592
+102,üksik naine,Ennustatud 2020,1.35,21.29,2020,592
+103,üksikvanem,Tegelik 2020,0,29.34,2020,592
+104,üksikvanem,Ennustatud 2020,0,29.34,2020,592
+105,Lasteta paar,Tegelik 2020,0.26,9.21,2020,592
+106,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,592
+107,ühe lapsega paar,Tegelik 2020,0,7.3,2020,592
+108,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,592
+109,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,592
+110,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,592
+111,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,592
+112,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,592
+113,üksik mees,Tegelik 2020,5.47,32.99,2020,593
+114,üksik mees,Ennustatud 2020,5.47,32.99,2020,593
+115,üksik naine,Tegelik 2020,1.35,21.29,2020,593
+116,üksik naine,Ennustatud 2020,1.35,21.29,2020,593
+117,üksikvanem,Tegelik 2020,0,29.34,2020,593
+118,üksikvanem,Ennustatud 2020,0,29.34,2020,593
+119,Lasteta paar,Tegelik 2020,0.26,9.21,2020,593
+120,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,593
+121,ühe lapsega paar,Tegelik 2020,0,7.3,2020,593
+122,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,593
+123,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,593
+124,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,593
+125,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,593
+126,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,593
+127,üksik mees,Tegelik 2020,5.47,32.99,2020,594
+128,üksik mees,Ennustatud 2020,5.47,32.99,2020,594
+129,üksik naine,Tegelik 2020,1.35,21.29,2020,594
+130,üksik naine,Ennustatud 2020,1.35,21.29,2020,594
+131,üksikvanem,Tegelik 2020,0,29.34,2020,594
+132,üksikvanem,Ennustatud 2020,0,29.62,2020,594
+133,Lasteta paar,Tegelik 2020,0.26,9.21,2020,594
+134,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,594
+135,ühe lapsega paar,Tegelik 2020,0,7.3,2020,594
+136,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,594
+137,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,594
+138,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,594
+139,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,594
+140,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,594
+141,üksik mees,Tegelik 2020,5.47,32.99,2020,595
+142,üksik mees,Ennustatud 2020,5.47,32.99,2020,595
+143,üksik naine,Tegelik 2020,1.35,21.29,2020,595
+144,üksik naine,Ennustatud 2020,1.35,21.29,2020,595
+145,üksikvanem,Tegelik 2020,0,29.34,2020,595
+146,üksikvanem,Ennustatud 2020,0,29.62,2020,595
+147,Lasteta paar,Tegelik 2020,0.26,9.21,2020,595
+148,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,595
+149,ühe lapsega paar,Tegelik 2020,0,7.3,2020,595
+150,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,595
+151,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,595
+152,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,595
+153,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,595
+154,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,595
+155,üksik mees,Tegelik 2020,5.47,32.99,2020,596
+156,üksik mees,Ennustatud 2020,5.47,32.99,2020,596
+157,üksik naine,Tegelik 2020,1.35,21.29,2020,596
+158,üksik naine,Ennustatud 2020,1.35,21.29,2020,596
+159,üksikvanem,Tegelik 2020,0,29.34,2020,596
+160,üksikvanem,Ennustatud 2020,0,28.63,2020,596
+161,Lasteta paar,Tegelik 2020,0.26,9.21,2020,596
+162,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,596
+163,ühe lapsega paar,Tegelik 2020,0,7.3,2020,596
+164,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,596
+165,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,596
+166,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,596
+167,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,596
+168,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,596
+169,üksik mees,Tegelik 2020,5.47,32.99,2020,597
+170,üksik mees,Ennustatud 2020,5.47,32.99,2020,597
+171,üksik naine,Tegelik 2020,1.35,21.29,2020,597
+172,üksik naine,Ennustatud 2020,1.35,21.29,2020,597
+173,üksikvanem,Tegelik 2020,0,29.34,2020,597
+174,üksikvanem,Ennustatud 2020,0,28.76,2020,597
+175,Lasteta paar,Tegelik 2020,0.26,9.21,2020,597
+176,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,597
+177,ühe lapsega paar,Tegelik 2020,0,7.3,2020,597
+178,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,597
+179,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,597
+180,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,597
+181,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,597
+182,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,597
+183,üksik mees,Tegelik 2020,5.47,32.99,2020,598
+184,üksik mees,Ennustatud 2020,5.47,32.99,2020,598
+185,üksik naine,Tegelik 2020,1.35,21.29,2020,598
+186,üksik naine,Ennustatud 2020,1.35,21.29,2020,598
+187,üksikvanem,Tegelik 2020,0,29.34,2020,598
+188,üksikvanem,Ennustatud 2020,0,28.76,2020,598
+189,Lasteta paar,Tegelik 2020,0.26,9.21,2020,598
+190,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,598
+191,ühe lapsega paar,Tegelik 2020,0,7.3,2020,598
+192,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,598
+193,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,598
+194,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,598
+195,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,598
+196,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,598
+197,üksik mees,Tegelik 2020,5.47,32.99,2020,599
+198,üksik mees,Ennustatud 2020,5.47,32.99,2020,599
+199,üksik naine,Tegelik 2020,1.35,21.29,2020,599
+200,üksik naine,Ennustatud 2020,1.35,21.29,2020,599
+201,üksikvanem,Tegelik 2020,0,29.34,2020,599
+202,üksikvanem,Ennustatud 2020,0,28.38,2020,599
+203,Lasteta paar,Tegelik 2020,0.26,9.21,2020,599
+204,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,599
+205,ühe lapsega paar,Tegelik 2020,0,7.3,2020,599
+206,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,599
+207,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,599
+208,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,599
+209,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,599
+210,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,599
+211,üksik mees,Tegelik 2020,5.47,32.99,2020,600
+212,üksik mees,Ennustatud 2020,5.47,32.99,2020,600
+213,üksik naine,Tegelik 2020,1.35,21.29,2020,600
+214,üksik naine,Ennustatud 2020,1.35,21.29,2020,600
+215,üksikvanem,Tegelik 2020,0,29.34,2020,600
+216,üksikvanem,Ennustatud 2020,0,28.38,2020,600
+217,Lasteta paar,Tegelik 2020,0.26,9.21,2020,600
+218,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,600
+219,ühe lapsega paar,Tegelik 2020,0,7.3,2020,600
+220,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,600
+221,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,600
+222,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,600
+223,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,600
+224,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,600
+225,üksik mees,Tegelik 2020,5.47,32.99,2020,601
+226,üksik mees,Ennustatud 2020,5.47,32.99,2020,601
+227,üksik naine,Tegelik 2020,1.35,21.29,2020,601
+228,üksik naine,Ennustatud 2020,1.35,21.29,2020,601
+229,üksikvanem,Tegelik 2020,0,29.34,2020,601
+230,üksikvanem,Ennustatud 2020,0,28.38,2020,601
+231,Lasteta paar,Tegelik 2020,0.26,9.21,2020,601
+232,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,601
+233,ühe lapsega paar,Tegelik 2020,0,7.3,2020,601
+234,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,601
+235,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,601
+236,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,601
+237,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,601
+238,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,601
+239,üksik mees,Tegelik 2020,5.47,32.99,2020,602
+240,üksik mees,Ennustatud 2020,5.47,32.99,2020,602
+241,üksik naine,Tegelik 2020,1.35,21.29,2020,602
+242,üksik naine,Ennustatud 2020,1.35,21.29,2020,602
+243,üksikvanem,Tegelik 2020,0,29.34,2020,602
+244,üksikvanem,Ennustatud 2020,0,28.38,2020,602
+245,Lasteta paar,Tegelik 2020,0.26,9.21,2020,602
+246,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,602
+247,ühe lapsega paar,Tegelik 2020,0,7.3,2020,602
+248,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,602
+249,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,602
+250,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,602
+251,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,602
+252,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,602
+253,üksik mees,Tegelik 2020,5.47,32.99,2020,603
+254,üksik mees,Ennustatud 2020,5.47,32.99,2020,603
+255,üksik naine,Tegelik 2020,1.35,21.29,2020,603
+256,üksik naine,Ennustatud 2020,1.35,21.29,2020,603
+257,üksikvanem,Tegelik 2020,0,29.34,2020,603
+258,üksikvanem,Ennustatud 2020,0,28.38,2020,603
+259,Lasteta paar,Tegelik 2020,0.26,9.21,2020,603
+260,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,603
+261,ühe lapsega paar,Tegelik 2020,0,7.3,2020,603
+262,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,603
+263,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,603
+264,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,603
+265,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,603
+266,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,603
+267,üksik mees,Tegelik 2020,5.47,32.99,2020,604
+268,üksik mees,Ennustatud 2020,5.47,32.99,2020,604
+269,üksik naine,Tegelik 2020,1.35,21.29,2020,604
+270,üksik naine,Ennustatud 2020,1.35,21.29,2020,604
+271,üksikvanem,Tegelik 2020,0,29.34,2020,604
+272,üksikvanem,Ennustatud 2020,0,28.38,2020,604
+273,Lasteta paar,Tegelik 2020,0.26,9.21,2020,604
+274,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,604
+275,ühe lapsega paar,Tegelik 2020,0,7.3,2020,604
+276,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,604
+277,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,604
+278,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,604
+279,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,604
+280,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,604
+281,üksik mees,Tegelik 2020,5.47,32.99,2020,605
+282,üksik mees,Ennustatud 2020,5.47,32.99,2020,605
+283,üksik naine,Tegelik 2020,1.35,21.29,2020,605
+284,üksik naine,Ennustatud 2020,1.35,21.29,2020,605
+285,üksikvanem,Tegelik 2020,0,29.34,2020,605
+286,üksikvanem,Ennustatud 2020,0,28.38,2020,605
+287,Lasteta paar,Tegelik 2020,0.26,9.21,2020,605
+288,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,605
+289,ühe lapsega paar,Tegelik 2020,0,7.3,2020,605
+290,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,605
+291,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,605
+292,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,605
+293,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,605
+294,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,605
+295,üksik mees,Tegelik 2020,5.47,32.99,2020,606
+296,üksik mees,Ennustatud 2020,5.47,32.99,2020,606
+297,üksik naine,Tegelik 2020,1.35,21.29,2020,606
+298,üksik naine,Ennustatud 2020,1.35,21.29,2020,606
+299,üksikvanem,Tegelik 2020,0,29.34,2020,606
+300,üksikvanem,Ennustatud 2020,0,28.38,2020,606
+301,Lasteta paar,Tegelik 2020,0.26,9.21,2020,606
+302,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,606
+303,ühe lapsega paar,Tegelik 2020,0,7.3,2020,606
+304,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,606
+305,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,606
+306,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,606
+307,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,606
+308,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,606
+309,üksik mees,Tegelik 2020,5.47,32.99,2020,607
+310,üksik mees,Ennustatud 2020,5.47,32.99,2020,607
+311,üksik naine,Tegelik 2020,1.35,21.29,2020,607
+312,üksik naine,Ennustatud 2020,1.35,21.29,2020,607
+313,üksikvanem,Tegelik 2020,0,29.34,2020,607
+314,üksikvanem,Ennustatud 2020,0,28.38,2020,607
+315,Lasteta paar,Tegelik 2020,0.26,9.21,2020,607
+316,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,607
+317,ühe lapsega paar,Tegelik 2020,0,7.3,2020,607
+318,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,607
+319,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,607
+320,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,607
+321,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,607
+322,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,607
+323,üksik mees,Tegelik 2020,5.47,32.99,2020,608
+324,üksik mees,Ennustatud 2020,5.47,32.99,2020,608
+325,üksik naine,Tegelik 2020,1.35,21.29,2020,608
+326,üksik naine,Ennustatud 2020,1.35,21.29,2020,608
+327,üksikvanem,Tegelik 2020,0,29.34,2020,608
+328,üksikvanem,Ennustatud 2020,0,28.38,2020,608
+329,Lasteta paar,Tegelik 2020,0.26,9.21,2020,608
+330,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,608
+331,ühe lapsega paar,Tegelik 2020,0,7.3,2020,608
+332,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,608
+333,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,608
+334,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,608
+335,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,608
+336,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,608
+337,üksik mees,Tegelik 2020,5.47,32.99,2020,609
+338,üksik mees,Ennustatud 2020,5.47,32.99,2020,609
+339,üksik naine,Tegelik 2020,1.35,21.29,2020,609
+340,üksik naine,Ennustatud 2020,1.35,21.29,2020,609
+341,üksikvanem,Tegelik 2020,0,29.34,2020,609
+342,üksikvanem,Ennustatud 2020,0,28.38,2020,609
+343,Lasteta paar,Tegelik 2020,0.26,9.21,2020,609
+344,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,609
+345,ühe lapsega paar,Tegelik 2020,0,7.3,2020,609
+346,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,609
+347,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,609
+348,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,609
+349,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,609
+350,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,609
+351,üksik mees,Tegelik 2020,5.47,32.99,2020,610
+352,üksik mees,Ennustatud 2020,5.47,32.99,2020,610
+353,üksik naine,Tegelik 2020,1.35,21.29,2020,610
+354,üksik naine,Ennustatud 2020,1.35,21.29,2020,610
+355,üksikvanem,Tegelik 2020,0,29.34,2020,610
+356,üksikvanem,Ennustatud 2020,0,28.38,2020,610
+357,Lasteta paar,Tegelik 2020,0.26,9.21,2020,610
+358,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,610
+359,ühe lapsega paar,Tegelik 2020,0,7.3,2020,610
+360,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,610
+361,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,610
+362,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,610
+363,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,610
+364,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,610
+365,üksik mees,Tegelik 2020,5.47,32.99,2020,611
+366,üksik mees,Ennustatud 2020,5.47,32.99,2020,611
+367,üksik naine,Tegelik 2020,1.35,21.29,2020,611
+368,üksik naine,Ennustatud 2020,1.35,21.29,2020,611
+369,üksikvanem,Tegelik 2020,0,29.34,2020,611
+370,üksikvanem,Ennustatud 2020,0,28.38,2020,611
+371,Lasteta paar,Tegelik 2020,0.26,9.21,2020,611
+372,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,611
+373,ühe lapsega paar,Tegelik 2020,0,7.3,2020,611
+374,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,611
+375,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,611
+376,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,611
+377,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,611
+378,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,611
+379,üksik mees,Tegelik 2020,5.47,32.99,2020,612
+380,üksik mees,Ennustatud 2020,5.47,32.99,2020,612
+381,üksik naine,Tegelik 2020,1.35,21.29,2020,612
+382,üksik naine,Ennustatud 2020,1.35,21.29,2020,612
+383,üksikvanem,Tegelik 2020,0,29.34,2020,612
+384,üksikvanem,Ennustatud 2020,0,28.38,2020,612
+385,Lasteta paar,Tegelik 2020,0.26,9.21,2020,612
+386,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,612
+387,ühe lapsega paar,Tegelik 2020,0,7.3,2020,612
+388,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,612
+389,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,612
+390,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,612
+391,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,612
+392,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,612
+393,üksik mees,Tegelik 2020,5.47,32.99,2020,613
+394,üksik mees,Ennustatud 2020,5.47,32.99,2020,613
+395,üksik naine,Tegelik 2020,1.35,21.29,2020,613
+396,üksik naine,Ennustatud 2020,1.35,21.29,2020,613
+397,üksikvanem,Tegelik 2020,0,29.34,2020,613
+398,üksikvanem,Ennustatud 2020,0,28.38,2020,613
+399,Lasteta paar,Tegelik 2020,0.26,9.21,2020,613
+400,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,613
+401,ühe lapsega paar,Tegelik 2020,0,7.3,2020,613
+402,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,613
+403,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,613
+404,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,613
+405,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,613
+406,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,613
+407,üksik mees,Tegelik 2020,5.47,32.99,2020,614
+408,üksik mees,Ennustatud 2020,5.47,32.99,2020,614
+409,üksik naine,Tegelik 2020,1.35,21.29,2020,614
+410,üksik naine,Ennustatud 2020,1.35,21.29,2020,614
+411,üksikvanem,Tegelik 2020,0,29.34,2020,614
+412,üksikvanem,Ennustatud 2020,0,28.38,2020,614
+413,Lasteta paar,Tegelik 2020,0.26,9.21,2020,614
+414,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,614
+415,ühe lapsega paar,Tegelik 2020,0,7.3,2020,614
+416,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,614
+417,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,614
+418,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,614
+419,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,614
+420,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,614
+421,üksik mees,Tegelik 2020,5.47,32.99,2020,615
+422,üksik mees,Ennustatud 2020,5.47,32.99,2020,615
+423,üksik naine,Tegelik 2020,1.35,21.29,2020,615
+424,üksik naine,Ennustatud 2020,1.35,21.29,2020,615
+425,üksikvanem,Tegelik 2020,0,29.34,2020,615
+426,üksikvanem,Ennustatud 2020,0,28.38,2020,615
+427,Lasteta paar,Tegelik 2020,0.26,9.21,2020,615
+428,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,615
+429,ühe lapsega paar,Tegelik 2020,0,7.3,2020,615
+430,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,615
+431,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,615
+432,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,615
+433,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,615
+434,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,615
+435,üksik mees,Tegelik 2020,5.47,32.99,2020,616
+436,üksik mees,Ennustatud 2020,5.47,32.99,2020,616
+437,üksik naine,Tegelik 2020,1.35,21.29,2020,616
+438,üksik naine,Ennustatud 2020,1.35,21.29,2020,616
+439,üksikvanem,Tegelik 2020,0,29.34,2020,616
+440,üksikvanem,Ennustatud 2020,0,28.38,2020,616
+441,Lasteta paar,Tegelik 2020,0.26,9.21,2020,616
+442,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,616
+443,ühe lapsega paar,Tegelik 2020,0,7.3,2020,616
+444,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,616
+445,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,616
+446,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,616
+447,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,616
+448,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,616
+449,üksik mees,Tegelik 2020,5.47,32.99,2020,617
+450,üksik mees,Ennustatud 2020,5.47,32.99,2020,617
+451,üksik naine,Tegelik 2020,1.35,21.29,2020,617
+452,üksik naine,Ennustatud 2020,1.35,21.29,2020,617
+453,üksikvanem,Tegelik 2020,0,29.34,2020,617
+454,üksikvanem,Ennustatud 2020,0,28.38,2020,617
+455,Lasteta paar,Tegelik 2020,0.26,9.21,2020,617
+456,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,617
+457,ühe lapsega paar,Tegelik 2020,0,7.3,2020,617
+458,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,617
+459,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,617
+460,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,617
+461,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,617
+462,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,617
+463,üksik mees,Tegelik 2020,5.47,32.99,2020,618
+464,üksik mees,Ennustatud 2020,5.47,32.99,2020,618
+465,üksik naine,Tegelik 2020,1.35,21.29,2020,618
+466,üksik naine,Ennustatud 2020,1.35,21.29,2020,618
+467,üksikvanem,Tegelik 2020,0,29.34,2020,618
+468,üksikvanem,Ennustatud 2020,0,28.38,2020,618
+469,Lasteta paar,Tegelik 2020,0.26,9.21,2020,618
+470,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,618
+471,ühe lapsega paar,Tegelik 2020,0,7.3,2020,618
+472,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,618
+473,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,618
+474,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,618
+475,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,618
+476,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,618
+477,üksik mees,Tegelik 2020,5.47,32.99,2020,619
+478,üksik mees,Ennustatud 2020,5.47,32.99,2020,619
+479,üksik naine,Tegelik 2020,1.35,21.29,2020,619
+480,üksik naine,Ennustatud 2020,1.35,21.29,2020,619
+481,üksikvanem,Tegelik 2020,0,29.34,2020,619
+482,üksikvanem,Ennustatud 2020,0,28.38,2020,619
+483,Lasteta paar,Tegelik 2020,0.26,9.21,2020,619
+484,Lasteta paar,Ennustatud 2020,0.26,9.21,2020,619
+485,ühe lapsega paar,Tegelik 2020,0,7.3,2020,619
+486,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,619
+487,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,619
+488,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,619
+489,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,619
+490,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,619
+491,üksik mees,Tegelik 2020,5.47,32.99,2020,620
+492,üksik mees,Ennustatud 2020,5.47,32.99,2020,620
+493,üksik naine,Tegelik 2020,1.35,21.29,2020,620
+494,üksik naine,Ennustatud 2020,1.35,21.29,2020,620
+495,üksikvanem,Tegelik 2020,0,29.34,2020,620
+496,üksikvanem,Ennustatud 2020,0,28.38,2020,620
+497,Lasteta paar,Tegelik 2020,0.26,9.21,2020,620
+498,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,620
+499,ühe lapsega paar,Tegelik 2020,0,7.3,2020,620
+500,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,620
+501,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,620
+502,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,620
+503,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,620
+504,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,620
+505,üksik mees,Tegelik 2020,5.47,32.99,2020,621
+506,üksik mees,Ennustatud 2020,5.47,32.99,2020,621
+507,üksik naine,Tegelik 2020,1.35,21.29,2020,621
+508,üksik naine,Ennustatud 2020,1.35,21.29,2020,621
+509,üksikvanem,Tegelik 2020,0,29.34,2020,621
+510,üksikvanem,Ennustatud 2020,0,28.38,2020,621
+511,Lasteta paar,Tegelik 2020,0.26,9.21,2020,621
+512,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,621
+513,ühe lapsega paar,Tegelik 2020,0,7.3,2020,621
+514,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,621
+515,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,621
+516,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,621
+517,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,621
+518,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,621
+519,üksik mees,Tegelik 2020,5.47,32.99,2020,622
+520,üksik mees,Ennustatud 2020,5.47,32.99,2020,622
+521,üksik naine,Tegelik 2020,1.35,21.29,2020,622
+522,üksik naine,Ennustatud 2020,1.35,21.29,2020,622
+523,üksikvanem,Tegelik 2020,0,29.34,2020,622
+524,üksikvanem,Ennustatud 2020,0,28.38,2020,622
+525,Lasteta paar,Tegelik 2020,0.26,9.21,2020,622
+526,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,622
+527,ühe lapsega paar,Tegelik 2020,0,7.3,2020,622
+528,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,622
+529,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,622
+530,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,622
+531,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,622
+532,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,622
+533,üksik mees,Tegelik 2020,5.47,32.99,2020,623
+534,üksik mees,Ennustatud 2020,5.47,32.99,2020,623
+535,üksik naine,Tegelik 2020,1.35,21.29,2020,623
+536,üksik naine,Ennustatud 2020,1.35,21.29,2020,623
+537,üksikvanem,Tegelik 2020,0,29.34,2020,623
+538,üksikvanem,Ennustatud 2020,0,28.38,2020,623
+539,Lasteta paar,Tegelik 2020,0.26,9.21,2020,623
+540,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,623
+541,ühe lapsega paar,Tegelik 2020,0,7.3,2020,623
+542,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,623
+543,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,623
+544,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,623
+545,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,623
+546,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,623
+547,üksik mees,Tegelik 2020,5.47,32.99,2020,624
+548,üksik mees,Ennustatud 2020,5.47,32.99,2020,624
+549,üksik naine,Tegelik 2020,1.35,21.29,2020,624
+550,üksik naine,Ennustatud 2020,1.35,21.29,2020,624
+551,üksikvanem,Tegelik 2020,0,29.34,2020,624
+552,üksikvanem,Ennustatud 2020,0,28.38,2020,624
+553,Lasteta paar,Tegelik 2020,0.26,9.21,2020,624
+554,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,624
+555,ühe lapsega paar,Tegelik 2020,0,7.3,2020,624
+556,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,624
+557,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,624
+558,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,624
+559,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,624
+560,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,624
+561,üksik mees,Tegelik 2020,5.47,32.99,2020,625
+562,üksik mees,Ennustatud 2020,5.47,32.99,2020,625
+563,üksik naine,Tegelik 2020,1.35,21.29,2020,625
+564,üksik naine,Ennustatud 2020,1.35,21.29,2020,625
+565,üksikvanem,Tegelik 2020,0,29.34,2020,625
+566,üksikvanem,Ennustatud 2020,0,28.38,2020,625
+567,Lasteta paar,Tegelik 2020,0.26,9.21,2020,625
+568,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,625
+569,ühe lapsega paar,Tegelik 2020,0,7.3,2020,625
+570,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,625
+571,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,625
+572,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,625
+573,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,625
+574,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,625
+575,üksik mees,Tegelik 2020,5.47,32.99,2020,626
+576,üksik mees,Ennustatud 2020,5.47,32.99,2020,626
+577,üksik naine,Tegelik 2020,1.35,21.29,2020,626
+578,üksik naine,Ennustatud 2020,1.35,21.29,2020,626
+579,üksikvanem,Tegelik 2020,0,29.34,2020,626
+580,üksikvanem,Ennustatud 2020,0,28.38,2020,626
+581,Lasteta paar,Tegelik 2020,0.26,9.21,2020,626
+582,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,626
+583,ühe lapsega paar,Tegelik 2020,0,7.3,2020,626
+584,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,626
+585,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,626
+586,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,626
+587,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,626
+588,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,626
+589,üksik mees,Tegelik 2020,5.47,32.99,2020,627
+590,üksik mees,Ennustatud 2020,5.47,32.99,2020,627
+591,üksik naine,Tegelik 2020,1.35,21.29,2020,627
+592,üksik naine,Ennustatud 2020,1.35,21.29,2020,627
+593,üksikvanem,Tegelik 2020,0,29.34,2020,627
+594,üksikvanem,Ennustatud 2020,0,28.38,2020,627
+595,Lasteta paar,Tegelik 2020,0.26,9.21,2020,627
+596,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,627
+597,ühe lapsega paar,Tegelik 2020,0,7.3,2020,627
+598,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,627
+599,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,627
+600,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,627
+601,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,627
+602,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,627
+603,üksik mees,Tegelik 2020,5.47,32.99,2020,628
+604,üksik mees,Ennustatud 2020,5.47,32.99,2020,628
+605,üksik naine,Tegelik 2020,1.35,21.29,2020,628
+606,üksik naine,Ennustatud 2020,1.35,21.29,2020,628
+607,üksikvanem,Tegelik 2020,0,29.34,2020,628
+608,üksikvanem,Ennustatud 2020,0,28.38,2020,628
+609,Lasteta paar,Tegelik 2020,0.26,9.21,2020,628
+610,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,628
+611,ühe lapsega paar,Tegelik 2020,0,7.3,2020,628
+612,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,628
+613,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,628
+614,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,628
+615,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,628
+616,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,628
+617,üksik mees,Tegelik 2020,5.47,32.99,2020,629
+618,üksik mees,Ennustatud 2020,5.47,32.99,2020,629
+619,üksik naine,Tegelik 2020,1.35,21.29,2020,629
+620,üksik naine,Ennustatud 2020,1.35,21.29,2020,629
+621,üksikvanem,Tegelik 2020,0,29.34,2020,629
+622,üksikvanem,Ennustatud 2020,0,28.38,2020,629
+623,Lasteta paar,Tegelik 2020,0.26,9.21,2020,629
+624,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,629
+625,ühe lapsega paar,Tegelik 2020,0,7.3,2020,629
+626,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,629
+627,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,629
+628,Kahe lapsega paar,Ennustatud 2020,0,9.65,2020,629
+629,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,629
+630,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,629
+631,üksik mees,Tegelik 2020,5.47,32.99,2020,630
+632,üksik mees,Ennustatud 2020,5.47,32.99,2020,630
+633,üksik naine,Tegelik 2020,1.35,21.29,2020,630
+634,üksik naine,Ennustatud 2020,1.35,21.29,2020,630
+635,üksikvanem,Tegelik 2020,0,29.34,2020,630
+636,üksikvanem,Ennustatud 2020,0,28.38,2020,630
+637,Lasteta paar,Tegelik 2020,0.26,9.21,2020,630
+638,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,630
+639,ühe lapsega paar,Tegelik 2020,0,7.3,2020,630
+640,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,630
+641,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,630
+642,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,630
+643,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,630
+644,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,630
+645,üksik mees,Tegelik 2020,5.47,32.99,2020,631
+646,üksik mees,Ennustatud 2020,5.47,32.99,2020,631
+647,üksik naine,Tegelik 2020,1.35,21.29,2020,631
+648,üksik naine,Ennustatud 2020,1.35,21.29,2020,631
+649,üksikvanem,Tegelik 2020,0,29.34,2020,631
+650,üksikvanem,Ennustatud 2020,0,28.38,2020,631
+651,Lasteta paar,Tegelik 2020,0.26,9.21,2020,631
+652,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,631
+653,ühe lapsega paar,Tegelik 2020,0,7.3,2020,631
+654,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,631
+655,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,631
+656,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,631
+657,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,631
+658,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,631
+659,üksik mees,Tegelik 2020,5.47,32.99,2020,632
+660,üksik mees,Ennustatud 2020,5.47,32.99,2020,632
+661,üksik naine,Tegelik 2020,1.35,21.29,2020,632
+662,üksik naine,Ennustatud 2020,1.35,21.29,2020,632
+663,üksikvanem,Tegelik 2020,0,29.34,2020,632
+664,üksikvanem,Ennustatud 2020,0,28.38,2020,632
+665,Lasteta paar,Tegelik 2020,0.26,9.21,2020,632
+666,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,632
+667,ühe lapsega paar,Tegelik 2020,0,7.3,2020,632
+668,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,632
+669,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,632
+670,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,632
+671,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,632
+672,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,632
+673,üksik mees,Tegelik 2020,5.47,32.99,2020,633
+674,üksik mees,Ennustatud 2020,5.47,32.99,2020,633
+675,üksik naine,Tegelik 2020,1.35,21.29,2020,633
+676,üksik naine,Ennustatud 2020,1.35,21.29,2020,633
+677,üksikvanem,Tegelik 2020,0,29.34,2020,633
+678,üksikvanem,Ennustatud 2020,0,28.2,2020,633
+679,Lasteta paar,Tegelik 2020,0.26,9.21,2020,633
+680,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,633
+681,ühe lapsega paar,Tegelik 2020,0,7.3,2020,633
+682,ühe lapsega paar,Ennustatud 2020,0,7.3,2020,633
+683,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,633
+684,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,633
+685,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,633
+686,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,633
+687,üksik mees,Tegelik 2020,5.47,32.99,2020,634
+688,üksik mees,Ennustatud 2020,5.47,32.99,2020,634
+689,üksik naine,Tegelik 2020,1.35,21.29,2020,634
+690,üksik naine,Ennustatud 2020,1.35,21.29,2020,634
+691,üksikvanem,Tegelik 2020,0,29.34,2020,634
+692,üksikvanem,Ennustatud 2020,0,28.2,2020,634
+693,Lasteta paar,Tegelik 2020,0.26,9.21,2020,634
+694,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,634
+695,ühe lapsega paar,Tegelik 2020,0,7.3,2020,634
+696,ühe lapsega paar,Ennustatud 2020,0,7.22,2020,634
+697,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,634
+698,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,634
+699,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,634
+700,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,634
+701,üksik mees,Tegelik 2020,5.47,32.99,2020,635
+702,üksik mees,Ennustatud 2020,5.47,32.99,2020,635
+703,üksik naine,Tegelik 2020,1.35,21.29,2020,635
+704,üksik naine,Ennustatud 2020,1.35,21.29,2020,635
+705,üksikvanem,Tegelik 2020,0,29.34,2020,635
+706,üksikvanem,Ennustatud 2020,0,28.2,2020,635
+707,Lasteta paar,Tegelik 2020,0.26,9.21,2020,635
+708,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,635
+709,ühe lapsega paar,Tegelik 2020,0,7.3,2020,635
+710,ühe lapsega paar,Ennustatud 2020,0,7.22,2020,635
+711,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,635
+712,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,635
+713,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,635
+714,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,635
+715,üksik mees,Tegelik 2020,5.47,32.99,2020,636
+716,üksik mees,Ennustatud 2020,5.47,32.99,2020,636
+717,üksik naine,Tegelik 2020,1.35,21.29,2020,636
+718,üksik naine,Ennustatud 2020,1.35,21.29,2020,636
+719,üksikvanem,Tegelik 2020,0,29.34,2020,636
+720,üksikvanem,Ennustatud 2020,0,28.2,2020,636
+721,Lasteta paar,Tegelik 2020,0.26,9.21,2020,636
+722,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,636
+723,ühe lapsega paar,Tegelik 2020,0,7.3,2020,636
+724,ühe lapsega paar,Ennustatud 2020,0,7.22,2020,636
+725,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,636
+726,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,636
+727,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,636
+728,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,636
+729,üksik mees,Tegelik 2020,5.47,32.99,2020,637
+730,üksik mees,Ennustatud 2020,5.47,32.99,2020,637
+731,üksik naine,Tegelik 2020,1.35,21.29,2020,637
+732,üksik naine,Ennustatud 2020,1.35,21.29,2020,637
+733,üksikvanem,Tegelik 2020,0,29.34,2020,637
+734,üksikvanem,Ennustatud 2020,0,28.2,2020,637
+735,Lasteta paar,Tegelik 2020,0.26,9.21,2020,637
+736,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,637
+737,ühe lapsega paar,Tegelik 2020,0,7.3,2020,637
+738,ühe lapsega paar,Ennustatud 2020,0,7.22,2020,637
+739,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,637
+740,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,637
+741,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,637
+742,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,637
+743,üksik mees,Tegelik 2020,5.47,32.99,2020,638
+744,üksik mees,Ennustatud 2020,5.47,32.99,2020,638
+745,üksik naine,Tegelik 2020,1.35,21.29,2020,638
+746,üksik naine,Ennustatud 2020,1.35,21.29,2020,638
+747,üksikvanem,Tegelik 2020,0,29.34,2020,638
+748,üksikvanem,Ennustatud 2020,0,28.2,2020,638
+749,Lasteta paar,Tegelik 2020,0.26,9.21,2020,638
+750,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,638
+751,ühe lapsega paar,Tegelik 2020,0,7.3,2020,638
+752,ühe lapsega paar,Ennustatud 2020,0,7.22,2020,638
+753,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,638
+754,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,638
+755,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,638
+756,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,638
+757,üksik mees,Tegelik 2020,5.47,32.99,2020,639
+758,üksik mees,Ennustatud 2020,5.47,32.99,2020,639
+759,üksik naine,Tegelik 2020,1.35,21.29,2020,639
+760,üksik naine,Ennustatud 2020,1.35,21.29,2020,639
+761,üksikvanem,Tegelik 2020,0,29.34,2020,639
+762,üksikvanem,Ennustatud 2020,0,28.2,2020,639
+763,Lasteta paar,Tegelik 2020,0.26,9.21,2020,639
+764,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,639
+765,ühe lapsega paar,Tegelik 2020,0,7.3,2020,639
+766,ühe lapsega paar,Ennustatud 2020,0,7.22,2020,639
+767,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,639
+768,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,639
+769,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,639
+770,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,639
+771,üksik mees,Tegelik 2020,5.47,32.99,2020,640
+772,üksik mees,Ennustatud 2020,5.47,32.99,2020,640
+773,üksik naine,Tegelik 2020,1.35,21.29,2020,640
+774,üksik naine,Ennustatud 2020,1.35,21.29,2020,640
+775,üksikvanem,Tegelik 2020,0,29.34,2020,640
+776,üksikvanem,Ennustatud 2020,0,28.2,2020,640
+777,Lasteta paar,Tegelik 2020,0.26,9.21,2020,640
+778,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,640
+779,ühe lapsega paar,Tegelik 2020,0,7.3,2020,640
+780,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,640
+781,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,640
+782,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,640
+783,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,640
+784,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,640
+785,üksik mees,Tegelik 2020,5.47,32.99,2020,641
+786,üksik mees,Ennustatud 2020,5.47,32.99,2020,641
+787,üksik naine,Tegelik 2020,1.35,21.29,2020,641
+788,üksik naine,Ennustatud 2020,1.35,21.29,2020,641
+789,üksikvanem,Tegelik 2020,0,29.34,2020,641
+790,üksikvanem,Ennustatud 2020,0,28.2,2020,641
+791,Lasteta paar,Tegelik 2020,0.26,9.21,2020,641
+792,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,641
+793,ühe lapsega paar,Tegelik 2020,0,7.3,2020,641
+794,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,641
+795,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,641
+796,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,641
+797,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,641
+798,Kolme ja enama lapsega paar,Ennustatud 2020,0,7.99,2020,641
+799,üksik mees,Tegelik 2020,5.47,32.99,2020,642
+800,üksik mees,Ennustatud 2020,5.47,32.99,2020,642
+801,üksik naine,Tegelik 2020,1.35,21.29,2020,642
+802,üksik naine,Ennustatud 2020,1.35,21.29,2020,642
+803,üksikvanem,Tegelik 2020,0,29.34,2020,642
+804,üksikvanem,Ennustatud 2020,0,28.2,2020,642
+805,Lasteta paar,Tegelik 2020,0.26,9.21,2020,642
+806,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,642
+807,ühe lapsega paar,Tegelik 2020,0,7.3,2020,642
+808,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,642
+809,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,642
+810,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,642
+811,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,642
+812,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,642
+813,üksik mees,Tegelik 2020,5.47,32.99,2020,643
+814,üksik mees,Ennustatud 2020,5.47,32.99,2020,643
+815,üksik naine,Tegelik 2020,1.35,21.29,2020,643
+816,üksik naine,Ennustatud 2020,1.35,21.29,2020,643
+817,üksikvanem,Tegelik 2020,0,29.34,2020,643
+818,üksikvanem,Ennustatud 2020,0,28.2,2020,643
+819,Lasteta paar,Tegelik 2020,0.26,9.21,2020,643
+820,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,643
+821,ühe lapsega paar,Tegelik 2020,0,7.3,2020,643
+822,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,643
+823,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,643
+824,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,643
+825,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,643
+826,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,643
+827,üksik mees,Tegelik 2020,5.47,32.99,2020,644
+828,üksik mees,Ennustatud 2020,5.47,32.99,2020,644
+829,üksik naine,Tegelik 2020,1.35,21.29,2020,644
+830,üksik naine,Ennustatud 2020,1.35,21.29,2020,644
+831,üksikvanem,Tegelik 2020,0,29.34,2020,644
+832,üksikvanem,Ennustatud 2020,0,28.29,2020,644
+833,Lasteta paar,Tegelik 2020,0.26,9.21,2020,644
+834,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,644
+835,ühe lapsega paar,Tegelik 2020,0,7.3,2020,644
+836,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,644
+837,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,644
+838,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,644
+839,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,644
+840,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,644
+841,üksik mees,Tegelik 2020,5.47,32.99,2020,645
+842,üksik mees,Ennustatud 2020,5.47,32.99,2020,645
+843,üksik naine,Tegelik 2020,1.35,21.29,2020,645
+844,üksik naine,Ennustatud 2020,1.35,21.29,2020,645
+845,üksikvanem,Tegelik 2020,0,29.34,2020,645
+846,üksikvanem,Ennustatud 2020,0,28.29,2020,645
+847,Lasteta paar,Tegelik 2020,0.26,9.21,2020,645
+848,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,645
+849,ühe lapsega paar,Tegelik 2020,0,7.3,2020,645
+850,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,645
+851,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,645
+852,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,645
+853,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,645
+854,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,645
+855,üksik mees,Tegelik 2020,5.47,32.99,2020,646
+856,üksik mees,Ennustatud 2020,5.47,32.99,2020,646
+857,üksik naine,Tegelik 2020,1.35,21.29,2020,646
+858,üksik naine,Ennustatud 2020,1.35,21.29,2020,646
+859,üksikvanem,Tegelik 2020,0,29.34,2020,646
+860,üksikvanem,Ennustatud 2020,0,28.29,2020,646
+861,Lasteta paar,Tegelik 2020,0.26,9.21,2020,646
+862,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,646
+863,ühe lapsega paar,Tegelik 2020,0,7.3,2020,646
+864,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,646
+865,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,646
+866,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,646
+867,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,646
+868,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,646
+869,üksik mees,Tegelik 2020,5.47,32.99,2020,647
+870,üksik mees,Ennustatud 2020,5.47,32.99,2020,647
+871,üksik naine,Tegelik 2020,1.35,21.29,2020,647
+872,üksik naine,Ennustatud 2020,1.35,21.29,2020,647
+873,üksikvanem,Tegelik 2020,0,29.34,2020,647
+874,üksikvanem,Ennustatud 2020,0,28.29,2020,647
+875,Lasteta paar,Tegelik 2020,0.26,9.21,2020,647
+876,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,647
+877,ühe lapsega paar,Tegelik 2020,0,7.3,2020,647
+878,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,647
+879,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,647
+880,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,647
+881,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,647
+882,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,647
+883,üksik mees,Tegelik 2020,5.47,32.99,2020,648
+884,üksik mees,Ennustatud 2020,5.47,32.99,2020,648
+885,üksik naine,Tegelik 2020,1.35,21.29,2020,648
+886,üksik naine,Ennustatud 2020,1.35,21.29,2020,648
+887,üksikvanem,Tegelik 2020,0,29.34,2020,648
+888,üksikvanem,Ennustatud 2020,0,28.29,2020,648
+889,Lasteta paar,Tegelik 2020,0.26,9.21,2020,648
+890,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,648
+891,ühe lapsega paar,Tegelik 2020,0,7.3,2020,648
+892,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,648
+893,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,648
+894,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,648
+895,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,648
+896,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,648
+897,üksik mees,Tegelik 2020,5.47,32.99,2020,649
+898,üksik mees,Ennustatud 2020,5.47,32.99,2020,649
+899,üksik naine,Tegelik 2020,1.35,21.29,2020,649
+900,üksik naine,Ennustatud 2020,1.35,21.29,2020,649
+901,üksikvanem,Tegelik 2020,0,29.34,2020,649
+902,üksikvanem,Ennustatud 2020,0,28.29,2020,649
+903,Lasteta paar,Tegelik 2020,0.26,9.21,2020,649
+904,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,649
+905,ühe lapsega paar,Tegelik 2020,0,7.3,2020,649
+906,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,649
+907,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,649
+908,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,649
+909,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,649
+910,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,649
+911,üksik mees,Tegelik 2020,5.47,32.99,2020,650
+912,üksik mees,Ennustatud 2020,5.39,32.99,2020,650
+913,üksik naine,Tegelik 2020,1.35,21.29,2020,650
+914,üksik naine,Ennustatud 2020,1.35,21.29,2020,650
+915,üksikvanem,Tegelik 2020,0,29.34,2020,650
+916,üksikvanem,Ennustatud 2020,0,28.29,2020,650
+917,Lasteta paar,Tegelik 2020,0.26,9.21,2020,650
+918,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,650
+919,ühe lapsega paar,Tegelik 2020,0,7.3,2020,650
+920,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,650
+921,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,650
+922,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,650
+923,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,650
+924,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,650
+925,üksik mees,Tegelik 2020,5.47,32.99,2020,651
+926,üksik mees,Ennustatud 2020,5.39,32.99,2020,651
+927,üksik naine,Tegelik 2020,1.35,21.29,2020,651
+928,üksik naine,Ennustatud 2020,1.35,21.29,2020,651
+929,üksikvanem,Tegelik 2020,0,29.34,2020,651
+930,üksikvanem,Ennustatud 2020,0,28.29,2020,651
+931,Lasteta paar,Tegelik 2020,0.26,9.21,2020,651
+932,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,651
+933,ühe lapsega paar,Tegelik 2020,0,7.3,2020,651
+934,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,651
+935,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,651
+936,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,651
+937,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,651
+938,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,651
+939,üksik mees,Tegelik 2020,5.47,32.99,2020,652
+940,üksik mees,Ennustatud 2020,5.39,32.99,2020,652
+941,üksik naine,Tegelik 2020,1.35,21.29,2020,652
+942,üksik naine,Ennustatud 2020,1.35,21.29,2020,652
+943,üksikvanem,Tegelik 2020,0,29.34,2020,652
+944,üksikvanem,Ennustatud 2020,0,27.76,2020,652
+945,Lasteta paar,Tegelik 2020,0.26,9.21,2020,652
+946,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,652
+947,ühe lapsega paar,Tegelik 2020,0,7.3,2020,652
+948,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,652
+949,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,652
+950,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,652
+951,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,652
+952,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,652
+953,üksik mees,Tegelik 2020,5.47,32.99,2020,653
+954,üksik mees,Ennustatud 2020,5.39,32.99,2020,653
+955,üksik naine,Tegelik 2020,1.35,21.29,2020,653
+956,üksik naine,Ennustatud 2020,1.35,21.29,2020,653
+957,üksikvanem,Tegelik 2020,0,29.34,2020,653
+958,üksikvanem,Ennustatud 2020,0,27.76,2020,653
+959,Lasteta paar,Tegelik 2020,0.26,9.21,2020,653
+960,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,653
+961,ühe lapsega paar,Tegelik 2020,0,7.3,2020,653
+962,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,653
+963,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,653
+964,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,653
+965,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,653
+966,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,653
+967,üksik mees,Tegelik 2020,5.47,32.99,2020,654
+968,üksik mees,Ennustatud 2020,5.39,32.6,2020,654
+969,üksik naine,Tegelik 2020,1.35,21.29,2020,654
+970,üksik naine,Ennustatud 2020,1.35,21.29,2020,654
+971,üksikvanem,Tegelik 2020,0,29.34,2020,654
+972,üksikvanem,Ennustatud 2020,0,28.11,2020,654
+973,Lasteta paar,Tegelik 2020,0.26,9.21,2020,654
+974,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,654
+975,ühe lapsega paar,Tegelik 2020,0,7.3,2020,654
+976,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,654
+977,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,654
+978,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,654
+979,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,654
+980,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,654
+981,üksik mees,Tegelik 2020,5.47,32.99,2020,655
+982,üksik mees,Ennustatud 2020,5.39,32.6,2020,655
+983,üksik naine,Tegelik 2020,1.35,21.29,2020,655
+984,üksik naine,Ennustatud 2020,1.35,21.29,2020,655
+985,üksikvanem,Tegelik 2020,0,29.34,2020,655
+986,üksikvanem,Ennustatud 2020,0,28.11,2020,655
+987,Lasteta paar,Tegelik 2020,0.26,9.21,2020,655
+988,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,655
+989,ühe lapsega paar,Tegelik 2020,0,7.3,2020,655
+990,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,655
+991,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,655
+992,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,655
+993,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,655
+994,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,655
+995,üksik mees,Tegelik 2020,5.47,32.99,2020,656
+996,üksik mees,Ennustatud 2020,5.39,32.6,2020,656
+997,üksik naine,Tegelik 2020,1.35,21.29,2020,656
+998,üksik naine,Ennustatud 2020,1.35,21.29,2020,656
+999,üksikvanem,Tegelik 2020,0,29.34,2020,656
+1000,üksikvanem,Ennustatud 2020,0,28.11,2020,656
+1001,Lasteta paar,Tegelik 2020,0.26,9.21,2020,656
+1002,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,656
+1003,ühe lapsega paar,Tegelik 2020,0,7.3,2020,656
+1004,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,656
+1005,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,656
+1006,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,656
+1007,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,656
+1008,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,656
+1009,üksik mees,Tegelik 2020,5.47,32.99,2020,657
+1010,üksik mees,Ennustatud 2020,5.39,32.6,2020,657
+1011,üksik naine,Tegelik 2020,1.35,21.29,2020,657
+1012,üksik naine,Ennustatud 2020,1.35,21.29,2020,657
+1013,üksikvanem,Tegelik 2020,0,29.34,2020,657
+1014,üksikvanem,Ennustatud 2020,0,28.11,2020,657
+1015,Lasteta paar,Tegelik 2020,0.26,9.21,2020,657
+1016,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,657
+1017,ühe lapsega paar,Tegelik 2020,0,7.3,2020,657
+1018,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,657
+1019,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,657
+1020,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,657
+1021,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,657
+1022,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,657
+1023,üksik mees,Tegelik 2020,5.47,32.99,2020,658
+1024,üksik mees,Ennustatud 2020,5.39,32.6,2020,658
+1025,üksik naine,Tegelik 2020,1.35,21.29,2020,658
+1026,üksik naine,Ennustatud 2020,1.35,21.29,2020,658
+1027,üksikvanem,Tegelik 2020,0,29.34,2020,658
+1028,üksikvanem,Ennustatud 2020,0,28.11,2020,658
+1029,Lasteta paar,Tegelik 2020,0.26,9.21,2020,658
+1030,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,658
+1031,ühe lapsega paar,Tegelik 2020,0,7.3,2020,658
+1032,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,658
+1033,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,658
+1034,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,658
+1035,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,658
+1036,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,658
+1037,üksik mees,Tegelik 2020,5.47,32.99,2020,659
+1038,üksik mees,Ennustatud 2020,5.39,32.6,2020,659
+1039,üksik naine,Tegelik 2020,1.35,21.29,2020,659
+1040,üksik naine,Ennustatud 2020,1.35,21.29,2020,659
+1041,üksikvanem,Tegelik 2020,0,29.34,2020,659
+1042,üksikvanem,Ennustatud 2020,0,28.11,2020,659
+1043,Lasteta paar,Tegelik 2020,0.26,9.21,2020,659
+1044,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,659
+1045,ühe lapsega paar,Tegelik 2020,0,7.3,2020,659
+1046,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,659
+1047,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,659
+1048,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,659
+1049,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,659
+1050,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,659
+1051,üksik mees,Tegelik 2020,5.47,32.99,2020,660
+1052,üksik mees,Ennustatud 2020,5.39,32.6,2020,660
+1053,üksik naine,Tegelik 2020,1.35,21.29,2020,660
+1054,üksik naine,Ennustatud 2020,1.35,21.29,2020,660
+1055,üksikvanem,Tegelik 2020,0,29.34,2020,660
+1056,üksikvanem,Ennustatud 2020,0,28.11,2020,660
+1057,Lasteta paar,Tegelik 2020,0.26,9.21,2020,660
+1058,Lasteta paar,Ennustatud 2020,0.26,9.04,2020,660
+1059,ühe lapsega paar,Tegelik 2020,0,7.3,2020,660
+1060,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,660
+1061,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,660
+1062,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,660
+1063,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,660
+1064,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.88,2020,660
+1065,üksik mees,Tegelik 2020,5.47,32.99,2020,661
+1066,üksik mees,Ennustatud 2020,5.39,32.6,2020,661
+1067,üksik naine,Tegelik 2020,1.35,21.29,2020,661
+1068,üksik naine,Ennustatud 2020,1.35,21.29,2020,661
+1069,üksikvanem,Tegelik 2020,0,29.34,2020,661
+1070,üksikvanem,Ennustatud 2020,0,28.11,2020,661
+1071,Lasteta paar,Tegelik 2020,0.26,9.21,2020,661
+1072,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,661
+1073,ühe lapsega paar,Tegelik 2020,0,7.3,2020,661
+1074,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,661
+1075,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,661
+1076,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,661
+1077,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,661
+1078,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,661
+1079,üksik mees,Tegelik 2020,5.47,32.99,2020,662
+1080,üksik mees,Ennustatud 2020,5.39,32.6,2020,662
+1081,üksik naine,Tegelik 2020,1.35,21.29,2020,662
+1082,üksik naine,Ennustatud 2020,1.35,21.29,2020,662
+1083,üksikvanem,Tegelik 2020,0,29.34,2020,662
+1084,üksikvanem,Ennustatud 2020,0,28.11,2020,662
+1085,Lasteta paar,Tegelik 2020,0.26,9.21,2020,662
+1086,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,662
+1087,ühe lapsega paar,Tegelik 2020,0,7.3,2020,662
+1088,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,662
+1089,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,662
+1090,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,662
+1091,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,662
+1092,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,662
+1093,üksik mees,Tegelik 2020,5.47,32.99,2020,663
+1094,üksik mees,Ennustatud 2020,5.39,32.6,2020,663
+1095,üksik naine,Tegelik 2020,1.35,21.29,2020,663
+1096,üksik naine,Ennustatud 2020,1.35,21.29,2020,663
+1097,üksikvanem,Tegelik 2020,0,29.34,2020,663
+1098,üksikvanem,Ennustatud 2020,0,28.11,2020,663
+1099,Lasteta paar,Tegelik 2020,0.26,9.21,2020,663
+1100,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,663
+1101,ühe lapsega paar,Tegelik 2020,0,7.3,2020,663
+1102,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,663
+1103,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,663
+1104,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,663
+1105,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,663
+1106,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,663
+1107,üksik mees,Tegelik 2020,5.47,32.99,2020,664
+1108,üksik mees,Ennustatud 2020,5.39,32.6,2020,664
+1109,üksik naine,Tegelik 2020,1.35,21.29,2020,664
+1110,üksik naine,Ennustatud 2020,1.35,21.29,2020,664
+1111,üksikvanem,Tegelik 2020,0,29.34,2020,664
+1112,üksikvanem,Ennustatud 2020,0,28.11,2020,664
+1113,Lasteta paar,Tegelik 2020,0.26,9.21,2020,664
+1114,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,664
+1115,ühe lapsega paar,Tegelik 2020,0,7.3,2020,664
+1116,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,664
+1117,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,664
+1118,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,664
+1119,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,664
+1120,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,664
+1121,üksik mees,Tegelik 2020,5.47,32.99,2020,665
+1122,üksik mees,Ennustatud 2020,5.39,32.6,2020,665
+1123,üksik naine,Tegelik 2020,1.35,21.29,2020,665
+1124,üksik naine,Ennustatud 2020,1.35,21.29,2020,665
+1125,üksikvanem,Tegelik 2020,0,29.34,2020,665
+1126,üksikvanem,Ennustatud 2020,0,28.11,2020,665
+1127,Lasteta paar,Tegelik 2020,0.26,9.21,2020,665
+1128,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,665
+1129,ühe lapsega paar,Tegelik 2020,0,7.3,2020,665
+1130,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,665
+1131,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,665
+1132,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,665
+1133,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,665
+1134,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,665
+1135,üksik mees,Tegelik 2020,5.47,32.99,2020,666
+1136,üksik mees,Ennustatud 2020,5.39,32.6,2020,666
+1137,üksik naine,Tegelik 2020,1.35,21.29,2020,666
+1138,üksik naine,Ennustatud 2020,1.35,21.29,2020,666
+1139,üksikvanem,Tegelik 2020,0,29.34,2020,666
+1140,üksikvanem,Ennustatud 2020,0,28.11,2020,666
+1141,Lasteta paar,Tegelik 2020,0.26,9.21,2020,666
+1142,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,666
+1143,ühe lapsega paar,Tegelik 2020,0,7.3,2020,666
+1144,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,666
+1145,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,666
+1146,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,666
+1147,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,666
+1148,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,666
+1149,üksik mees,Tegelik 2020,5.47,32.99,2020,667
+1150,üksik mees,Ennustatud 2020,5.39,32.6,2020,667
+1151,üksik naine,Tegelik 2020,1.35,21.29,2020,667
+1152,üksik naine,Ennustatud 2020,1.35,21.29,2020,667
+1153,üksikvanem,Tegelik 2020,0,29.34,2020,667
+1154,üksikvanem,Ennustatud 2020,0,28.11,2020,667
+1155,Lasteta paar,Tegelik 2020,0.26,9.21,2020,667
+1156,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,667
+1157,ühe lapsega paar,Tegelik 2020,0,7.3,2020,667
+1158,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,667
+1159,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,667
+1160,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,667
+1161,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,667
+1162,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,667
+1163,üksik mees,Tegelik 2020,5.47,32.99,2020,668
+1164,üksik mees,Ennustatud 2020,5.39,32.6,2020,668
+1165,üksik naine,Tegelik 2020,1.35,21.29,2020,668
+1166,üksik naine,Ennustatud 2020,1.35,21.29,2020,668
+1167,üksikvanem,Tegelik 2020,0,29.34,2020,668
+1168,üksikvanem,Ennustatud 2020,0,28.11,2020,668
+1169,Lasteta paar,Tegelik 2020,0.26,9.21,2020,668
+1170,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,668
+1171,ühe lapsega paar,Tegelik 2020,0,7.3,2020,668
+1172,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,668
+1173,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,668
+1174,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,668
+1175,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,668
+1176,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,668
+1177,üksik mees,Tegelik 2020,5.47,32.99,2020,669
+1178,üksik mees,Ennustatud 2020,4.93,32.6,2020,669
+1179,üksik naine,Tegelik 2020,1.35,21.29,2020,669
+1180,üksik naine,Ennustatud 2020,1.35,21.29,2020,669
+1181,üksikvanem,Tegelik 2020,0,29.34,2020,669
+1182,üksikvanem,Ennustatud 2020,0,27.58,2020,669
+1183,Lasteta paar,Tegelik 2020,0.26,9.21,2020,669
+1184,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,669
+1185,ühe lapsega paar,Tegelik 2020,0,7.3,2020,669
+1186,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,669
+1187,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,669
+1188,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,669
+1189,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,669
+1190,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,669
+1191,üksik mees,Tegelik 2020,5.47,32.99,2020,670
+1192,üksik mees,Ennustatud 2020,4.93,32.6,2020,670
+1193,üksik naine,Tegelik 2020,1.35,21.29,2020,670
+1194,üksik naine,Ennustatud 2020,1.35,21.29,2020,670
+1195,üksikvanem,Tegelik 2020,0,29.34,2020,670
+1196,üksikvanem,Ennustatud 2020,0,27.58,2020,670
+1197,Lasteta paar,Tegelik 2020,0.26,9.21,2020,670
+1198,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,670
+1199,ühe lapsega paar,Tegelik 2020,0,7.3,2020,670
+1200,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,670
+1201,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,670
+1202,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,670
+1203,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,670
+1204,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,670
+1205,üksik mees,Tegelik 2020,5.47,32.99,2020,671
+1206,üksik mees,Ennustatud 2020,4.93,32.6,2020,671
+1207,üksik naine,Tegelik 2020,1.35,21.29,2020,671
+1208,üksik naine,Ennustatud 2020,1.35,21.29,2020,671
+1209,üksikvanem,Tegelik 2020,0,29.34,2020,671
+1210,üksikvanem,Ennustatud 2020,0,27.58,2020,671
+1211,Lasteta paar,Tegelik 2020,0.26,9.21,2020,671
+1212,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,671
+1213,ühe lapsega paar,Tegelik 2020,0,7.3,2020,671
+1214,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,671
+1215,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,671
+1216,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,671
+1217,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,671
+1218,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,671
+1219,üksik mees,Tegelik 2020,5.47,32.99,2020,672
+1220,üksik mees,Ennustatud 2020,4.93,32.6,2020,672
+1221,üksik naine,Tegelik 2020,1.35,21.29,2020,672
+1222,üksik naine,Ennustatud 2020,1.35,21.29,2020,672
+1223,üksikvanem,Tegelik 2020,0,29.34,2020,672
+1224,üksikvanem,Ennustatud 2020,0,27.58,2020,672
+1225,Lasteta paar,Tegelik 2020,0.26,9.21,2020,672
+1226,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,672
+1227,ühe lapsega paar,Tegelik 2020,0,7.3,2020,672
+1228,ühe lapsega paar,Ennustatud 2020,0,7.38,2020,672
+1229,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,672
+1230,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,672
+1231,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,672
+1232,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,672
+1233,üksik mees,Tegelik 2020,5.47,32.99,2020,673
+1234,üksik mees,Ennustatud 2020,4.93,32.6,2020,673
+1235,üksik naine,Tegelik 2020,1.35,21.29,2020,673
+1236,üksik naine,Ennustatud 2020,1.35,21.29,2020,673
+1237,üksikvanem,Tegelik 2020,0,29.34,2020,673
+1238,üksikvanem,Ennustatud 2020,0,27.58,2020,673
+1239,Lasteta paar,Tegelik 2020,0.26,9.21,2020,673
+1240,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,673
+1241,ühe lapsega paar,Tegelik 2020,0,7.3,2020,673
+1242,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,673
+1243,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,673
+1244,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,673
+1245,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,673
+1246,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,673
+1247,üksik mees,Tegelik 2020,5.47,32.99,2020,674
+1248,üksik mees,Ennustatud 2020,4.93,32.6,2020,674
+1249,üksik naine,Tegelik 2020,1.35,21.29,2020,674
+1250,üksik naine,Ennustatud 2020,1.35,21.29,2020,674
+1251,üksikvanem,Tegelik 2020,0,29.34,2020,674
+1252,üksikvanem,Ennustatud 2020,0,27.58,2020,674
+1253,Lasteta paar,Tegelik 2020,0.26,9.21,2020,674
+1254,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,674
+1255,ühe lapsega paar,Tegelik 2020,0,7.3,2020,674
+1256,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,674
+1257,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,674
+1258,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,674
+1259,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,674
+1260,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,674
+1261,üksik mees,Tegelik 2020,5.47,32.99,2020,675
+1262,üksik mees,Ennustatud 2020,4.93,32.6,2020,675
+1263,üksik naine,Tegelik 2020,1.35,21.29,2020,675
+1264,üksik naine,Ennustatud 2020,1.35,21.29,2020,675
+1265,üksikvanem,Tegelik 2020,0,29.34,2020,675
+1266,üksikvanem,Ennustatud 2020,0,27.58,2020,675
+1267,Lasteta paar,Tegelik 2020,0.26,9.21,2020,675
+1268,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,675
+1269,ühe lapsega paar,Tegelik 2020,0,7.3,2020,675
+1270,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,675
+1271,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,675
+1272,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,675
+1273,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,675
+1274,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,675
+1275,üksik mees,Tegelik 2020,5.47,32.99,2020,676
+1276,üksik mees,Ennustatud 2020,4.93,32.6,2020,676
+1277,üksik naine,Tegelik 2020,1.35,21.29,2020,676
+1278,üksik naine,Ennustatud 2020,1.35,21.29,2020,676
+1279,üksikvanem,Tegelik 2020,0,29.34,2020,676
+1280,üksikvanem,Ennustatud 2020,0,27.58,2020,676
+1281,Lasteta paar,Tegelik 2020,0.26,9.21,2020,676
+1282,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,676
+1283,ühe lapsega paar,Tegelik 2020,0,7.3,2020,676
+1284,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,676
+1285,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,676
+1286,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,676
+1287,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,676
+1288,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,676
+1289,üksik mees,Tegelik 2020,5.47,32.99,2020,677
+1290,üksik mees,Ennustatud 2020,4.93,32.6,2020,677
+1291,üksik naine,Tegelik 2020,1.35,21.29,2020,677
+1292,üksik naine,Ennustatud 2020,1.35,21.29,2020,677
+1293,üksikvanem,Tegelik 2020,0,29.34,2020,677
+1294,üksikvanem,Ennustatud 2020,0,27.5,2020,677
+1295,Lasteta paar,Tegelik 2020,0.26,9.21,2020,677
+1296,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,677
+1297,ühe lapsega paar,Tegelik 2020,0,7.3,2020,677
+1298,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,677
+1299,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,677
+1300,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,677
+1301,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,677
+1302,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,677
+1303,üksik mees,Tegelik 2020,5.47,32.99,2020,678
+1304,üksik mees,Ennustatud 2020,4.93,32.6,2020,678
+1305,üksik naine,Tegelik 2020,1.35,21.29,2020,678
+1306,üksik naine,Ennustatud 2020,1.35,21.29,2020,678
+1307,üksikvanem,Tegelik 2020,0,29.34,2020,678
+1308,üksikvanem,Ennustatud 2020,0,27.5,2020,678
+1309,Lasteta paar,Tegelik 2020,0.26,9.21,2020,678
+1310,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,678
+1311,ühe lapsega paar,Tegelik 2020,0,7.3,2020,678
+1312,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,678
+1313,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,678
+1314,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,678
+1315,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,678
+1316,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,678
+1317,üksik mees,Tegelik 2020,5.47,32.99,2020,679
+1318,üksik mees,Ennustatud 2020,4.93,32.6,2020,679
+1319,üksik naine,Tegelik 2020,1.35,21.29,2020,679
+1320,üksik naine,Ennustatud 2020,1.35,21.29,2020,679
+1321,üksikvanem,Tegelik 2020,0,29.34,2020,679
+1322,üksikvanem,Ennustatud 2020,0,27.5,2020,679
+1323,Lasteta paar,Tegelik 2020,0.26,9.21,2020,679
+1324,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,679
+1325,ühe lapsega paar,Tegelik 2020,0,7.3,2020,679
+1326,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,679
+1327,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,679
+1328,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,679
+1329,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,679
+1330,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,679
+1331,üksik mees,Tegelik 2020,5.47,32.99,2020,680
+1332,üksik mees,Ennustatud 2020,4.93,32.6,2020,680
+1333,üksik naine,Tegelik 2020,1.35,21.29,2020,680
+1334,üksik naine,Ennustatud 2020,1.35,21.29,2020,680
+1335,üksikvanem,Tegelik 2020,0,29.34,2020,680
+1336,üksikvanem,Ennustatud 2020,0,27.5,2020,680
+1337,Lasteta paar,Tegelik 2020,0.26,9.21,2020,680
+1338,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,680
+1339,ühe lapsega paar,Tegelik 2020,0,7.3,2020,680
+1340,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,680
+1341,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,680
+1342,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,680
+1343,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,680
+1344,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,680
+1345,üksik mees,Tegelik 2020,5.47,32.99,2020,681
+1346,üksik mees,Ennustatud 2020,4.93,32.6,2020,681
+1347,üksik naine,Tegelik 2020,1.35,21.29,2020,681
+1348,üksik naine,Ennustatud 2020,1.35,21.29,2020,681
+1349,üksikvanem,Tegelik 2020,0,29.34,2020,681
+1350,üksikvanem,Ennustatud 2020,0,27.5,2020,681
+1351,Lasteta paar,Tegelik 2020,0.26,9.21,2020,681
+1352,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,681
+1353,ühe lapsega paar,Tegelik 2020,0,7.3,2020,681
+1354,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,681
+1355,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,681
+1356,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,681
+1357,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,681
+1358,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,681
+1359,üksik mees,Tegelik 2020,5.47,32.99,2020,682
+1360,üksik mees,Ennustatud 2020,4.93,32.6,2020,682
+1361,üksik naine,Tegelik 2020,1.35,21.29,2020,682
+1362,üksik naine,Ennustatud 2020,1.35,21.29,2020,682
+1363,üksikvanem,Tegelik 2020,0,29.34,2020,682
+1364,üksikvanem,Ennustatud 2020,0,27.5,2020,682
+1365,Lasteta paar,Tegelik 2020,0.26,9.21,2020,682
+1366,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,682
+1367,ühe lapsega paar,Tegelik 2020,0,7.3,2020,682
+1368,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,682
+1369,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,682
+1370,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,682
+1371,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,682
+1372,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,682
+1373,üksik mees,Tegelik 2020,5.47,32.99,2020,683
+1374,üksik mees,Ennustatud 2020,4.93,32.6,2020,683
+1375,üksik naine,Tegelik 2020,1.35,21.29,2020,683
+1376,üksik naine,Ennustatud 2020,1.35,21.29,2020,683
+1377,üksikvanem,Tegelik 2020,0,29.34,2020,683
+1378,üksikvanem,Ennustatud 2020,0,27.5,2020,683
+1379,Lasteta paar,Tegelik 2020,0.26,9.21,2020,683
+1380,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,683
+1381,ühe lapsega paar,Tegelik 2020,0,7.3,2020,683
+1382,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,683
+1383,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,683
+1384,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,683
+1385,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,683
+1386,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,683
+1387,üksik mees,Tegelik 2020,5.47,32.99,2020,684
+1388,üksik mees,Ennustatud 2020,4.93,32.6,2020,684
+1389,üksik naine,Tegelik 2020,1.35,21.29,2020,684
+1390,üksik naine,Ennustatud 2020,1.35,21.29,2020,684
+1391,üksikvanem,Tegelik 2020,0,29.34,2020,684
+1392,üksikvanem,Ennustatud 2020,0,27.5,2020,684
+1393,Lasteta paar,Tegelik 2020,0.26,9.21,2020,684
+1394,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,684
+1395,ühe lapsega paar,Tegelik 2020,0,7.3,2020,684
+1396,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,684
+1397,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,684
+1398,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,684
+1399,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,684
+1400,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,684
+1401,üksik mees,Tegelik 2020,5.47,32.99,2020,685
+1402,üksik mees,Ennustatud 2020,4.93,32.6,2020,685
+1403,üksik naine,Tegelik 2020,1.35,21.29,2020,685
+1404,üksik naine,Ennustatud 2020,1.35,21.29,2020,685
+1405,üksikvanem,Tegelik 2020,0,29.34,2020,685
+1406,üksikvanem,Ennustatud 2020,0,27.5,2020,685
+1407,Lasteta paar,Tegelik 2020,0.26,9.21,2020,685
+1408,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,685
+1409,ühe lapsega paar,Tegelik 2020,0,7.3,2020,685
+1410,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,685
+1411,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,685
+1412,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,685
+1413,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,685
+1414,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,685
+1415,üksik mees,Tegelik 2020,5.47,32.99,2020,686
+1416,üksik mees,Ennustatud 2020,4.93,32.6,2020,686
+1417,üksik naine,Tegelik 2020,1.35,21.29,2020,686
+1418,üksik naine,Ennustatud 2020,1.35,21.29,2020,686
+1419,üksikvanem,Tegelik 2020,0,29.34,2020,686
+1420,üksikvanem,Ennustatud 2020,0,27.5,2020,686
+1421,Lasteta paar,Tegelik 2020,0.26,9.21,2020,686
+1422,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,686
+1423,ühe lapsega paar,Tegelik 2020,0,7.3,2020,686
+1424,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,686
+1425,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,686
+1426,Kahe lapsega paar,Ennustatud 2020,0,9.77,2020,686
+1427,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,686
+1428,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,686
+1429,üksik mees,Tegelik 2020,5.47,32.99,2020,687
+1430,üksik mees,Ennustatud 2020,4.93,32.6,2020,687
+1431,üksik naine,Tegelik 2020,1.35,21.29,2020,687
+1432,üksik naine,Ennustatud 2020,1.35,21.29,2020,687
+1433,üksikvanem,Tegelik 2020,0,29.34,2020,687
+1434,üksikvanem,Ennustatud 2020,0,27.5,2020,687
+1435,Lasteta paar,Tegelik 2020,0.26,9.21,2020,687
+1436,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,687
+1437,ühe lapsega paar,Tegelik 2020,0,7.3,2020,687
+1438,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,687
+1439,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,687
+1440,Kahe lapsega paar,Ennustatud 2020,0,9.91,2020,687
+1441,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,687
+1442,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,687
+1443,üksik mees,Tegelik 2020,5.47,32.99,2020,688
+1444,üksik mees,Ennustatud 2020,4.93,32.6,2020,688
+1445,üksik naine,Tegelik 2020,1.35,21.29,2020,688
+1446,üksik naine,Ennustatud 2020,1.35,21.29,2020,688
+1447,üksikvanem,Tegelik 2020,0,29.34,2020,688
+1448,üksikvanem,Ennustatud 2020,0,27.5,2020,688
+1449,Lasteta paar,Tegelik 2020,0.26,9.21,2020,688
+1450,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,688
+1451,ühe lapsega paar,Tegelik 2020,0,7.3,2020,688
+1452,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,688
+1453,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,688
+1454,Kahe lapsega paar,Ennustatud 2020,0,9.91,2020,688
+1455,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,688
+1456,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,688
+1457,üksik mees,Tegelik 2020,5.47,32.99,2020,689
+1458,üksik mees,Ennustatud 2020,4.93,32.6,2020,689
+1459,üksik naine,Tegelik 2020,1.35,21.29,2020,689
+1460,üksik naine,Ennustatud 2020,1.35,21.29,2020,689
+1461,üksikvanem,Tegelik 2020,0,29.34,2020,689
+1462,üksikvanem,Ennustatud 2020,0,27.5,2020,689
+1463,Lasteta paar,Tegelik 2020,0.26,9.21,2020,689
+1464,Lasteta paar,Ennustatud 2020,0.26,9.11,2020,689
+1465,ühe lapsega paar,Tegelik 2020,0,7.3,2020,689
+1466,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,689
+1467,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,689
+1468,Kahe lapsega paar,Ennustatud 2020,0,9.91,2020,689
+1469,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,689
+1470,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,689
+1471,üksik mees,Tegelik 2020,5.47,32.99,2020,690
+1472,üksik mees,Ennustatud 2020,4.93,32.6,2020,690
+1473,üksik naine,Tegelik 2020,1.35,21.29,2020,690
+1474,üksik naine,Ennustatud 2020,1.35,21.29,2020,690
+1475,üksikvanem,Tegelik 2020,0,29.34,2020,690
+1476,üksikvanem,Ennustatud 2020,0,27.5,2020,690
+1477,Lasteta paar,Tegelik 2020,0.26,9.21,2020,690
+1478,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,690
+1479,ühe lapsega paar,Tegelik 2020,0,7.3,2020,690
+1480,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,690
+1481,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,690
+1482,Kahe lapsega paar,Ennustatud 2020,0,9.91,2020,690
+1483,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,690
+1484,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,690
+1485,üksik mees,Tegelik 2020,5.47,32.99,2020,691
+1486,üksik mees,Ennustatud 2020,4.93,32.6,2020,691
+1487,üksik naine,Tegelik 2020,1.35,21.29,2020,691
+1488,üksik naine,Ennustatud 2020,1.35,21.29,2020,691
+1489,üksikvanem,Tegelik 2020,0,29.34,2020,691
+1490,üksikvanem,Ennustatud 2020,0,27.5,2020,691
+1491,Lasteta paar,Tegelik 2020,0.26,9.21,2020,691
+1492,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,691
+1493,ühe lapsega paar,Tegelik 2020,0,7.3,2020,691
+1494,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,691
+1495,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,691
+1496,Kahe lapsega paar,Ennustatud 2020,0,9.91,2020,691
+1497,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,691
+1498,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,691
+1499,üksik mees,Tegelik 2020,5.47,32.99,2020,692
+1500,üksik mees,Ennustatud 2020,4.93,32.6,2020,692
+1501,üksik naine,Tegelik 2020,1.35,21.29,2020,692
+1502,üksik naine,Ennustatud 2020,1.35,21.29,2020,692
+1503,üksikvanem,Tegelik 2020,0,29.34,2020,692
+1504,üksikvanem,Ennustatud 2020,0,27.5,2020,692
+1505,Lasteta paar,Tegelik 2020,0.26,9.21,2020,692
+1506,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,692
+1507,ühe lapsega paar,Tegelik 2020,0,7.3,2020,692
+1508,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,692
+1509,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,692
+1510,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,692
+1511,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,692
+1512,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,692
+1513,üksik mees,Tegelik 2020,5.47,32.99,2020,693
+1514,üksik mees,Ennustatud 2020,4.93,32.6,2020,693
+1515,üksik naine,Tegelik 2020,1.35,21.29,2020,693
+1516,üksik naine,Ennustatud 2020,1.35,21.29,2020,693
+1517,üksikvanem,Tegelik 2020,0,29.34,2020,693
+1518,üksikvanem,Ennustatud 2020,0,27.5,2020,693
+1519,Lasteta paar,Tegelik 2020,0.26,9.21,2020,693
+1520,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,693
+1521,ühe lapsega paar,Tegelik 2020,0,7.3,2020,693
+1522,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,693
+1523,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,693
+1524,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,693
+1525,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,693
+1526,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,693
+1527,üksik mees,Tegelik 2020,5.47,32.99,2020,694
+1528,üksik mees,Ennustatud 2020,4.93,32.6,2020,694
+1529,üksik naine,Tegelik 2020,1.35,21.29,2020,694
+1530,üksik naine,Ennustatud 2020,1.35,21.29,2020,694
+1531,üksikvanem,Tegelik 2020,0,29.34,2020,694
+1532,üksikvanem,Ennustatud 2020,0,27.5,2020,694
+1533,Lasteta paar,Tegelik 2020,0.26,9.21,2020,694
+1534,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,694
+1535,ühe lapsega paar,Tegelik 2020,0,7.3,2020,694
+1536,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,694
+1537,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,694
+1538,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,694
+1539,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,694
+1540,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,694
+1541,üksik mees,Tegelik 2020,5.47,32.99,2020,695
+1542,üksik mees,Ennustatud 2020,4.93,32.6,2020,695
+1543,üksik naine,Tegelik 2020,1.35,21.29,2020,695
+1544,üksik naine,Ennustatud 2020,1.35,21.29,2020,695
+1545,üksikvanem,Tegelik 2020,0,29.34,2020,695
+1546,üksikvanem,Ennustatud 2020,0,27.5,2020,695
+1547,Lasteta paar,Tegelik 2020,0.26,9.21,2020,695
+1548,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,695
+1549,ühe lapsega paar,Tegelik 2020,0,7.3,2020,695
+1550,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,695
+1551,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,695
+1552,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,695
+1553,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,695
+1554,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,695
+1555,üksik mees,Tegelik 2020,5.47,32.99,2020,696
+1556,üksik mees,Ennustatud 2020,4.93,32.6,2020,696
+1557,üksik naine,Tegelik 2020,1.35,21.29,2020,696
+1558,üksik naine,Ennustatud 2020,1.35,21.29,2020,696
+1559,üksikvanem,Tegelik 2020,0,29.34,2020,696
+1560,üksikvanem,Ennustatud 2020,0,27.5,2020,696
+1561,Lasteta paar,Tegelik 2020,0.26,9.21,2020,696
+1562,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,696
+1563,ühe lapsega paar,Tegelik 2020,0,7.3,2020,696
+1564,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,696
+1565,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,696
+1566,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,696
+1567,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,696
+1568,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,696
+1569,üksik mees,Tegelik 2020,5.47,32.99,2020,697
+1570,üksik mees,Ennustatud 2020,4.93,32.6,2020,697
+1571,üksik naine,Tegelik 2020,1.35,21.29,2020,697
+1572,üksik naine,Ennustatud 2020,1.35,21.29,2020,697
+1573,üksikvanem,Tegelik 2020,0,29.34,2020,697
+1574,üksikvanem,Ennustatud 2020,0,27.5,2020,697
+1575,Lasteta paar,Tegelik 2020,0.26,9.21,2020,697
+1576,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,697
+1577,ühe lapsega paar,Tegelik 2020,0,7.3,2020,697
+1578,ühe lapsega paar,Ennustatud 2020,0,7.35,2020,697
+1579,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,697
+1580,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,697
+1581,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,697
+1582,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,697
+1583,üksik mees,Tegelik 2020,5.47,32.99,2020,698
+1584,üksik mees,Ennustatud 2020,4.93,32.6,2020,698
+1585,üksik naine,Tegelik 2020,1.35,21.29,2020,698
+1586,üksik naine,Ennustatud 2020,1.35,21.29,2020,698
+1587,üksikvanem,Tegelik 2020,0,29.34,2020,698
+1588,üksikvanem,Ennustatud 2020,0,27.5,2020,698
+1589,Lasteta paar,Tegelik 2020,0.26,9.21,2020,698
+1590,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,698
+1591,ühe lapsega paar,Tegelik 2020,0,7.3,2020,698
+1592,ühe lapsega paar,Ennustatud 2020,0,7.61,2020,698
+1593,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,698
+1594,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,698
+1595,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,698
+1596,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,698
+1597,üksik mees,Tegelik 2020,5.47,32.99,2020,699
+1598,üksik mees,Ennustatud 2020,4.93,32.6,2020,699
+1599,üksik naine,Tegelik 2020,1.35,21.29,2020,699
+1600,üksik naine,Ennustatud 2020,1.35,21.29,2020,699
+1601,üksikvanem,Tegelik 2020,0,29.34,2020,699
+1602,üksikvanem,Ennustatud 2020,0,27.5,2020,699
+1603,Lasteta paar,Tegelik 2020,0.26,9.21,2020,699
+1604,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,699
+1605,ühe lapsega paar,Tegelik 2020,0,7.3,2020,699
+1606,ühe lapsega paar,Ennustatud 2020,0,7.61,2020,699
+1607,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,699
+1608,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,699
+1609,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,699
+1610,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,699
+1611,üksik mees,Tegelik 2020,5.47,32.99,2020,700
+1612,üksik mees,Ennustatud 2020,4.93,32.6,2020,700
+1613,üksik naine,Tegelik 2020,1.35,21.29,2020,700
+1614,üksik naine,Ennustatud 2020,1.35,21.29,2020,700
+1615,üksikvanem,Tegelik 2020,0,29.34,2020,700
+1616,üksikvanem,Ennustatud 2020,0,27.7,2020,700
+1617,Lasteta paar,Tegelik 2020,0.26,9.21,2020,700
+1618,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,700
+1619,ühe lapsega paar,Tegelik 2020,0,7.3,2020,700
+1620,ühe lapsega paar,Ennustatud 2020,0,7.61,2020,700
+1621,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,700
+1622,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,700
+1623,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,700
+1624,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,700
+1625,üksik mees,Tegelik 2020,5.47,32.99,2020,701
+1626,üksik mees,Ennustatud 2020,4.93,32.6,2020,701
+1627,üksik naine,Tegelik 2020,1.35,21.29,2020,701
+1628,üksik naine,Ennustatud 2020,1.35,21.29,2020,701
+1629,üksikvanem,Tegelik 2020,0,29.34,2020,701
+1630,üksikvanem,Ennustatud 2020,0,27.7,2020,701
+1631,Lasteta paar,Tegelik 2020,0.26,9.21,2020,701
+1632,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,701
+1633,ühe lapsega paar,Tegelik 2020,0,7.3,2020,701
+1634,ühe lapsega paar,Ennustatud 2020,0,7.61,2020,701
+1635,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,701
+1636,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,701
+1637,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,701
+1638,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,701
+1639,üksik mees,Tegelik 2020,5.47,32.99,2020,702
+1640,üksik mees,Ennustatud 2020,4.93,32.6,2020,702
+1641,üksik naine,Tegelik 2020,1.35,21.29,2020,702
+1642,üksik naine,Ennustatud 2020,1.35,21.29,2020,702
+1643,üksikvanem,Tegelik 2020,0,29.34,2020,702
+1644,üksikvanem,Ennustatud 2020,0,27.7,2020,702
+1645,Lasteta paar,Tegelik 2020,0.26,9.21,2020,702
+1646,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,702
+1647,ühe lapsega paar,Tegelik 2020,0,7.3,2020,702
+1648,ühe lapsega paar,Ennustatud 2020,0,7.61,2020,702
+1649,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,702
+1650,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,702
+1651,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,702
+1652,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,702
+1653,üksik mees,Tegelik 2020,5.47,32.99,2020,703
+1654,üksik mees,Ennustatud 2020,4.93,32.96,2020,703
+1655,üksik naine,Tegelik 2020,1.35,21.29,2020,703
+1656,üksik naine,Ennustatud 2020,1.35,21.29,2020,703
+1657,üksikvanem,Tegelik 2020,0,29.34,2020,703
+1658,üksikvanem,Ennustatud 2020,0,27.48,2020,703
+1659,Lasteta paar,Tegelik 2020,0.26,9.21,2020,703
+1660,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,703
+1661,ühe lapsega paar,Tegelik 2020,0,7.3,2020,703
+1662,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,703
+1663,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,703
+1664,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,703
+1665,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,703
+1666,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,703
+1667,üksik mees,Tegelik 2020,5.47,32.99,2020,704
+1668,üksik mees,Ennustatud 2020,4.93,32.96,2020,704
+1669,üksik naine,Tegelik 2020,1.35,21.29,2020,704
+1670,üksik naine,Ennustatud 2020,1.35,21.29,2020,704
+1671,üksikvanem,Tegelik 2020,0,29.34,2020,704
+1672,üksikvanem,Ennustatud 2020,0,27.48,2020,704
+1673,Lasteta paar,Tegelik 2020,0.26,9.21,2020,704
+1674,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,704
+1675,ühe lapsega paar,Tegelik 2020,0,7.3,2020,704
+1676,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,704
+1677,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,704
+1678,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,704
+1679,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,704
+1680,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,704
+1681,üksik mees,Tegelik 2020,5.47,32.99,2020,705
+1682,üksik mees,Ennustatud 2020,4.93,32.96,2020,705
+1683,üksik naine,Tegelik 2020,1.35,21.29,2020,705
+1684,üksik naine,Ennustatud 2020,1.35,21.29,2020,705
+1685,üksikvanem,Tegelik 2020,0,29.34,2020,705
+1686,üksikvanem,Ennustatud 2020,0,27.48,2020,705
+1687,Lasteta paar,Tegelik 2020,0.26,9.21,2020,705
+1688,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,705
+1689,ühe lapsega paar,Tegelik 2020,0,7.3,2020,705
+1690,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,705
+1691,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,705
+1692,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,705
+1693,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,705
+1694,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,705
+1695,üksik mees,Tegelik 2020,5.47,32.99,2020,706
+1696,üksik mees,Ennustatud 2020,4.93,32.96,2020,706
+1697,üksik naine,Tegelik 2020,1.35,21.29,2020,706
+1698,üksik naine,Ennustatud 2020,1.35,21.29,2020,706
+1699,üksikvanem,Tegelik 2020,0,29.34,2020,706
+1700,üksikvanem,Ennustatud 2020,0,27.48,2020,706
+1701,Lasteta paar,Tegelik 2020,0.26,9.21,2020,706
+1702,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,706
+1703,ühe lapsega paar,Tegelik 2020,0,7.3,2020,706
+1704,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,706
+1705,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,706
+1706,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,706
+1707,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,706
+1708,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,706
+1709,üksik mees,Tegelik 2020,5.47,32.99,2020,707
+1710,üksik mees,Ennustatud 2020,4.93,32.96,2020,707
+1711,üksik naine,Tegelik 2020,1.35,21.29,2020,707
+1712,üksik naine,Ennustatud 2020,1.35,21.29,2020,707
+1713,üksikvanem,Tegelik 2020,0,29.34,2020,707
+1714,üksikvanem,Ennustatud 2020,0,27.48,2020,707
+1715,Lasteta paar,Tegelik 2020,0.26,9.21,2020,707
+1716,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,707
+1717,ühe lapsega paar,Tegelik 2020,0,7.3,2020,707
+1718,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,707
+1719,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,707
+1720,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,707
+1721,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,707
+1722,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,707
+1723,üksik mees,Tegelik 2020,5.47,32.99,2020,708
+1724,üksik mees,Ennustatud 2020,4.93,32.96,2020,708
+1725,üksik naine,Tegelik 2020,1.35,21.29,2020,708
+1726,üksik naine,Ennustatud 2020,1.35,21.29,2020,708
+1727,üksikvanem,Tegelik 2020,0,29.34,2020,708
+1728,üksikvanem,Ennustatud 2020,0,27.48,2020,708
+1729,Lasteta paar,Tegelik 2020,0.26,9.21,2020,708
+1730,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,708
+1731,ühe lapsega paar,Tegelik 2020,0,7.3,2020,708
+1732,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,708
+1733,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,708
+1734,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,708
+1735,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,708
+1736,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,708
+1737,üksik mees,Tegelik 2020,5.47,32.99,2020,709
+1738,üksik mees,Ennustatud 2020,4.93,32.96,2020,709
+1739,üksik naine,Tegelik 2020,1.35,21.29,2020,709
+1740,üksik naine,Ennustatud 2020,1.35,21.29,2020,709
+1741,üksikvanem,Tegelik 2020,0,29.34,2020,709
+1742,üksikvanem,Ennustatud 2020,0,27.48,2020,709
+1743,Lasteta paar,Tegelik 2020,0.26,9.21,2020,709
+1744,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,709
+1745,ühe lapsega paar,Tegelik 2020,0,7.3,2020,709
+1746,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,709
+1747,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,709
+1748,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,709
+1749,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,709
+1750,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,709
+1751,üksik mees,Tegelik 2020,5.47,32.99,2020,710
+1752,üksik mees,Ennustatud 2020,4.93,32.96,2020,710
+1753,üksik naine,Tegelik 2020,1.35,21.29,2020,710
+1754,üksik naine,Ennustatud 2020,1.35,21.29,2020,710
+1755,üksikvanem,Tegelik 2020,0,29.34,2020,710
+1756,üksikvanem,Ennustatud 2020,0,27.48,2020,710
+1757,Lasteta paar,Tegelik 2020,0.26,9.21,2020,710
+1758,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,710
+1759,ühe lapsega paar,Tegelik 2020,0,7.3,2020,710
+1760,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,710
+1761,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,710
+1762,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,710
+1763,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,710
+1764,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,710
+1765,üksik mees,Tegelik 2020,5.47,32.99,2020,711
+1766,üksik mees,Ennustatud 2020,4.93,32.96,2020,711
+1767,üksik naine,Tegelik 2020,1.35,21.29,2020,711
+1768,üksik naine,Ennustatud 2020,1.35,21.29,2020,711
+1769,üksikvanem,Tegelik 2020,0,29.34,2020,711
+1770,üksikvanem,Ennustatud 2020,0,27.48,2020,711
+1771,Lasteta paar,Tegelik 2020,0.26,9.21,2020,711
+1772,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,711
+1773,ühe lapsega paar,Tegelik 2020,0,7.3,2020,711
+1774,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,711
+1775,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,711
+1776,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,711
+1777,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,711
+1778,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,711
+1779,üksik mees,Tegelik 2020,5.47,32.99,2020,712
+1780,üksik mees,Ennustatud 2020,4.93,32.96,2020,712
+1781,üksik naine,Tegelik 2020,1.35,21.29,2020,712
+1782,üksik naine,Ennustatud 2020,1.35,21.29,2020,712
+1783,üksikvanem,Tegelik 2020,0,29.34,2020,712
+1784,üksikvanem,Ennustatud 2020,0,27.48,2020,712
+1785,Lasteta paar,Tegelik 2020,0.26,9.21,2020,712
+1786,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,712
+1787,ühe lapsega paar,Tegelik 2020,0,7.3,2020,712
+1788,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,712
+1789,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,712
+1790,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,712
+1791,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,712
+1792,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,712
+1793,üksik mees,Tegelik 2020,5.47,32.99,2020,713
+1794,üksik mees,Ennustatud 2020,4.93,32.96,2020,713
+1795,üksik naine,Tegelik 2020,1.35,21.29,2020,713
+1796,üksik naine,Ennustatud 2020,1.35,21.29,2020,713
+1797,üksikvanem,Tegelik 2020,0,29.34,2020,713
+1798,üksikvanem,Ennustatud 2020,0,27.48,2020,713
+1799,Lasteta paar,Tegelik 2020,0.26,9.21,2020,713
+1800,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,713
+1801,ühe lapsega paar,Tegelik 2020,0,7.3,2020,713
+1802,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,713
+1803,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,713
+1804,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,713
+1805,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,713
+1806,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,713
+1807,üksik mees,Tegelik 2020,5.47,32.99,2020,714
+1808,üksik mees,Ennustatud 2020,4.93,32.96,2020,714
+1809,üksik naine,Tegelik 2020,1.35,21.29,2020,714
+1810,üksik naine,Ennustatud 2020,1.35,21.29,2020,714
+1811,üksikvanem,Tegelik 2020,0,29.34,2020,714
+1812,üksikvanem,Ennustatud 2020,0,27.48,2020,714
+1813,Lasteta paar,Tegelik 2020,0.26,9.21,2020,714
+1814,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,714
+1815,ühe lapsega paar,Tegelik 2020,0,7.3,2020,714
+1816,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,714
+1817,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,714
+1818,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,714
+1819,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,714
+1820,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,714
+1821,üksik mees,Tegelik 2020,5.47,32.99,2020,715
+1822,üksik mees,Ennustatud 2020,4.93,32.96,2020,715
+1823,üksik naine,Tegelik 2020,1.35,21.29,2020,715
+1824,üksik naine,Ennustatud 2020,1.35,21.29,2020,715
+1825,üksikvanem,Tegelik 2020,0,29.34,2020,715
+1826,üksikvanem,Ennustatud 2020,0,27.48,2020,715
+1827,Lasteta paar,Tegelik 2020,0.26,9.21,2020,715
+1828,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,715
+1829,ühe lapsega paar,Tegelik 2020,0,7.3,2020,715
+1830,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,715
+1831,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,715
+1832,Kahe lapsega paar,Ennustatud 2020,0,9.84,2020,715
+1833,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,715
+1834,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,715
+1835,üksik mees,Tegelik 2020,5.47,32.99,2020,716
+1836,üksik mees,Ennustatud 2020,4.93,32.96,2020,716
+1837,üksik naine,Tegelik 2020,1.35,21.29,2020,716
+1838,üksik naine,Ennustatud 2020,1.35,21.29,2020,716
+1839,üksikvanem,Tegelik 2020,0,29.34,2020,716
+1840,üksikvanem,Ennustatud 2020,0,27.48,2020,716
+1841,Lasteta paar,Tegelik 2020,0.26,9.21,2020,716
+1842,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,716
+1843,ühe lapsega paar,Tegelik 2020,0,7.3,2020,716
+1844,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,716
+1845,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,716
+1846,Kahe lapsega paar,Ennustatud 2020,0,9.58,2020,716
+1847,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,716
+1848,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,716
+1849,üksik mees,Tegelik 2020,5.47,32.99,2020,717
+1850,üksik mees,Ennustatud 2020,4.93,32.96,2020,717
+1851,üksik naine,Tegelik 2020,1.35,21.29,2020,717
+1852,üksik naine,Ennustatud 2020,1.35,21.29,2020,717
+1853,üksikvanem,Tegelik 2020,0,29.34,2020,717
+1854,üksikvanem,Ennustatud 2020,0,27.48,2020,717
+1855,Lasteta paar,Tegelik 2020,0.26,9.21,2020,717
+1856,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,717
+1857,ühe lapsega paar,Tegelik 2020,0,7.3,2020,717
+1858,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,717
+1859,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,717
+1860,Kahe lapsega paar,Ennustatud 2020,0,9.58,2020,717
+1861,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,717
+1862,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,717
+1863,üksik mees,Tegelik 2020,5.47,32.99,2020,718
+1864,üksik mees,Ennustatud 2020,4.93,32.96,2020,718
+1865,üksik naine,Tegelik 2020,1.35,21.29,2020,718
+1866,üksik naine,Ennustatud 2020,1.35,21.29,2020,718
+1867,üksikvanem,Tegelik 2020,0,29.34,2020,718
+1868,üksikvanem,Ennustatud 2020,0,27.48,2020,718
+1869,Lasteta paar,Tegelik 2020,0.26,9.21,2020,718
+1870,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,718
+1871,ühe lapsega paar,Tegelik 2020,0,7.3,2020,718
+1872,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,718
+1873,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,718
+1874,Kahe lapsega paar,Ennustatud 2020,0,9.58,2020,718
+1875,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,718
+1876,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.46,2020,718
+1877,üksik mees,Tegelik 2020,5.47,32.99,2020,719
+1878,üksik mees,Ennustatud 2020,4.93,32.96,2020,719
+1879,üksik naine,Tegelik 2020,1.35,21.29,2020,719
+1880,üksik naine,Ennustatud 2020,1.35,21.29,2020,719
+1881,üksikvanem,Tegelik 2020,0,29.34,2020,719
+1882,üksikvanem,Ennustatud 2020,0,27.48,2020,719
+1883,Lasteta paar,Tegelik 2020,0.26,9.21,2020,719
+1884,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,719
+1885,ühe lapsega paar,Tegelik 2020,0,7.3,2020,719
+1886,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,719
+1887,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,719
+1888,Kahe lapsega paar,Ennustatud 2020,0,9.58,2020,719
+1889,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,719
+1890,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.9,2020,719
+1891,üksik mees,Tegelik 2020,5.47,32.99,2020,720
+1892,üksik mees,Ennustatud 2020,4.93,32.96,2020,720
+1893,üksik naine,Tegelik 2020,1.35,21.29,2020,720
+1894,üksik naine,Ennustatud 2020,1.35,21.29,2020,720
+1895,üksikvanem,Tegelik 2020,0,29.34,2020,720
+1896,üksikvanem,Ennustatud 2020,0,27.48,2020,720
+1897,Lasteta paar,Tegelik 2020,0.26,9.21,2020,720
+1898,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,720
+1899,ühe lapsega paar,Tegelik 2020,0,7.3,2020,720
+1900,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,720
+1901,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,720
+1902,Kahe lapsega paar,Ennustatud 2020,0,9.58,2020,720
+1903,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,720
+1904,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.9,2020,720
+1905,üksik mees,Tegelik 2020,5.47,32.99,2020,721
+1906,üksik mees,Ennustatud 2020,4.93,32.96,2020,721
+1907,üksik naine,Tegelik 2020,1.35,21.29,2020,721
+1908,üksik naine,Ennustatud 2020,1.35,21.29,2020,721
+1909,üksikvanem,Tegelik 2020,0,29.34,2020,721
+1910,üksikvanem,Ennustatud 2020,0,27.48,2020,721
+1911,Lasteta paar,Tegelik 2020,0.26,9.21,2020,721
+1912,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,721
+1913,ühe lapsega paar,Tegelik 2020,0,7.3,2020,721
+1914,ühe lapsega paar,Ennustatud 2020,0,7.74,2020,721
+1915,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,721
+1916,Kahe lapsega paar,Ennustatud 2020,0,9.58,2020,721
+1917,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,721
+1918,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.9,2020,721
+1919,üksik mees,Tegelik 2020,5.47,32.99,2020,722
+1920,üksik mees,Ennustatud 2020,4.93,32.96,2020,722
+1921,üksik naine,Tegelik 2020,1.35,21.29,2020,722
+1922,üksik naine,Ennustatud 2020,1.35,21.29,2020,722
+1923,üksikvanem,Tegelik 2020,0,29.34,2020,722
+1924,üksikvanem,Ennustatud 2020,0,27.48,2020,722
+1925,Lasteta paar,Tegelik 2020,0.26,9.21,2020,722
+1926,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,722
+1927,ühe lapsega paar,Tegelik 2020,0,7.3,2020,722
+1928,ühe lapsega paar,Ennustatud 2020,0,7.51,2020,722
+1929,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,722
+1930,Kahe lapsega paar,Ennustatud 2020,0,9.58,2020,722
+1931,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,722
+1932,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.9,2020,722
+1933,üksik mees,Tegelik 2020,5.47,32.99,2020,723
+1934,üksik mees,Ennustatud 2020,4.93,32.96,2020,723
+1935,üksik naine,Tegelik 2020,1.35,21.29,2020,723
+1936,üksik naine,Ennustatud 2020,1.35,21.29,2020,723
+1937,üksikvanem,Tegelik 2020,0,29.34,2020,723
+1938,üksikvanem,Ennustatud 2020,0,27.48,2020,723
+1939,Lasteta paar,Tegelik 2020,0.26,9.21,2020,723
+1940,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,723
+1941,ühe lapsega paar,Tegelik 2020,0,7.3,2020,723
+1942,ühe lapsega paar,Ennustatud 2020,0,7.51,2020,723
+1943,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,723
+1944,Kahe lapsega paar,Ennustatud 2020,0,9.58,2020,723
+1945,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,723
+1946,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.9,2020,723
+1947,üksik mees,Tegelik 2020,5.47,32.99,2020,724
+1948,üksik mees,Ennustatud 2020,4.93,32.96,2020,724
+1949,üksik naine,Tegelik 2020,1.35,21.29,2020,724
+1950,üksik naine,Ennustatud 2020,1.35,21.29,2020,724
+1951,üksikvanem,Tegelik 2020,0,29.34,2020,724
+1952,üksikvanem,Ennustatud 2020,0,27.48,2020,724
+1953,Lasteta paar,Tegelik 2020,0.26,9.21,2020,724
+1954,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,724
+1955,ühe lapsega paar,Tegelik 2020,0,7.3,2020,724
+1956,ühe lapsega paar,Ennustatud 2020,0,7.51,2020,724
+1957,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,724
+1958,Kahe lapsega paar,Ennustatud 2020,0,9.58,2020,724
+1959,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,724
+1960,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.9,2020,724
+1961,üksik mees,Tegelik 2020,5.47,32.99,2020,725
+1962,üksik mees,Ennustatud 2020,4.93,32.96,2020,725
+1963,üksik naine,Tegelik 2020,1.35,21.29,2020,725
+1964,üksik naine,Ennustatud 2020,1.35,21.29,2020,725
+1965,üksikvanem,Tegelik 2020,0,29.34,2020,725
+1966,üksikvanem,Ennustatud 2020,0,27.48,2020,725
+1967,Lasteta paar,Tegelik 2020,0.26,9.21,2020,725
+1968,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,725
+1969,ühe lapsega paar,Tegelik 2020,0,7.3,2020,725
+1970,ühe lapsega paar,Ennustatud 2020,0,7.51,2020,725
+1971,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,725
+1972,Kahe lapsega paar,Ennustatud 2020,0,9.58,2020,725
+1973,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,725
+1974,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.9,2020,725
+1975,üksik mees,Tegelik 2020,5.47,32.99,2020,726
+1976,üksik mees,Ennustatud 2020,4.93,32.96,2020,726
+1977,üksik naine,Tegelik 2020,1.35,21.29,2020,726
+1978,üksik naine,Ennustatud 2020,1.35,21.29,2020,726
+1979,üksikvanem,Tegelik 2020,0,29.34,2020,726
+1980,üksikvanem,Ennustatud 2020,0,27.48,2020,726
+1981,Lasteta paar,Tegelik 2020,0.26,9.21,2020,726
+1982,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,726
+1983,ühe lapsega paar,Tegelik 2020,0,7.3,2020,726
+1984,ühe lapsega paar,Ennustatud 2020,0,7.51,2020,726
+1985,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,726
+1986,Kahe lapsega paar,Ennustatud 2020,0,9.58,2020,726
+1987,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,726
+1988,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.9,2020,726
+1989,üksik mees,Tegelik 2020,5.47,32.99,2020,727
+1990,üksik mees,Ennustatud 2020,4.93,32.96,2020,727
+1991,üksik naine,Tegelik 2020,1.35,21.29,2020,727
+1992,üksik naine,Ennustatud 2020,1.35,21.29,2020,727
+1993,üksikvanem,Tegelik 2020,0,29.34,2020,727
+1994,üksikvanem,Ennustatud 2020,0,27.48,2020,727
+1995,Lasteta paar,Tegelik 2020,0.26,9.21,2020,727
+1996,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,727
+1997,ühe lapsega paar,Tegelik 2020,0,7.3,2020,727
+1998,ühe lapsega paar,Ennustatud 2020,0,7.51,2020,727
+1999,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,727
+2000,Kahe lapsega paar,Ennustatud 2020,0,9.58,2020,727
+2001,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,727
+2002,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.9,2020,727
+2003,üksik mees,Tegelik 2020,5.47,32.99,2020,728
+2004,üksik mees,Ennustatud 2020,4.93,32.96,2020,728
+2005,üksik naine,Tegelik 2020,1.35,21.29,2020,728
+2006,üksik naine,Ennustatud 2020,1.35,21.29,2020,728
+2007,üksikvanem,Tegelik 2020,0,29.34,2020,728
+2008,üksikvanem,Ennustatud 2020,0,27.48,2020,728
+2009,Lasteta paar,Tegelik 2020,0.26,9.21,2020,728
+2010,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,728
+2011,ühe lapsega paar,Tegelik 2020,0,7.3,2020,728
+2012,ühe lapsega paar,Ennustatud 2020,0,7.51,2020,728
+2013,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,728
+2014,Kahe lapsega paar,Ennustatud 2020,0,9.58,2020,728
+2015,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,728
+2016,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.9,2020,728
+2017,üksik mees,Tegelik 2020,5.47,32.99,2020,729
+2018,üksik mees,Ennustatud 2020,4.93,32.96,2020,729
+2019,üksik naine,Tegelik 2020,1.35,21.29,2020,729
+2020,üksik naine,Ennustatud 2020,1.35,21.29,2020,729
+2021,üksikvanem,Tegelik 2020,0,29.34,2020,729
+2022,üksikvanem,Ennustatud 2020,0,27.48,2020,729
+2023,Lasteta paar,Tegelik 2020,0.26,9.21,2020,729
+2024,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,729
+2025,ühe lapsega paar,Tegelik 2020,0,7.3,2020,729
+2026,ühe lapsega paar,Ennustatud 2020,0,7.51,2020,729
+2027,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,729
+2028,Kahe lapsega paar,Ennustatud 2020,0,9.58,2020,729
+2029,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,729
+2030,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.9,2020,729
+2031,üksik mees,Tegelik 2020,5.47,32.99,2020,730
+2032,üksik mees,Ennustatud 2020,4.93,32.96,2020,730
+2033,üksik naine,Tegelik 2020,1.35,21.29,2020,730
+2034,üksik naine,Ennustatud 2020,1.35,21.29,2020,730
+2035,üksikvanem,Tegelik 2020,0,29.34,2020,730
+2036,üksikvanem,Ennustatud 2020,0,27.48,2020,730
+2037,Lasteta paar,Tegelik 2020,0.26,9.21,2020,730
+2038,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,730
+2039,ühe lapsega paar,Tegelik 2020,0,7.3,2020,730
+2040,ühe lapsega paar,Ennustatud 2020,0,7.51,2020,730
+2041,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,730
+2042,Kahe lapsega paar,Ennustatud 2020,0,9.52,2020,730
+2043,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,730
+2044,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.79,2020,730
+2045,üksik mees,Tegelik 2020,5.47,32.99,2020,731
+2046,üksik mees,Ennustatud 2020,4.93,32.96,2020,731
+2047,üksik naine,Tegelik 2020,1.35,21.29,2020,731
+2048,üksik naine,Ennustatud 2020,1.35,21.29,2020,731
+2049,üksikvanem,Tegelik 2020,0,29.34,2020,731
+2050,üksikvanem,Ennustatud 2020,0,27.48,2020,731
+2051,Lasteta paar,Tegelik 2020,0.26,9.21,2020,731
+2052,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,731
+2053,ühe lapsega paar,Tegelik 2020,0,7.3,2020,731
+2054,ühe lapsega paar,Ennustatud 2020,0,7.26,2020,731
+2055,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,731
+2056,Kahe lapsega paar,Ennustatud 2020,0,9.52,2020,731
+2057,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,731
+2058,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.79,2020,731
+2059,üksik mees,Tegelik 2020,5.47,32.99,2020,732
+2060,üksik mees,Ennustatud 2020,4.93,32.96,2020,732
+2061,üksik naine,Tegelik 2020,1.35,21.29,2020,732
+2062,üksik naine,Ennustatud 2020,1.35,21.29,2020,732
+2063,üksikvanem,Tegelik 2020,0,29.34,2020,732
+2064,üksikvanem,Ennustatud 2020,0,27.48,2020,732
+2065,Lasteta paar,Tegelik 2020,0.26,9.21,2020,732
+2066,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,732
+2067,ühe lapsega paar,Tegelik 2020,0,7.3,2020,732
+2068,ühe lapsega paar,Ennustatud 2020,0,7.26,2020,732
+2069,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,732
+2070,Kahe lapsega paar,Ennustatud 2020,0,9.52,2020,732
+2071,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,732
+2072,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.79,2020,732
+2073,üksik mees,Tegelik 2020,5.47,32.99,2020,733
+2074,üksik mees,Ennustatud 2020,4.93,32.96,2020,733
+2075,üksik naine,Tegelik 2020,1.35,21.29,2020,733
+2076,üksik naine,Ennustatud 2020,1.35,21.29,2020,733
+2077,üksikvanem,Tegelik 2020,0,29.34,2020,733
+2078,üksikvanem,Ennustatud 2020,0,27.48,2020,733
+2079,Lasteta paar,Tegelik 2020,0.26,9.21,2020,733
+2080,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,733
+2081,ühe lapsega paar,Tegelik 2020,0,7.3,2020,733
+2082,ühe lapsega paar,Ennustatud 2020,0,7.26,2020,733
+2083,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,733
+2084,Kahe lapsega paar,Ennustatud 2020,0,9.52,2020,733
+2085,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,733
+2086,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.79,2020,733
+2087,üksik mees,Tegelik 2020,5.47,32.99,2020,734
+2088,üksik mees,Ennustatud 2020,4.93,32.96,2020,734
+2089,üksik naine,Tegelik 2020,1.35,21.29,2020,734
+2090,üksik naine,Ennustatud 2020,1.35,21.29,2020,734
+2091,üksikvanem,Tegelik 2020,0,29.34,2020,734
+2092,üksikvanem,Ennustatud 2020,0,28.3,2020,734
+2093,Lasteta paar,Tegelik 2020,0.26,9.21,2020,734
+2094,Lasteta paar,Ennustatud 2020,0.26,8.99,2020,734
+2095,ühe lapsega paar,Tegelik 2020,0,7.3,2020,734
+2096,ühe lapsega paar,Ennustatud 2020,0,7.41,2020,734
+2097,Kahe lapsega paar,Tegelik 2020,0,9.65,2020,734
+2098,Kahe lapsega paar,Ennustatud 2020,0,9.52,2020,734
+2099,Kolme ja enama lapsega paar,Tegelik 2020,0,7.99,2020,734
+2100,Kolme ja enama lapsega paar,Ennustatud 2020,0,8.79,2020,734

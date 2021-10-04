@@ -4,6 +4,9 @@ library(plotly)
 library(shinyBS) # Additional Bootstrap Controls
 library(shiny.i18n)
 
+# Used in poverty tab for newggslopegraph
+library(CGPfunctions)
+
 i18n <-
   Translator$new(translation_json_path = 'translations/translation.json')
 i18n$set_translation_language("ee")
@@ -23,6 +26,12 @@ data_dump <- rbind(
   read.csv("data_dump/2020_dump.csv")
 )
 
+data_hh_dump <- rbind(
+  read.csv("data_dump/2018_hh_dump.csv"),
+  read.csv("data_dump/2019_hh_dump.csv"),
+  read.csv("data_dump/2020_hh_dump.csv")
+)
+
 baseValues <- read.csv("data_dump/base_values.csv")
 
 server <- shinyServer(function(input, output, session) {
@@ -30,10 +39,13 @@ server <- shinyServer(function(input, output, session) {
     update_lang(session, input$language)
   })
   results <-
-    callModule(appInputServer,
-               "appInput",
-               reactive(baseValues),
-               reactive(data_dump))
+    callModule(
+      appInputServer,
+      "appInput",
+      reactive(baseValues),
+      reactive(data_dump),
+      reactive(data_hh_dump)
+    )
   callModule(genderPayGapServer, "genderPayGap", results)
   callModule(povertyServer, "poverty", results)
   callModule(taxesAndBenefitsServer, "taxesBenefits", results)

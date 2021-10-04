@@ -40,7 +40,15 @@ povertyUI <- function(id, i18n) {
       ),
       i18n$t("Tegelik väärtus"),
       i18n$t("Ennustatatud uus väärtus")
-    )
+    ),
+    br(),
+    fluidRow(column(11, align = "center", plotOutput(
+      ns("householdAbsolutePoverty")
+    ))),
+    br(),
+    fluidRow(column(11, align = "center", plotOutput(
+      ns("householdRelativePoverty")
+    )))
   )
 }
 
@@ -65,4 +73,33 @@ povertyServer <- function(input, output, session, results) {
     reactive(results()$original$abs.poverty.rate),
     reactive(results()$computed$new.abs.poverty.rate)
   )
+  output$householdRelativePoverty <-
+    renderPlot(
+      newggslopegraph(
+        dataframe = results()$computed_household,
+        Times = scenario,
+        Measurement = relative.poverty,
+        Grouping = household,
+        Title = i18n$t("Suhtelise vaesuse määra muutus"),
+        SubTitle = i18n$t("Leibkondade kaupa"),
+        YTextSize = 4,
+        DataTextSize = 4,
+        Caption = NULL
+      )
+    )
+  
+  output$householdAbsolutePoverty <-
+    renderPlot(
+      newggslopegraph(
+        dataframe = results()$computed_household,
+        Times = scenario,
+        Measurement = absolute.poverty,
+        Grouping = household,
+        Title = i18n$t("Absoluutse vaesuse määra muutus"),
+        SubTitle = i18n$t("Leibkondade kaupa"),
+        YTextSize = 4,
+        DataTextSize = 4,
+        Caption = NULL
+      )
+    )
 }
