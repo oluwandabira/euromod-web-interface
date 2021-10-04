@@ -34,23 +34,6 @@ data_hh_dump <- rbind(
 
 baseValues <- read.csv("data_dump/base_values.csv")
 
-server <- shinyServer(function(input, output, session) {
-  observeEvent(input$language, ignoreInit = TRUE, {
-    update_lang(session, input$language)
-  })
-  results <-
-    callModule(
-      appInputServer,
-      "appInput",
-      reactive(baseValues),
-      reactive(data_dump),
-      reactive(data_hh_dump)
-    )
-  callModule(genderPayGapServer, "genderPayGap", results)
-  callModule(povertyServer, "poverty", results)
-  callModule(taxesAndBenefitsServer, "taxesBenefits", results)
-})
-
 
 ui <- shinyUI(fluidPage(
   shiny.i18n::usei18n(i18n),
@@ -77,7 +60,23 @@ ui <- shinyUI(fluidPage(
       )
     )
   ))
-  
 ))
+
+server <- shinyServer(function(input, output, session) {
+  observeEvent(input$language, ignoreInit = TRUE, {
+    update_lang(session, input$language)
+  })
+  results <-
+    callModule(
+      appInputServer,
+      "appInput",
+      reactive(baseValues),
+      reactive(data_dump),
+      reactive(data_hh_dump)
+    )
+  callModule(genderPayGapServer, "genderPayGap", results)
+  callModule(povertyServer, "poverty", results)
+  callModule(taxesAndBenefitsServer, "taxesBenefits", results)
+})
 
 shinyApp(ui = ui, server = server)
