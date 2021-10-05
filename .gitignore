@@ -41,3 +41,6 @@ vignettes/*.pdf
 data
 euromod
 .Rproj.user
+
+# macOS
+.DS_Store

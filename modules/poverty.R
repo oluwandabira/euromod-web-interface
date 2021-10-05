@@ -29,6 +29,7 @@ povertyUI <- function(id, i18n) {
       i18n$t("Tegelik väärtus"),
       i18n$t("Ennustatatud uus väärtus")
     ),
+    br(),
     metricChangeUI(
       ns("absolutePovertyRate"),
       i18n$t("Absoluutse vaesuse määr"),
@@ -73,10 +74,34 @@ povertyServer <- function(input, output, session, results, i18n) {
     reactive(results()$original$abs.poverty.rate),
     reactive(results()$computed$new.abs.poverty.rate)
   )
+  
+  translated_data <- reactive({
+    dataframe <- results()$computed_household
+    i18n <- i18n()
+    dataframe <-
+      dataframe %>% mutate(household := i18n$t(household), scenario := i18n$t(scenario))
+    dataframe
+  })
+  
+  output$householdAbsolutePoverty <-
+    renderPlot(
+      newggslopegraph(
+        dataframe = translated_data(),
+        Times = scenario,
+        Measurement = absolute.poverty,
+        Grouping = household,
+        Title = i18n()$t("Absoluutse vaesuse määra muutus"),
+        SubTitle = i18n()$t("Leibkondade kaupa"),
+        YTextSize = 4,
+        DataTextSize = 4,
+        Caption = NULL
+      )
+    )
+
   output$householdRelativePoverty <-
     renderPlot(
       newggslopegraph(
-        dataframe = results()$computed_household,
+        dataframe = translated_data(),
         Times = scenario,
         Measurement = relative.poverty,
         Grouping = household,
@@ -88,18 +113,4 @@ povertyServer <- function(input, output, session, results, i18n) {
       )
     )
   
-  output$householdAbsolutePoverty <-
-    renderPlot(
-      newggslopegraph(
-        dataframe = results()$computed_household,
-        Times = scenario,
-        Measurement = absolute.poverty,
-        Grouping = household,
-        Title = i18n()$t("Absoluutse vaesuse määra muutus"),
-        SubTitle = i18n()$t("Leibkondade kaupa"),
-        YTextSize = 4,
-        DataTextSize = 4,
-        Caption = NULL
-      )
-    )
 }

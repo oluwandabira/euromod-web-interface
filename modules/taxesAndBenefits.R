@@ -51,12 +51,13 @@ taxesAndBenefitsServer <-
   function(input, output, session, results, i18n) {
     taxes_table <- reactive({
       r <- results()
+      i18n <- i18n()
       # i18n translation doesn't work here, should change to server side translation.
-      data.frame(
+      dataframe <- data.frame(
         "Maks" = c(
-          i18n()$t("Sotsiaalmaks"),
-          i18n()$t("Tulumaks"),
-          i18n()$t("Kokku")
+          i18n$t("Sotsiaalmaks"),
+          i18n$t("Tulumaks"),
+          i18n$t("Kokku")
         ),
         "Tegelik maksutulu" = c(
           formatMoney(r$original$social.tax.paid),
@@ -74,16 +75,18 @@ taxesAndBenefitsServer <-
           formatPercentageChange(r$computed$total.benefits.change)
         )
       )
+      names(dataframe) <- c(i18n$t("Maks"), i18n$t("Tegelik maksutulu"), i18n$t("Ennustatav maksutulu"), i18n$t("Muutus"))
+      dataframe
     })
     
     benefits_table <- reactive({
       r <- results()
-      
-      data.frame(
+      i18n <- i18n()
+      dataframe <- data.frame(
         "Toetus" = c(
-          i18n()$t("Toimetulekutoetus"),
-          i18n()$t("Muud toetused"),
-          i18n()$t("Kokku")
+          i18n$t("Toimetulekutoetus"),
+          i18n$t("Muud toetused"),
+          i18n$t("Kokku")
         ),
         "Tegelik kulu" = c(
           formatMoney(r$original$subsistence.benefit.received),
@@ -105,7 +108,11 @@ taxesAndBenefitsServer <-
           formatPercentageChange(r$computed$total.benefits.change)
         )
       )
+      names(dataframe) <- c(i18n$t("Toetus"), i18n$t("Tegelik kulu"), i18n$t("Ennustatav kulu"), i18n$t("Muutus"))
+      dataframe
     })
+    
+    
     
     callModule(metricServer,
                "taxChange",
