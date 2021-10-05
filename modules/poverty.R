@@ -52,7 +52,7 @@ povertyUI <- function(id, i18n) {
   )
 }
 
-povertyServer <- function(input, output, session, results) {
+povertyServer <- function(input, output, session, results, i18n) {
   callModule(
     metricChangeServer,
     "inWorkPoverty",
@@ -80,8 +80,8 @@ povertyServer <- function(input, output, session, results) {
         Times = scenario,
         Measurement = relative.poverty,
         Grouping = household,
-        Title = i18n$t("Suhtelise vaesuse määra muutus"),
-        SubTitle = i18n$t("Leibkondade kaupa"),
+        Title = i18n()$t("Suhtelise vaesuse määra muutus"),
+        SubTitle = i18n()$t("Leibkondade kaupa"),
         YTextSize = 4,
         DataTextSize = 4,
         Caption = NULL
@@ -95,8 +95,8 @@ povertyServer <- function(input, output, session, results) {
         Times = scenario,
         Measurement = absolute.poverty,
         Grouping = household,
-        Title = i18n$t("Absoluutse vaesuse määra muutus"),
-        SubTitle = i18n$t("Leibkondade kaupa"),
+        Title = i18n()$t("Absoluutse vaesuse määra muutus"),
+        SubTitle = i18n()$t("Leibkondade kaupa"),
         YTextSize = 4,
         DataTextSize = 4,
         Caption = NULL

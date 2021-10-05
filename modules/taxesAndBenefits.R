@@ -48,15 +48,15 @@ taxesAndBenefitsUI <- function(id, i18n) {
 }
 
 taxesAndBenefitsServer <-
-  function(input, output, session, results) {
+  function(input, output, session, results, i18n) {
     taxes_table <- reactive({
       r <- results()
       # i18n translation doesn't work here, should change to server side translation.
       data.frame(
         "Maks" = c(
-          i18n$t("Sotsiaalmaks"),
-          i18n$t("Tulumaks"),
-          i18n$t("Kokku")
+          i18n()$t("Sotsiaalmaks"),
+          i18n()$t("Tulumaks"),
+          i18n()$t("Kokku")
         ),
         "Tegelik maksutulu" = c(
           formatMoney(r$original$social.tax.paid),
@@ -81,9 +81,9 @@ taxesAndBenefitsServer <-
       
       data.frame(
         "Toetus" = c(
-          i18n$t("Toimetulekutoetus"),
-          i18n$t("Muud toetused"),
-          i18n$t("Kokku")
+          i18n()$t("Toimetulekutoetus"),
+          i18n()$t("Muud toetused"),
+          i18n()$t("Kokku")
         ),
         "Tegelik kulu" = c(
           formatMoney(r$original$subsistence.benefit.received),

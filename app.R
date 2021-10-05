@@ -7,9 +7,9 @@ library(shiny.i18n)
 # Used in poverty tab for newggslopegraph
 library(CGPfunctions)
 
-i18n <-
+translator <-
   Translator$new(translation_json_path = 'translations/translation.json')
-i18n$set_translation_language("ee")
+translator$set_translation_language("ee")
 
 source("modules/components.R")
 source("modules/metric.R")
@@ -36,8 +36,8 @@ baseValues <- read.csv("data_dump/base_values.csv")
 
 
 ui <- shinyUI(fluidPage(
-  shiny.i18n::usei18n(i18n),
-  titlePanel(i18n$t("Miinimumpalga tõusu mõju palgalõhele")),
+  shiny.i18n::usei18n(translator),
+  titlePanel(translator$t("Miinimumpalga tõusu mõju palgalõhele")),
   fluidRow(column(
     2,
     offset = 10,
@@ -46,17 +46,20 @@ ui <- shinyUI(fluidPage(
       label = NULL,
       choices = list("Eesti keel" = "ee",
                      "In English" = "en"),
-      selected = i18n$get_key_translation()
+      selected = translator$get_key_translation()
     )
   )),
-  sidebarLayout(appInputUI("appInput", i18n), mainPanel(
+  sidebarLayout(appInputUI("appInput", translator), mainPanel(
     tabsetPanel(
       type = "tabs",
-      tabPanel(i18n$t("Palgalõhe"), genderPayGapUI("genderPayGap", i18n)),
-      tabPanel(i18n$t("Vaesus"), povertyUI("poverty", i18n)),
       tabPanel(
-        i18n$t("Maksud ja toetused"),
-        taxesAndBenefitsUI("taxesBenefits", i18n)
+        translator$t("Palgalõhe"),
+        genderPayGapUI("genderPayGap", translator)
+      ),
+      tabPanel(translator$t("Vaesus"), povertyUI("poverty", translator)),
+      tabPanel(
+        translator$t("Maksud ja toetused"),
+        taxesAndBenefitsUI("taxesBenefits", translator)
       )
     )
   ))
@@ -65,6 +68,11 @@ ui <- shinyUI(fluidPage(
 server <- shinyServer(function(input, output, session) {
   observeEvent(input$language, ignoreInit = TRUE, {
     update_lang(session, input$language)
+  })
+  
+  i18n <- reactive({
+    translator$set_translation_language(input$language)
+    translator
   })
   results <-
     callModule(
@@ -75,8 +83,8 @@ server <- shinyServer(function(input, output, session) {
       reactive(data_hh_dump)
     )
   callModule(genderPayGapServer, "genderPayGap", results)
-  callModule(povertyServer, "poverty", results)
-  callModule(taxesAndBenefitsServer, "taxesBenefits", results)
+  callModule(povertyServer, "poverty", results, i18n)
+  callModule(taxesAndBenefitsServer, "taxesBenefits", results, i18n)
 })
 
 shinyApp(ui = ui, server = server)
