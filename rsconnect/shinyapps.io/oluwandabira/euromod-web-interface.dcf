@@ -5,9 +5,9 @@ account: oluwandabira
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 4791802
-bundleId: 5102561
+bundleId: 5105003
 url: https://oluwandabira.shinyapps.io/euromod-web-interface/
-when: 1633357973.59997
-lastSyncTime: 1633357973.6
+when: 1633411762.63175
+lastSyncTime: 1633411762.63178
 asMultiple: FALSE
 asStatic: FALSE
