@@ -14,7 +14,7 @@ translator$set_translation_language("ee")
 source("modules/components.R")
 source("modules/metric.R")
 source("modules/metricChange.R")
-source("modules/appInput.R")
+source("modules/main.R")
 source("modules/genderPayGap.R")
 source("modules/poverty.R")
 source("modules/taxesAndBenefits.R")
@@ -37,54 +37,18 @@ baseValues <- read.csv("data_dump/base_values.csv")
 
 ui <- shinyUI(fluidPage(
   shiny.i18n::usei18n(translator),
-  titlePanel(translator$t("Miinimumpalga tõusu mõju palgalõhele")),
-  fluidRow(column(
-    2,
-    offset = 10,
-    selectInput(
-      "language",
-      label = NULL,
-      choices = list("Eesti keel" = "ee",
-                     "In English" = "en"),
-      selected = translator$get_key_translation()
-    )
-  )),
-  sidebarLayout(appInputUI("appInput", translator), mainPanel(
-    tabsetPanel(
-      type = "tabs",
-      tabPanel(
-        translator$t("Palgalõhe"),
-        genderPayGapUI("genderPayGap", translator)
-      ),
-      tabPanel(translator$t("Vaesus"), povertyUI("poverty", translator)),
-      tabPanel(
-        translator$t("Maksud ja toetused"),
-        taxesAndBenefitsUI("taxesBenefits", translator)
-      )
-    )
-  ))
+  mainUI("main", translator)
 ))
 
 server <- shinyServer(function(input, output, session) {
-  observeEvent(input$language, ignoreInit = TRUE, {
-    update_lang(session, input$language)
-  })
-  
-  i18n <- reactive({
-    translator$set_translation_language(input$language)
-    translator
-  })
-  results <-
     callModule(
-      appInputServer,
-      "appInput",
+      mainServer,
+      "main",
       reactive(baseValues),
       reactive(data_dump),
-      reactive(data_hh_dump)
+      reactive(data_hh_dump),
+      translator
     )
-  callModule(genderPayGapServer, "genderPayGap", results)
-  callModule(povertyServer, "poverty", results, i18n)
-  callModule(taxesAndBenefitsServer, "taxesBenefits", results, i18n)
 })
 
 shinyApp(ui = ui, server = server)
