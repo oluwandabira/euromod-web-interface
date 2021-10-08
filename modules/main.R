@@ -1,7 +1,7 @@
 mainUI <- function(id, i18n) {
   ns <- NS(id)
   div(
-    titlePanel(i18n$t("Miinimumpalga tõusu mõju palgalõhele")),
+    uiOutput(ns("title")),
     fluidRow(column(
       2,
       offset = 10,
@@ -21,7 +21,14 @@ mainUI <- function(id, i18n) {
           )
         ),
         br(),
-        uiOutput(ns("inputPanel")),
+        numericInput(ns("minWage"),
+                     i18n$t("Sisesta miinimumpalk (bruto)"),
+                     0),
+        selectInput(
+          ns("year"),
+          i18n$t("Rakendumise aasta"),
+          c(2018,2019,2020)
+        ),
         actionButton(ns("run"), i18n$t("Arvuta"))
       ),
       mainPanel(tabsetPanel(
@@ -56,38 +63,8 @@ mainServer <-
       translator
     })
     
+    output$title <- renderUI(titlePanel(i18n()$t("Miinimumpalga tõusu mõju palgalõhele")))
     
-    output$inputPanel <- renderUI({
-      i18n <- i18n()
-      mwage <- isolate(input$minWage)
-      year <- isolate(input$year)
-      
-      results <- results()
-      
-      #req(input$year)
-      
-      if (is.null(year)) {
-        year <- max(results$year)
-      }
-      
-      computed <- results %>% filter(.data$year == .env$year)
-      
-      if (is.null(mwage)) {
-        mwage <- min(computed$minwage)
-      }
-      
-      div(
-        numericInput("minWage",
-                     i18n$t("Sisesta miinimumpalk (bruto)"),
-                     mwage),
-        selectInput(
-          "year",
-          i18n$t("Rakendumise aasta"),
-          selected = year,
-          unique(data_dump$year)
-        )
-      )
-    })
     
     observeEvent(input$run, {
       message("Running ", input$run)
@@ -97,27 +74,21 @@ mainServer <-
       
       results <- results()
       
-      req(year)
-      # if (is.null(year)) {
-      #   year <- min(results$year)
-      # }
-      # 
-      computed <- results %>% filter(.data$year == .env$year)
+      computed <- results %>% filter(.data$year == .env$year) %>% filter(.data$minwage == .env$mwage)
       
-      # if (is.null(mwage)) {
-      #   mwage <- min(computed$minwage)
-      # }
+      message(nrow(computed))
+      req(nrow(computed) > 0)
       
       message("Observed minwage and year: ", mwage,"/", year)
       
       computed_household <-
-        household_results() %>% filter(.data$year == .env$year)
+        household_results() %>% filter(.data$year == .env$year) %>% filter(.data$minwage == .env$mwage)
       
       original <- original() %>% filter(.data$year == .env$year)
       
       r <- reactive(list(
-        "computed" = computed %>% filter(.data$minwage == .env$mwage),
-        "computed_household" = computed_household %>% filter(.data$minwage == .env$mwage),
+        "computed" = computed,
+        "computed_household" = computed_household,
         "original" = original
       ))
       
