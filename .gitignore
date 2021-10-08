@@ -40,3 +40,6 @@ vignettes/*.pdf
 
 data
 euromod
+.Rproj.user
+.Rdata
+.DS_Store
