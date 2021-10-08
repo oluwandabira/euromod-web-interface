@@ -20,12 +20,12 @@
 ## 
 golem::fill_desc(
   pkg_name = "rege", # The Name of the package containing the App 
-  pkg_title = "PKG_TITLE", # The Title of the package containing the App 
-  pkg_description = "PKG_DESC.", # The Description of the package containing the App 
-  author_first_name = "AUTHOR_FIRST", # Your First Name
-  author_last_name = "AUTHOR_LAST", # Your Last Name
+  pkg_title = "Euromod Web Interface", # The Title of the package containing the App 
+  pkg_description = "Web interface to run euromod simulations for REGE(Reaserch Project \"Reducing the gender wage gap\").", # The Description of the package containing the App 
+  author_first_name = "Kristine", # Your First Name
+  author_last_name = "Leetberg", # Your Last Name
   author_email = "AUTHOR@MAIL.COM", # Your Email
-  repo_url = NULL # The URL of the GitHub Repo (optional) 
+  repo_url = "https://github.com/kr1stine/euromod-web-interface" # The URL of the GitHub Repo (optional) 
 )     
 
 ## Set {golem} options ----
@@ -33,7 +33,7 @@ golem::set_golem_options()
 
 ## Create Common Files ----
 ## See ?usethis for more information
-usethis::use_mit_license( "Golem User" )  # You can set another license here
+usethis::use_mit_license( "Kristine Leetberg" )  # You can set another license here
 usethis::use_readme_rmd( open = FALSE )
 usethis::use_code_of_conduct()
 usethis::use_lifecycle_badge( "Experimental" )

@@ -1,13 +1,14 @@
 Package: rege
-Title: PKG_TITLE
+Title: Euromod Web Interface
 Version: 0.0.0.9000
-Authors@R: person('AUTHOR_FIRST', 'AUTHOR_LAST', email = 'AUTHOR@MAIL.COM', role = c('cre', 'aut'))
-Description: PKG_DESC.
-License: What license is it under?
+Authors@R: person('Kristine', 'Leetberg', email = 'AUTHOR@MAIL.COM', role = c('cre', 'aut'))
+Description: Web interface to run euromod simulations for REGE(Reaserch Project "Reducing the gender wage gap").
+License: MIT + file LICENSE
 Imports: 
     attempt,
     config (>= 0.3.1),
     golem (>= 0.3.1),
+    pkgload,
     processx,
     shiny (>= 1.7.0)
 Encoding: UTF-8
@@ -18,3 +19,5 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Language: en-US
+URL: https://github.com/kr1stine/euromod-web-interface
+BugReports: https://github.com/kr1stine/euromod-web-interface/issues
