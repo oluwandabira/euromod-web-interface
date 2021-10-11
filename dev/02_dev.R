@@ -19,9 +19,9 @@ usethis::use_package("dplyr")
 
 ## Add modules ----
 ## Create a module infrastructure in R/
-golem::add_module("main") # Name of the module
-#golem::add_module( name = "name_of_module2" ) # Name of the module
-
+golem::add_module("input_panel")
+golem::add_module("output_panel")
+golem::add_module("translate")
 ## Add helper functions ----
 ## Creates fct_* and utils_*
 golem::add_fct( "helpers" ) 
@@ -69,7 +69,7 @@ usethis::use_github_action_check_release()
 #usethis::use_github_action_check_standard() 
 #usethis::use_github_action_check_full() 
 # Add action for PR
-#usethis::use_github_action_pr_commands()
+usethis::use_github_action_pr_commands()
 
 # You're now set! ----
 # go to dev/03_deploy.R

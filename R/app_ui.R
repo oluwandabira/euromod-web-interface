@@ -10,7 +10,10 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic 
     fluidPage(
-      h1("rege")
+      sidebarLayout(
+        sidebarPanel(mod_input_panel_ui("main_input")),
+        mainPanel(mod_output_panel_ui("main_output"))
+      )
     )
   )
 }
