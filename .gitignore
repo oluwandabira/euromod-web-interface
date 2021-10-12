@@ -38,8 +38,8 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-data
 euromod
 .Rproj.user
 .Rdata
 .DS_Store
+.renv

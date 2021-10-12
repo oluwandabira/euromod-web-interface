@@ -1,6 +1,7 @@
 {
   "languages": ["ee", "en"],
   "translation": [
+    {"ee": "Keelt muuta", "en": "Change Language"},
 	  {"ee": "Palun oota, arvutan...", "en": "Loading..."},
       {"ee": "Palgalõhe", "en": "Gender pay gap"},
       {"ee": "Vaesus", "en": "Poverty"},
@@ -11,7 +12,7 @@
 	  },
       {
 		  "ee": "Sisesta miinimumpalk (bruto)", 
-		  "en": "Insert gross minimum wage"
+		  "en": "Insert gross minimum wage (gross)"
 	  },
 	  {
 		  "ee": "Rakendumise aasta", 

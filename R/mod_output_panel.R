@@ -7,20 +7,34 @@
 #' @noRd 
 #'
 #' @importFrom shiny NS tagList 
-mod_output_panel_ui <- function(id){
+mod_output_panel_ui <- function(id, i18n){
   ns <- NS(id)
   tagList(
- 
+    textOutput(ns("years")),
+    br(),
+    i18n$t("Sisesta miinimumpalk (bruto)"),
+    br(),
+    textOutput(ns("lang"))
   )
 }
     
 #' output_panel Server Functions
 #'
 #' @noRd 
-mod_output_panel_server <- function(id){
+mod_output_panel_server <- function(id, app_inputs, i18n){
   moduleServer( id, function(input, output, session){
     ns <- session$ns
  
+    output$years <- renderText({
+      i <- app_inputs()
+      
+      paste0(i$year, "/", i$min_wage)
+    })
+    
+    output$lang <- renderText({
+      i <- i18n()
+      i$t("Sisesta miinimumpalk (bruto)")
+      })
   })
 }
     

@@ -14,6 +14,10 @@ run_app <- function(
   uiPattern = "/",
   ...
 ) {
+  
+  translator <- shiny.i18n::Translator$new(translation_json_path = "data/translation.json")
+  translator$set_translation_language("ee")
+  
   with_golem_options(
     app = shinyApp(
       ui = app_ui,
@@ -23,6 +27,6 @@ run_app <- function(
       enableBookmarking = enableBookmarking, 
       uiPattern = uiPattern
     ), 
-    golem_opts = list(...)
+    golem_opts = list(..., i18n = translator)
   )
 }

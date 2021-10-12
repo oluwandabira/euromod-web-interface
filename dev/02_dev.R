@@ -16,30 +16,35 @@
 ## Dependencies ----
 ## Add one line by package you want to add as dependency
 usethis::use_package("dplyr")
+usethis::use_package( "shiny.i18n" )
+
+# 
+usethis::use_r("ComputedProvider")
 
 ## Add modules ----
 ## Create a module infrastructure in R/
 golem::add_module("input_panel")
 golem::add_module("output_panel")
-golem::add_module("translate")
+
 ## Add helper functions ----
-## Creates fct_* and utils_*
+## Creates fct_* and utils_*š
 golem::add_fct( "helpers" ) 
 golem::add_utils( "helpers" )
 
 ## External resources
 ## Creates .js and .css files at inst/app/www
-golem::add_js_file( "script" )
-golem::add_js_handler( "handlers" )
-golem::add_css_file( "custom" )
+#golem::add_js_file( "script" )
+#golem::add_js_handler( "handlers" )
+#golem::add_css_file( "custom" )
 
 ## Add internal datasets ----
 ## If you have data in your package
-usethis::use_data_raw( name = "my_dataset", open = FALSE ) 
+#usethis::use_data_raw( name = "my_dataset", open = FALSE ) 
 
 ## Tests ----
 ## Add one line by test you want to create
 usethis::use_test( "app" )
+usethis::use_test( "language_selector" )
 
 # Documentation
 
