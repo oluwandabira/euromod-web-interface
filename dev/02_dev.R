@@ -16,6 +16,8 @@
 ## Dependencies ----
 ## Add one line by package you want to add as dependency
 usethis::use_package("dplyr")
+usethis::use_package("R6")
+usethis::use_package("shiny")
 usethis::use_package( "shiny.i18n" )
 
 # 

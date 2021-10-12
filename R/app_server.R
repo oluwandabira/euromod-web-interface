@@ -13,6 +13,7 @@ app_server <- function(input, output, session) {
     shiny.i18n::update_lang(session, input$selector)
   })
   
+  translator <- golem::get_golem_options("i18n")
   # i18n <-
   #   mod_language_selector_server("language", golem::get_golem_options("i18n"))
   
