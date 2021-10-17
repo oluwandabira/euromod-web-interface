@@ -28,7 +28,7 @@ app_server <- function(input, output, session) {
       i18n()$t("Miinimumpalga tõusu mõju palgalõhele")
     ))
   
-  app_inputs <- mod_input_panel_server("main_input")
+  app_inputs <- mod_input_panel_server("main_input", provider$get_input_limits())
   
   mod_output_panel_server("main_output", app_inputs, i18n)
 }

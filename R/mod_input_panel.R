@@ -16,7 +16,7 @@ mod_input_panel_ui <- function(id, i18n) {
     br(),
     numericInput(ns("min_wage"),
                  i18n$t("Sisesta miinimumpalk (bruto)"),
-                 0, min = 0, max = 100),
+                 600, min = 0, max = 100),
     selectInput(ns("year"),
                 i18n$t("Rakendumise aasta"),
                 c(2018, 2019, 2020)),
@@ -27,15 +27,32 @@ mod_input_panel_ui <- function(id, i18n) {
 #' input_panel Server Functions
 #'
 #' @noRd
-mod_input_panel_server <- function(id) {
+mod_input_panel_server <- function(id, input_limits) {
   moduleServer(id, function(input, output, session) {
     ns <- session$ns
     
-    return(reactive({
-      input$run
-      
+    iv <- shinyvalidate::InputValidator$new()
+    
+    iv$add_rule("min_wage", shinyvalidate::sv_required())
+    
+    iv$add_rule("min_wage",
+                function(min_wage) {
+                  limits <- input_limits[input_limits$year == input$year, ]
+                  if (min_wage < limits$min || min_wage > limits$max) {
+                    "Input outside range"
+                  }
+                })
+    
+    observe({iv$enable()}) %>% bindEvent(input$run)
+    
+
+    observe({
+
+      iv$enable()
+      #req(iv$is_valid())
       list(year = isolate(input$year), min_wage = isolate(input$min_wage))
-    }))
+    }) %>%
+      bindEvent(input$run)
   })
 }
 

@@ -16,9 +16,11 @@
 ## Dependencies ----
 ## Add one line by package you want to add as dependency
 usethis::use_package("dplyr")
+usethis::use_package("purrr")
 usethis::use_package("R6")
 usethis::use_package("shiny")
 usethis::use_package( "shiny.i18n" )
+usethis::use_package( "shinyvalidate" )
 
 # 
 usethis::use_r("ComputedProvider")
@@ -45,8 +47,9 @@ golem::add_utils( "helpers" )
 
 ## Tests ----
 ## Add one line by test you want to create
+usethis::use_testthat(parallel = TRUE)
 usethis::use_test( "app" )
-usethis::use_test( "language_selector" )
+usethis::use_test( "ComputedProvider" )
 
 # Documentation
 

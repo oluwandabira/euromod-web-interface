@@ -6,6 +6,7 @@
 #' @noRd
 app_ui <- function(request) {
   i18n <- golem::get_golem_options("i18n")
+  
   tagList(
     # Leave this function for adding external resources
     golem_add_external_resources(i18n),
@@ -38,9 +39,7 @@ golem_add_external_resources <- function(i18n){
   add_resource_path(
     'www', app_sys('app/www')
   )
-  
-  #title = i18n$t("Miinimumpalga tõusu mõju palgalõhele")
- 
+
   tags$head(
     favicon(),
     # bundle_resources(

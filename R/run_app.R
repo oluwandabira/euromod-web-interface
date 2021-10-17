@@ -18,6 +18,7 @@ run_app <- function(
   translator <- shiny.i18n::Translator$new(translation_json_path = "data/translation.json")
   translator$set_translation_language("ee")
   
+  
   with_golem_options(
     app = shinyApp(
       ui = app_ui,
