@@ -1,0 +1,248 @@
+{
+  "languages": [
+    "ee",
+    "en"
+  ],
+  "translation": [
+    {
+      "ee": "Sisend väljaspool vahemikku",
+      "en": "Input outside range"
+    },
+    {
+      "ee": "Keelt muuta",
+      "en": "Change Language"
+    },
+    {
+      "ee": "Palun oota, arvutan...",
+      "en": "Loading..."
+    },
+    {
+      "ee": "Palgalõhe",
+      "en": "Gender pay gap"
+    },
+    {
+      "ee": "Vaesus",
+      "en": "Poverty"
+    },
+    {
+      "ee": "Maksud ja toetused",
+      "en": "Taxes and benefits"
+    },
+    {
+      "ee": "Rakendus ennustab miinimumpalga muutuse esmast mõju sotsiaalsetele näitajatele, eeldusel, et muud näitajad jäävad samaks.",
+      "en": "The application predicts the first-hand effects of an increase in the minimum wage on social indicators, provided that other indicators remain the same."
+    },
+    {
+      "ee": "Sisesta miinimumpalk (bruto)",
+      "en": "Insert gross minimum wage (gross)"
+    },
+    {
+      "ee": "Rakendumise aasta",
+      "en": "Year of implementation"
+    },
+    {
+      "ee": "Töötav elanikkond",
+      "en": "Working population"
+    },
+    {
+      "ee": "Sooline palgalõhe",
+      "en": "The gender pay gap"
+    },
+    {
+      "ee": "Täisajaga töötavate meeste ja naiste brutotunnipalkade lõhe.",
+      "en": "The gross hourly pay gap between men and women in full - time employment."
+    },
+    {
+      "ee": "Kättesaadava sissetuleku sooline lõhe",
+      "en": "Gender gap in disposable income"
+    },
+    {
+      "ee": "Täisajaga töötavate meeste ja naiste kasutatava sissetuleku (brutopalk + toetused - maksud) lõhe.",
+      "en": "The income gap (gross wages + benefits - taxes) of men and women in full - time employment."
+    },
+    {
+      "ee": "Kogu elanikkond",
+      "en": "The whole population"
+    },
+    {
+      "ee": "Positiivse sissetulekuga meeste ja naiste kasutatava sissetuleku (brutopalk + toetused - maksud) lõhe. ",
+      "en": "The gap between the disposable income (gross wages + benefits - taxes) of men and women with a positive income."
+    },
+    {
+      "ee": "Absoluutse vaesuse määr",
+      "en": "Extreme poverty rate"
+    },
+    {
+      "ee": "Nende elanike osatähtsus, kelle sissetulek jääb alla elatusmiinimumi. ",
+      "en": "Proportion of the population whose income is below the subsistence level."
+    },
+    {
+      "ee": "Absoluutse vaesuse määr näitab, mitu protsenti kogu elanikkonnast on absoluutses vaesuses, ehk nende ekvivalentnetosissetulek on allpool elatusmiinimumi.",
+      "en": "The extreme poverty rate shows the percentage of individuals whose equivalent disposable income is lower than the subsistence level."
+    },
+    {
+      "ee": "Suhtelise vaesuse määr",
+      "en": "Relative poverty rate"
+    },
+    {
+      "ee": "Palgavaesuse määr",
+      "en": "In-work poverty rate"
+    },
+    {
+      "ee": "Nende elanike osatähtsus, kes on vaesuses vaatamata sellele, et käivad tööl.",
+      "en": "The amount of people who are at risk of poverty regardless that they are employed"
+    },
+    {
+      "ee": "Palgavaesus näitab, mitu protsenti töötavatest inimestest on suhtelises vaesuses, ehk nende ekvivalentnetosissetulek on allpool suhtelise vaesuse piiri.",
+      "en": "The proportion of working individuals whose equivalised disposable income is under the at-risk-of-poverty threshold."
+    },
+    {
+      "ee": "Nende elanike osatähtsus, kes on suhtelises vaesuses.",
+      "en": "The proportion of the population whose equivalent disposable income is below the relative poverty threshold."
+    },
+    {
+      "ee": "Suhtelise vaesuse määr näitab, mitu protsenti kogu elanikkonnast on suhtelises vaesuses, ehk nende ekvivalentnetosissetulek on allpool suhtelise vaesuse piiri.",
+      "en": "The at-risk-ofpoverty rate shows the percentage of individuals whose equivalent disposable income is below the at-risk-at-poverty threshold"
+    },
+    {
+      "ee": "Absoluutse vaesuse määra muutus",
+      "en": "Change in absolute poverty rate"
+    },
+    {
+      "ee": "Leibkondade kaupa",
+      "en": "By households"
+    },
+    {
+      "ee": "Üksik mees",
+      "en": "Single man"
+    },
+    {
+      "ee": "Üksik naine",
+      "en": "Single woman"
+    },
+    {
+      "ee": "Lasteta paar",
+      "en": "Couple without children"
+    },
+    {
+      "ee": "Kolme ja enama lapsega paar",
+      "en": "Couple with three or more children"
+    },
+    {
+      "ee": "Ühe lapsega paar",
+      "en": "Couple with one child"
+    },
+    {
+      "ee": "Kahe lapsega paar",
+      "en": "Couple with two children"
+    },
+    {
+      "ee": "Üksikvanem",
+      "en": "Single parent"
+    },
+    {
+      "ee": "Suhtelise vaesuse määra muutus",
+      "en": "Change in relative poverty rate"
+    },
+    {
+      "ee": "Tegelik",
+      "en": "Actual"
+    },
+    {
+      "ee": "Ennustatud",
+      "en": "Projected"
+    },
+    {
+      "ee": "Riigi tööjõumaksutulu ja kulutused toetustele",
+      "en": "State labor tax revenue and expenditure on benefits"
+    },
+    {
+      "ee": "Laekuvad tööjõumaksud",
+      "en": "Labor taxes receivable"
+    },
+    {
+      "ee": "Väljamakstavad toetused",
+      "en": "Benefits to be paid"
+    },
+    {
+      "ee": "Maks",
+      "en": "Tax"
+    },
+    {
+      "ee": "Tegelik maksutulu",
+      "en": "Actual tax revenue"
+    },
+    {
+      "ee": "Ennustatav maksutulu",
+      "en": "Estimated tax revenue"
+    },
+    {
+      "ee": "Muutus",
+      "en": "Change"
+    },
+    {
+      "ee": "Sotsiaalmaks",
+      "en": "Social tax"
+    },
+    {
+      "ee": "Tulumaks",
+      "en": "Income tax"
+    },
+    {
+      "ee": "Kokku",
+      "en": "Sum"
+    },
+    {
+      "ee": "Toetus",
+      "en": "Benefit"
+    },
+    {
+      "ee": "Tegelik kulu",
+      "en": "Actual cost"
+    },
+    {
+      "ee": "Ennustatav kulu",
+      "en": "Estimated cost"
+    },
+    {
+      "ee": "Toimetulekutoetus",
+      "en": "Subsistence benefit"
+    },
+    {
+      "ee": "Muud toetused",
+      "en": "Other benefits"
+    },
+    {
+      "ee": "Arvuta",
+      "en": "Run"
+    },
+    {
+      "ee": "Miinimumpalk ei tohi olla tühi!",
+      "en": "The minimum wage must not be empty!"
+    },
+    {
+      "ee": "Palun sisesta tegelikust miinimumpalgast kõrgem väärtus.",
+      "en": "Please enter a value higher than the actual minimum wage."
+    },
+    {
+      "ee": "Tegelik väärtus",
+      "en": "Actual value"
+    },
+    {
+      "ee": "Ennustatatud uus väärtus",
+      "en": "Predicted new value"
+    },
+    {
+      "ee": "Palgalõhe näitab, mitu protsenti on naiste brutotunnipalk meeste omast madalam.",
+      "en": "The gender pay gap shows how many percent the gross hourly pay of women is lower than the gross hourly pay of men."
+    },
+    {
+      "ee": "Arv näitab, mitu protsenti on naiste kuus kättesaadav sissetulek meeste omast madalam.",
+      "en": "The indicator shows how many percent the disposable income of women is lower than the disposable income of men."
+    },
+    {
+      "ee": "Miinimumpalga tõusu mõju palgalõhele",
+      "en": "Impact of the increase in the minimum wage on the pay gap"
+    }
+  ]
+}

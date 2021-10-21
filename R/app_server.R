@@ -14,8 +14,6 @@ app_server <- function(input, output, session) {
   })
   
   translator <- golem::get_golem_options("i18n")
-  # i18n <-
-  #   mod_language_selector_server("language", golem::get_golem_options("i18n"))
   
   i18n <- reactive({
     translator$set_translation_language(input$selector)
@@ -28,7 +26,16 @@ app_server <- function(input, output, session) {
       i18n()$t("Miinimumpalga tõusu mõju palgalõhele")
     ))
   
-  app_inputs <- mod_input_panel_server("main_input", provider$get_input_limits())
+  limits <- provider$get_input_limits()
   
-  mod_output_panel_server("main_output", app_inputs, i18n)
+  app_inputs <- mod_input_panel_server("main_input", i18n, limits)
+  
+  observe({message("App Inputs", app_inputs())}) %>% bindEvent(app_inputs)
+  
+  results <- reactive({
+    app_inputs() # NEED to draw this dependency so the inputs don't compute with NULL
+    provider$compute(app_inputs()$year, app_inputs()$min_wage)
+  })
+  
+  mod_output_panel_server("main_output", i18n, results)
 }

@@ -6,6 +6,7 @@ Description: Web interface to run euromod simulations for REGE(Reaserch Project 
 License: MIT + file LICENSE
 Imports: 
     attempt,
+    CGPfunctions,
     config (>= 0.3.1),
     dplyr,
     golem (>= 0.3.1),
@@ -15,10 +16,12 @@ Imports:
     R6,
     shiny (>= 1.7.0),
     shiny.i18n,
+    shinyBS,
+    shinyjs,
     shinyvalidate
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

@@ -14,8 +14,9 @@ app_ui <- function(request) {
       uiOutput("title"),
       column(2, offset = 10, selectInput(
         "selector",
-        label = i18n$t("Keelt muuta"),
-        choices = i18n$get_languages(),
+        label = NULL,
+        choices = list("Eesti keel" = "ee",
+                       "In English" = "en"),
         selected = i18n$get_key_translation()
       )),
       sidebarLayout(
@@ -49,6 +50,7 @@ golem_add_external_resources <- function(i18n){
     #HTML("<title>Just checking</title>"),
     # Add here other external resources
     # for example, you can add shinyalert::useShinyalert()
+    shinyjs::useShinyjs(),
     shiny.i18n::usei18n(i18n)
   )
 }

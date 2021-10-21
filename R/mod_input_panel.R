@@ -15,8 +15,11 @@ mod_input_panel_ui <- function(id, i18n) {
     ),
     br(),
     numericInput(ns("min_wage"),
-                 i18n$t("Sisesta miinimumpalk (bruto)"),
-                 600, min = 0, max = 100),
+                 tagList(
+                   i18n$t("Sisesta miinimumpalk (bruto)"),
+                   textOutput(ns("range"), inline = TRUE)
+                 ),
+                 600),
     selectInput(ns("year"),
                 i18n$t("Rakendumise aasta"),
                 c(2018, 2019, 2020)),
@@ -27,9 +30,13 @@ mod_input_panel_ui <- function(id, i18n) {
 #' input_panel Server Functions
 #'
 #' @noRd
-mod_input_panel_server <- function(id, input_limits) {
+mod_input_panel_server <- function(id, i18n, input_limits) {
   moduleServer(id, function(input, output, session) {
     ns <- session$ns
+    
+    limits <- reactive(input_limits[input_limits$year == input$year, ])
+    
+    output$range <- renderText(sprintf("[%d,%d]", limits()$min, limits()$max))
     
     iv <- shinyvalidate::InputValidator$new()
     
@@ -37,27 +44,31 @@ mod_input_panel_server <- function(id, input_limits) {
     
     iv$add_rule("min_wage",
                 function(min_wage) {
-                  limits <- input_limits[input_limits$year == input$year, ]
-                  if (min_wage < limits$min || min_wage > limits$max) {
-                    "Input outside range"
-                  }
+                  if (min_wage < limits()$min || min_wage > limits()$max)
+                    i18n()$t("Sisend väljaspool vahemikku")
                 })
     
-    observe({iv$enable()}) %>% bindEvent(input$run)
+    iv$enable()
+    #observe({iv$enable()}) %>% bindEvent(input$run)
     
-
     observe({
+      if (!iv$is_valid()) {
+        shinyjs::disable("run")
+      } else {
+        shinyjs::enable("run")
+      }
+    })
+    
+    app_inputs <- reactive({
+      #year <- isolate(input$year)
+      #min_wage <- isolate(input$min_wage)
 
-      iv$enable()
-      #req(iv$is_valid())
-      list(year = isolate(input$year), min_wage = isolate(input$min_wage))
-    }) %>%
-      bindEvent(input$run)
+      #req(!is.null(year))
+      #req(!is.null(min_wage))
+      req(iv$is_valid())
+      list("year" = input$year, "min_wage" = input$min_wage)
+    }) %>% bindEvent(input$run, ignoreInit = TRUE)
+    
+    return(app_inputs)
   })
 }
-
-## To be copied in the UI
-# mod_input_panel_ui("input_panel_ui_1")
-
-## To be copied in the server
-# mod_input_panel_server("input_panel_ui_1")

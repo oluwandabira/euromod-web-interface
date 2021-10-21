@@ -26,7 +26,7 @@ golem::fill_desc(
   author_last_name = "Leetberg", # Your Last Name
   author_email = "AUTHOR@MAIL.COM", # Your Email
   repo_url = "https://github.com/kr1stine/euromod-web-interface" # The URL of the GitHub Repo (optional) 
-)     
+)
 
 ## Set {golem} options ----
 golem::set_golem_options()
@@ -52,11 +52,11 @@ golem::use_recommended_deps()
 ## Favicon ----
 # If you want to change the favicon (default is golem's one)
 golem::use_favicon() # path = "path/to/ico". Can be an online file. 
-golem::remove_favicon()
+#golem::remove_favicon()
 
 ## Add helper functions ----
-golem::use_utils_ui()
-golem::use_utils_server()
+#golem::use_utils_ui()
+#golem::use_utils_server()
 
 # You're now set! ----
 

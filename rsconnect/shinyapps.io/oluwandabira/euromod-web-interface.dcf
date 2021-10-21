@@ -1,0 +1,14 @@
+name: euromod-web-interface
+title: euromod-web-interface
+username:
+account: oluwandabira
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4791802
+bundleId: 5164154
+url: https://oluwandabira.shinyapps.io/euromod-web-interface/
+when: 1634851463.1941
+lastSyncTime: 1634851463.19411
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .github/workflows/pr-commands.yaml|.github/workflows/R-CMD-check.yaml|tests/spelling.R|tests/testthat/test-ComputedProvider.R|tests/testthat/test-golem-recommended.R|tests/testthat/test-input_panel.R|tests/testthat.R|data-raw

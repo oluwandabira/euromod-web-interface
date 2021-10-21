@@ -19,8 +19,11 @@ usethis::use_package("dplyr")
 usethis::use_package("purrr")
 usethis::use_package("R6")
 usethis::use_package("shiny")
-usethis::use_package( "shiny.i18n" )
-usethis::use_package( "shinyvalidate" )
+usethis::use_package("shinyjs")
+usethis::use_package("shinyBS")
+usethis::use_package("shiny.i18n")
+usethis::use_package("shinyvalidate")
+usethis::use_package("CGPfunctions")
 
 # 
 usethis::use_r("ComputedProvider")
@@ -29,11 +32,17 @@ usethis::use_r("ComputedProvider")
 ## Create a module infrastructure in R/
 golem::add_module("input_panel")
 golem::add_module("output_panel")
+golem::add_module("gender_pay_gap")
+golem::add_module("metric_change")
+golem::add_module("metric_description")
+golem::add_module("metric")
+golem::add_module("poverty")
+golem::add_module("taxes")
 
 ## Add helper functions ----
 ## Creates fct_* and utils_*š
-golem::add_fct( "helpers" ) 
-golem::add_utils( "helpers" )
+#golem::add_fct( "helpers" ) 
+golem::add_utils( "formatting" )
 
 ## External resources
 ## Creates .js and .css files at inst/app/www
@@ -48,21 +57,23 @@ golem::add_utils( "helpers" )
 ## Tests ----
 ## Add one line by test you want to create
 usethis::use_testthat(parallel = TRUE)
-usethis::use_test( "app" )
-usethis::use_test( "ComputedProvider" )
+usethis::use_test("app")
+usethis::use_test("ComputedProvider")
+usethis::use_test("input_panel")
 
 # Documentation
+devtools::document()
 
 ## Vignette ----
-usethis::use_vignette("rege")
-devtools::build_vignettes()
+#usethis::use_vignette("rege")
+#devtools::build_vignettes()
 
 ## Code Coverage----
 ## Set the code coverage service ("codecov" or "coveralls")
-usethis::use_coverage()
+#usethis::use_coverage()
 
 # Create a summary readme for the testthat subdirectory
-covrpage::covrpage()
+#covrpage::covrpage()
 
 ## CI ----
 ## Use this part of the script if you need to set up a CI

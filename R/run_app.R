@@ -15,7 +15,7 @@ run_app <- function(
   ...
 ) {
   
-  translator <- shiny.i18n::Translator$new(translation_json_path = "data/translation.json")
+  translator <- shiny.i18n::Translator$new(translation_json_path = "inst/extdata/translation.json")
   translator$set_translation_language("ee")
   
   
