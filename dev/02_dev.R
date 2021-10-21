@@ -57,9 +57,7 @@ golem::add_utils( "formatting" )
 ## Tests ----
 ## Add one line by test you want to create
 usethis::use_testthat(parallel = TRUE)
-usethis::use_test("app")
 usethis::use_test("ComputedProvider")
-usethis::use_test("input_panel")
 
 # Documentation
 devtools::document()

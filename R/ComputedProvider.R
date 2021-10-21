@@ -1,7 +1,7 @@
 
 #' Provider for precomputed results
 #' @export
-#' @importFrom magrittr %>%
+#' @importFrom dplyr %>%
 ComputedProvider <- R6::R6Class(
   "ComputedProvider",
   public = list(
