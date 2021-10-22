@@ -23,7 +23,7 @@ mod_metric_change_ui <- function(id, title, description) {
 
 down_arrow <- function() {
   tags$i(class = "fa fa-arrow-down")
-         #style = "color: rgb(0,166,90)")
+  # style = "color: rgb(0,166,90)")
 }
 
 #' metric_change Server Functions
@@ -38,11 +38,11 @@ mod_metric_change_server <-
            new_tt = NULL) {
     moduleServer(id, function(input, output, session) {
       ns <- session$ns
-      
+
       mod_metric_description_server("decription", desc_tt)
-      
+
       mod_metric_server("old", old_value, old_tt)
-      
+
       mod_metric_server("new", new_value, new_tt)
     })
   }

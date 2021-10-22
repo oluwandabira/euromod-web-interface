@@ -4,7 +4,7 @@
 #'
 #' @param id,input,output,session Internal parameters for {shiny}.
 #'
-#' @noRd 
+#' @noRd
 #'
 #' @importFrom shiny NS tagList
 mod_gender_pay_gap_ui <- function(id, i18n) {
@@ -36,12 +36,12 @@ mod_gender_pay_gap_ui <- function(id, i18n) {
     )
   )
 }
-    
+
 #' gender_pay_gap Server Functions
 #'
-#' @noRd 
-mod_gender_pay_gap_server <- function(id, i18n, results){
-  moduleServer( id, function(input, output, session){
+#' @noRd
+mod_gender_pay_gap_server <- function(id, i18n, results) {
+  moduleServer(id, function(input, output, session) {
     ns <- session$ns
 
     mod_metric_change_server(
@@ -55,7 +55,7 @@ mod_gender_pay_gap_server <- function(id, i18n, results){
       reactive(results()$original$"disp income gap workers"),
       reactive(results()$computed$"new disp inc gap ft")
     )
-    
+
     mod_metric_change_server(
       "disp",
       reactive(results()$original$"disp income gap all"),

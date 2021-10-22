@@ -4,10 +4,10 @@
 #'
 #' @param id,input,output,session Internal parameters for {shiny}.
 #'
-#' @noRd 
+#' @noRd
 #'
-#' @importFrom shiny NS tagList 
-mod_poverty_ui <- function(id, i18n){
+#' @importFrom shiny NS tagList
+mod_poverty_ui <- function(id, i18n) {
   ns <- NS(id)
   div(
     br(),
@@ -45,33 +45,33 @@ mod_poverty_ui <- function(id, i18n){
     )))
   )
 }
-    
+
 #' poverty Server Functions
 #'
-#' @noRd 
-mod_poverty_server <- function(id, i18n, results){
-  moduleServer( id, function(input, output, session){
+#' @noRd
+mod_poverty_server <- function(id, i18n, results) {
+  moduleServer(id, function(input, output, session) {
     ns <- session$ns
- 
+
     mod_metric_change_server(
       "in_work_poverty",
       reactive(results()$original$"in work poverty"),
       reactive(results()$computed$"new in-work poverty rate")
     )
-    
+
     mod_metric_change_server(
       "relative_poverty",
       reactive(results()$original$"relative poverty rate"),
       reactive(results()$computed$"new relative poverty rate")
     )
-    
+
     mod_metric_change_server(
       "absolute_poverty",
       reactive(results()$original$"abs poverty rate"),
       reactive(results()$computed$"new abs poverty rate")
     )
-    
-    
+
+
     translated_data <- reactive({
       dataframe <- results()$household
       i18n <- i18n()
@@ -80,7 +80,7 @@ mod_poverty_server <- function(id, i18n, results){
       names(dataframe) <- c("year", "min wage", "household", "scenario", "abs_poverty", "rel_poverty")
       dataframe
     })
-    
+
     output$hh_abs <-
       renderPlot(
         CGPfunctions::newggslopegraph(
@@ -95,7 +95,7 @@ mod_poverty_server <- function(id, i18n, results){
           Caption = NULL
         )
       )
-    
+
     output$hh_rel <-
       renderPlot(
         CGPfunctions::newggslopegraph(
